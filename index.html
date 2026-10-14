@@ -8,71 +8,99 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
 <style>
   :root {
-    --bg: #f6f7f9; --card: #ffffff; --ink: #14161a; --sub: #5b6270; --line: #e3e6eb;
-    --accent: #ff5a1f; --accent-ink: #ffffff; --accent-soft: #fff1ea;
-    --chip: #eef0f3; --ok: #1f8a4c; --warn: #b8560c; --bad: #b42318;
+    --bg: #f6f7f9; --card: #ffffff; --ink: #14161a; --sub: #5b6270; --line: #e3e6eb; --chip: #eef0f3;
+    --accent: #ff5a1f; --accent-ink: #ffffff;
+    --red: #b42318; --red-bg: #fde8e6; --amber: #9a4a00; --amber-bg: #fff1d6;
+    --green: #17723f; --green-bg: #e3f5ea; --blue: #1d4ed8; --blue-bg: #e6edfd; --grey: #5b6270; --grey-bg: #eef0f3;
     --radius: 14px; --shadow: 0 1px 2px rgba(16,24,40,.05), 0 4px 16px rgba(16,24,40,.06);
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #0f1115; --card: #171a20; --ink: #eef0f3; --sub: #9aa3b2; --line: #2a2f38;
-      --accent: #ff6a33; --accent-ink: #14161a; --accent-soft: #2a1a12;
-      --chip: #232831; --ok: #4cc27f; --warn: #f0a25a; --bad: #f2786c;
+      --bg: #0f1115; --card: #171a20; --ink: #eef0f3; --sub: #9aa3b2; --line: #2a2f38; --chip: #232831;
+      --accent: #ff6a33; --accent-ink: #14161a;
+      --red: #ff8a80; --red-bg: #3a1714; --amber: #f6b25c; --amber-bg: #3a2810;
+      --green: #5fd393; --green-bg: #13301f; --blue: #8fb0ff; --blue-bg: #18233f; --grey: #9aa3b2; --grey-bg: #232831;
       --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
     }
   }
   :root[data-theme="dark"] {
-    --bg: #0f1115; --card: #171a20; --ink: #eef0f3; --sub: #9aa3b2; --line: #2a2f38;
-    --accent: #ff6a33; --accent-ink: #14161a; --accent-soft: #2a1a12;
-    --chip: #232831; --ok: #4cc27f; --warn: #f0a25a; --bad: #f2786c;
+    --bg: #0f1115; --card: #171a20; --ink: #eef0f3; --sub: #9aa3b2; --line: #2a2f38; --chip: #232831;
+    --accent: #ff6a33; --accent-ink: #14161a;
+    --red: #ff8a80; --red-bg: #3a1714; --amber: #f6b25c; --amber-bg: #3a2810;
+    --green: #5fd393; --green-bg: #13301f; --blue: #8fb0ff; --blue-bg: #18233f; --grey: #9aa3b2; --grey-bg: #232831;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
-    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding-bottom: 120px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 24px; }
   header h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 10px; letter-spacing: -.02em; }
   header p { color: var(--sub); margin: 0; font-size: 17px; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-    box-shadow: var(--shadow); padding: 20px; margin-top: 20px; }
-  .step { display: flex; align-items: center; gap: 10px; font-weight: 600; margin: 0 0 12px; }
-  .num { width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: var(--accent-ink);
-    display: grid; place-items: center; font-size: 13px; flex: none; }
-  .step + .chips, .step + .apps { margin-bottom: 22px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .updated { color: var(--sub); font-size: 13px; margin-top: 8px; }
+
+  .toolbar { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 14px 0 10px; margin-top: 18px;
+    border-bottom: 1px solid var(--line); }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .row + .row { margin-top: 10px; }
   .chip { border: 1px solid var(--line); background: var(--chip); color: var(--ink); border-radius: 999px;
-    padding: 8px 14px; font: inherit; font-size: 15px; cursor: pointer; }
-  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
-  .chip[disabled] { opacity: .5; cursor: default; }
-  .chip small { opacity: .75; margin-left: 4px; }
-  .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
-  .app { display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none;
-    border: 1px solid var(--line); border-radius: 12px; padding: 12px; color: var(--ink); background: var(--card);
-    font-weight: 600; font-size: 15px; cursor: pointer; font-family: inherit; }
+    padding: 6px 13px; font: inherit; font-size: 14px; cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); font-weight: 600; }
+  .linkbtn { background: none; border: 0; padding: 4px 2px; font: inherit; font-size: 14px; color: var(--accent); cursor: pointer; font-weight: 600; }
+  .count { color: var(--sub); font-size: 14px; margin-left: auto; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  .month { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--sub);
+    margin: 26px 0 10px; display: flex; align-items: center; gap: 10px; }
+  .month::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .timeline { position: relative; }
+  .card { display: grid; grid-template-columns: 28px 1fr; gap: 12px; background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; margin-bottom: 12px; transition: border-color .15s; }
+  .card.sel { border-color: var(--accent); }
+  .card.past { opacity: .55; }
+  .check { width: 22px; height: 22px; margin: 3px 0 0; accent-color: var(--accent); cursor: pointer; }
+  .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+  .name { font-weight: 700; font-size: 18px; margin: 0; }
+  .when { color: var(--sub); font-size: 14px; }
+  .dist { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
+  .pill { font-size: 12px; padding: 2px 8px; border-radius: 6px; background: var(--chip); color: var(--sub); font-weight: 600; }
+  .badge { font-size: 12px; font-weight: 700; letter-spacing: .02em; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+  .b-sold_out { color: var(--red); background: var(--red-bg); }
+  .b-price_hike_soon { color: var(--amber); background: var(--amber-bg); }
+  .b-registering { color: var(--green); background: var(--green-bg); }
+  .b-opens_soon { color: var(--blue); background: var(--blue-bg); }
+  .b-closed { color: var(--grey); background: var(--grey-bg); }
+  .headline { margin: 10px 0 0; font-size: 15px; }
+  .deadline { margin: 8px 0 0; font-size: 14px; font-weight: 600; }
+  .deadline .rel { font-weight: 700; }
+  .notes { margin: 8px 0 0; padding-left: 18px; color: var(--sub); font-size: 13px; }
+  .actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .signup { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; font-weight: 700; font-size: 14px;
+    padding: 8px 14px; border-radius: 10px; background: var(--accent); color: var(--accent-ink); }
+  .signup.muted { background: var(--chip); color: var(--ink); }
+  .empty { color: var(--sub); font-size: 15px; padding: 24px 4px; }
+
+  .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: var(--card); border-top: 1px solid var(--line);
+    box-shadow: 0 -4px 20px rgba(0,0,0,.08); }
+  .dock-in { max-width: 760px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 12px; padding: 11px 16px;
+    font: inherit; font-weight: 700; font-size: 15px; cursor: pointer; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .btn[disabled] { opacity: .45; cursor: default; }
+  .dock small { color: var(--sub); font-size: 12px; flex-basis: 100%; }
+  .menu { position: fixed; bottom: 86px; left: 50%; transform: translateX(-50%); width: min(420px, calc(100% - 32px));
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: 14px; z-index: 11; display: none; }
+  .menu.open { display: block; }
+  .menu h3 { margin: 0 0 4px; font-size: 16px; }
+  .menu p { margin: 0 0 12px; color: var(--sub); font-size: 13px; }
+  .apps { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .app { display: flex; align-items: center; justify-content: center; text-decoration: none; text-align: center;
+    border: 1px solid var(--line); border-radius: 10px; padding: 11px; color: var(--ink); background: var(--card);
+    font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; }
   .app:hover { border-color: var(--accent); }
-  .app.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-  .hint { color: var(--sub); font-size: 13px; margin: 10px 0 0; }
-  .feedurl { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--sub); word-break: break-all; }
-  h2 { font-size: 18px; margin: 0 0 4px; }
-  .muted { color: var(--sub); font-size: 14px; margin: 0 0 14px; }
-  .preview { display: grid; gap: 8px; }
-  .ev { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center;
-    padding: 10px 12px; border-radius: 10px; background: var(--chip); }
-  .date { text-align: center; line-height: 1.1; }
-  .date b { display: block; font-size: 20px; }
-  .date span { font-size: 12px; text-transform: uppercase; color: var(--sub); letter-spacing: .04em; }
-  .ev .t { font-weight: 600; font-size: 15px; }
-  .ev .s { font-size: 13px; color: var(--sub); }
-  .ev a { color: inherit; }
-  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
-    padding: 2px 7px; border-radius: 6px; margin-right: 6px; vertical-align: 1px; }
-  .tag.open { background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok); }
-  .tag.price { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
-  .tag.cap { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); }
-  .tag.race { background: var(--accent-soft); color: var(--accent); }
-  .empty { color: var(--sub); font-size: 14px; padding: 8px 2px; }
+  .feedurl { font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--sub); word-break: break-all; margin-top: 10px; }
   footer { color: var(--sub); font-size: 13px; margin-top: 28px; text-align: center; }
-  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: var(--bg);
-    padding: 10px 16px; border-radius: 10px; font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast { position: fixed; left: 50%; bottom: 100px; transform: translateX(-50%); background: var(--ink); color: var(--bg);
+    padding: 10px 16px; border-radius: 10px; font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 12; }
   .toast.show { opacity: 1; }
 </style>
 </head>
@@ -80,141 +108,245 @@
 <div class="wrap">
   <header>
     <h1>🏃 Never miss sign-up day.</h1>
-    <p>Registration openings, early-bird price cutoffs and sell-outs for Stockholm races — added to the calendar you already use. No app, no account.</p>
+    <p>Every Stockholm race of the season — when registration opens, when prices jump, when it sells out. Pick your races and put the deadlines in the calendar you already use.</p>
+    <div class="updated" id="updated">Loading the latest check…</div>
   </header>
 
-  <section class="card" aria-label="Subscribe">
-    <p class="step"><span class="num">1</span>Region</p>
-    <div class="chips" role="group" aria-label="Region">
-      <button class="chip" aria-pressed="true">Greater Stockholm</button>
-      <button class="chip" disabled>More cities soon</button>
+  <div class="toolbar">
+    <div class="row" id="distances" role="group" aria-label="Distance"></div>
+    <div class="row">
+      <button class="linkbtn" id="toggleAll" type="button">Select all</button>
+      <div class="legend" aria-hidden="true">
+        <span class="badge b-sold_out">Sold out</span>
+        <span class="badge b-price_hike_soon">Price hike soon</span>
+        <span class="badge b-registering">Registering</span>
+        <span class="badge b-opens_soon">Opens soon</span>
+      </div>
+      <span class="count" id="count"></span>
     </div>
+  </div>
 
-    <p class="step"><span class="num">2</span>Distance</p>
-    <div class="chips" id="distances" role="group" aria-label="Distance"></div>
-
-    <p class="step"><span class="num">3</span>Add to your calendar</p>
-    <div class="apps">
-      <a class="app primary" id="apple" href="#">Apple Calendar</a>
-      <a class="app" id="google" href="#" target="_blank" rel="noopener">Google Calendar</a>
-      <a class="app" id="outlook" href="#" target="_blank" rel="noopener">Outlook</a>
-      <button class="app" id="copy" type="button">Copy link</button>
-    </div>
-    <p class="hint">Subscribing is one tap — new dates and price changes show up on their own, every day. <br><span class="feedurl" id="feedurl"></span></p>
-  </section>
-
-  <section class="card" aria-label="Coming up">
-    <h2>Coming up</h2>
-    <p class="muted" id="updated">What lands in your calendar next.</p>
-    <div class="preview" id="upcoming"></div>
-  </section>
+  <main class="timeline" id="timeline" aria-live="polite"></main>
 
   <footer>Checked every night at 00:30 from organizer and registration sites. Always confirm on the official race page before you pay.</footer>
+</div>
+
+<div class="menu" id="menu" role="dialog" aria-label="Add all races">
+  <h3 id="menuTitle">Add all races — live feed</h3>
+  <p>Subscribes once; new races, dates and price changes appear on their own every day.</p>
+  <div class="apps">
+    <a class="app" id="apple" href="#">Apple Calendar</a>
+    <a class="app" id="google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    <a class="app" id="outlook" href="#" target="_blank" rel="noopener">Outlook</a>
+    <button class="app" id="copy" type="button">Copy link</button>
+  </div>
+  <div class="feedurl" id="feedurl"></div>
+</div>
+
+<div class="dock">
+  <div class="dock-in">
+    <button class="btn primary" id="addAll" type="button" aria-expanded="false" aria-controls="menu">＋ Add all (live)</button>
+    <button class="btn" id="download" type="button" disabled>⬇ Download selected (0)</button>
+    <small id="dockHint">"Add all" stays up to date automatically. "Download selected" saves a one-time calendar file of just your picks.</small>
+  </div>
 </div>
 <div class="toast" id="toast" role="status"></div>
 
 <script>
 const DISTANCES = [
-  { id: "all", label: "All races", file: "stockholm-all.ics" },
+  { id: "all", label: "All distances", file: "stockholm-all.ics" },
   { id: "5k", label: "5K", file: "stockholm-5k.ics" },
   { id: "10k", label: "10K", file: "stockholm-10k.ics" },
-  { id: "half", label: "Half marathon", file: "stockholm-half.ics" },
+  { id: "half", label: "Half", file: "stockholm-half.ics" },
   { id: "marathon", label: "Marathon", file: "stockholm-marathon.ics" },
-  { id: "other", label: "Other distances", file: "stockholm-other.ics" },
+  { id: "other", label: "Other", file: "stockholm-other.ics" },
 ];
-let selected = "all";
-let races = [];
-
+const BADGE_LABEL = { sold_out: "Sold out", price_hike_soon: "Price hike soon", registering: "Registering", opens_soon: "Opens soon", closed: "Closed" };
+const STORE_KEY = "rs-selected-v1";
 const $ = (id) => document.getElementById(id);
-const feedHttps = (file) => new URL(file, location.href).href;
-const feedWebcal = (file) => feedHttps(file).replace(/^https?:/, "webcal:");
-
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const val = (v) => (v && typeof v === "object" && !Array.isArray(v) && "value" in v ? v.value : v);
+const dateOf = (v) => { v = val(v); if (v && typeof v === "object") v = v.date; return typeof v === "string" && /^\d{4}-\d{2}-\d{2}/.test(v) ? v.slice(0, 10) : null; };
+const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); };
+const daysUntil = (iso) => Math.round((new Date(iso + "T00:00:00") - new Date(todayISO() + "T00:00:00")) / 86400000);
+const fmt = (iso, opts) => new Date(iso + "T12:00:00").toLocaleDateString("en-GB", opts || { weekday: "short", day: "numeric", month: "short" });
+function rel(iso) {
+  const n = daysUntil(iso);
+  if (n === 0) return "today"; if (n === 1) return "tomorrow"; if (n === -1) return "yesterday";
+  if (n > 1 && n < 7) return "this " + fmt(iso, { weekday: "long" });
+  if (n >= 7 && n < 14) return "next " + fmt(iso, { weekday: "long" });
+  if (n >= 14 && n < 60) return `in ${Math.round(n / 7)} weeks`;
+  if (n >= 60) return `in ${Math.round(n / 30)} months`;
+  return `${-n} days ago`;
+}
 function bucket(d) {
-  const s = String(d).toLowerCase().replace(/\s+/g, "");
-  if (/half|halv|21\.?1|21k/.test(s)) return "half";
+  const s = String(val(d)).toLowerCase().replace(/\s+/g, "");
+  if (/half|halv|21/.test(s)) return "half";
   if (/marathon|maraton|42/.test(s)) return "marathon";
-  if (/^10(k|km)?$|^10\b|mil(en)?$/.test(s) || s === "10km") return "10k";
+  if (/^10(k|km)?$|mil(en)?$/.test(s)) return "10k";
   if (/^5(k|km)?$/.test(s)) return "5k";
   return "other";
 }
-const val = (v) => (v && typeof v === "object" && "value" in v ? v.value : v);
-const isDate = (s) => typeof s === "string" && /^\d{4}-\d{2}-\d{2}/.test(s);
-const raceBuckets = (r) => new Set((r.distances || []).map((d) => bucket(val(d))));
 
-function renderChips() {
-  const counts = {};
-  races.forEach((r) => raceBuckets(r).forEach((b) => (counts[b] = (counts[b] || 0) + 1)));
-  $("distances").innerHTML = DISTANCES.map((d) => {
-    const n = d.id === "all" ? races.length : counts[d.id] || 0;
-    const hide = races.length && d.id !== "all" && !n;
-    return hide ? "" : `<button class="chip" data-id="${d.id}" aria-pressed="${d.id === selected}">${d.label}${races.length ? `<small>${n}</small>` : ""}</button>`;
-  }).join("");
-  $("distances").querySelectorAll(".chip").forEach((b) =>
-    b.addEventListener("click", () => { selected = b.dataset.id; renderChips(); renderLinks(); renderUpcoming(); }));
+let races = [], filter = "all";
+let selected = new Set();
+try { selected = new Set(JSON.parse(localStorage.getItem(STORE_KEY) || "[]")); } catch {}
+const saveSel = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify([...selected])); } catch {} };
+
+// ── derive the human layer (agent v3 writes badge/headline/next_deadline/notes; older data gets computed fallbacks)
+function tiersOf(r) {
+  const t = val(r.price_tiers);
+  return Array.isArray(t) ? t.map((x) => ({ price: Number(val(x.price_sek)), until: dateOf(x.valid_until), dist: x.distance })) : [];
 }
-
-function renderLinks() {
-  const d = DISTANCES.find((x) => x.id === selected);
-  const name = `Stockholm races — ${d.label}`;
-  $("apple").href = feedWebcal(d.file);
-  $("google").href = "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(feedWebcal(d.file));
-  $("outlook").href = "https://outlook.live.com/calendar/0/addfromweb?url=" + encodeURIComponent(feedHttps(d.file)) + "&name=" + encodeURIComponent(name);
-  $("feedurl").textContent = feedWebcal(d.file);
-}
-
-function milestones() {
-  const today = new Date().toISOString().slice(0, 10);
-  const out = [];
-  races.filter((r) => selected === "all" || raceBuckets(r).has(selected)).forEach((r) => {
-    const url = val(r.registration_url);
-    const link = typeof url === "string" && url.startsWith("http") ? url : null;
-    const opens = val(r.registration_opens);
-    if (isDate(opens)) out.push({ date: opens.slice(0, 10), kind: "open", tag: "Reg opens", title: r.name, link });
-    const tiers = (r.price_tiers || []).map((t) => ({ price: Number(val(t.price_sek)), until: val(t.valid_until) }));
-    tiers.forEach((t, i) => {
-      const next = tiers[i + 1];
-      if (!isDate(t.until) || !next) return;
-      const save = next.price && t.price ? ` · last day at ${t.price} SEK (saves ${next.price - t.price} SEK)` : "";
-      out.push({ date: t.until.slice(0, 10), kind: "price", tag: "Price goes up", title: r.name + save, link });
-    });
-    const cap = String(val(r.capacity_status) || "").toLowerCase();
-    if (cap === "final_batch" || cap === "sold_out")
-      out.push({ date: today, kind: "cap", tag: cap === "sold_out" ? "Sold out" : "Final batch", title: r.name, link });
-    const day = val(r.race_day);
-    if (isDate(day)) out.push({ date: day.slice(0, 10), kind: "race", tag: "Race day", title: r.name, link });
-  });
-  return out.filter((m) => m.date >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 8);
-}
-
-function renderUpcoming() {
-  if (!races.length) {
-    $("upcoming").innerHTML = `<div class="empty">The first nightly update hasn't landed yet — subscribe now and dates appear automatically.</div>`;
-    return;
+function nextBump(r) {
+  const today = todayISO(), tiers = tiersOf(r);
+  for (let i = 0; i < tiers.length - 1; i++) {
+    const t = tiers[i], n = tiers[i + 1];
+    if (t.until && t.until >= today && (t.dist === n.dist || !t.dist)) {
+      const eff = new Date(t.until + "T12:00:00"); eff.setDate(eff.getDate() + 1);
+      return { date: eff.toISOString().slice(0, 10), from: t.price, to: n.price };
+    }
   }
-  const items = milestones();
-  $("upcoming").innerHTML = items.length ? items.map((m) => {
-    const dt = new Date(m.date + "T12:00:00");
-    const mon = dt.toLocaleDateString("en-GB", { month: "short" });
-    const title = m.link ? `<a href="${m.link}" target="_blank" rel="noopener">${m.title}</a>` : m.title;
-    return `<div class="ev"><div class="date"><b>${dt.getDate()}</b><span>${mon}</span></div>
-      <div><div class="t"><span class="tag ${m.kind}">${m.tag}</span>${title}</div>
-      <div class="s">${dt.toLocaleDateString("en-GB", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}</div></div></div>`;
-  }).join("") : `<div class="empty">Nothing announced for this distance yet — you'll get it the day it is.</div>`;
+  return null;
 }
+function capStatus(r) { const c = val(r.capacity_status); return String((c && typeof c === "object" ? c.status : c) || "").toLowerCase(); }
+function raceDay(r) {
+  const days = r.race_days && typeof r.race_days === "object" ? Object.values(r.race_days).map(dateOf).filter(Boolean) : [];
+  return dateOf(r.race_day) || days.sort()[0] || null;
+}
+function badgeOf(r) {
+  if (BADGE_LABEL[r.badge]) return r.badge;
+  const c = capStatus(r), b = nextBump(r);
+  if (c === "sold_out") return "sold_out";
+  if (c === "closed") return "closed";
+  if (c === "upcoming") return "opens_soon";
+  if (b && daysUntil(b.date) <= 14) return "price_hike_soon";
+  return "registering";
+}
+function deadlineOf(r) {
+  const nd = r.next_deadline;
+  if (nd && typeof nd === "object" && dateOf(nd.date)) {
+    const label = String(nd.label || "").replace(/\s*after this date\s*$/i, "");
+    // agent v3 dates a price_bump on the last day at the old price
+    return nd.type === "price_bump" ? { date: dateOf(nd.date), label: label + " · last day at the current price" } : { date: dateOf(nd.date), label };
+  }
+  const today = todayISO(), opens = dateOf(r.registration_opens), b = nextBump(r), c = capStatus(r);
+  if (c === "upcoming" && opens && opens >= today) return { date: opens, label: "Registration opens" };
+  if (b && c !== "sold_out") {
+    const last = new Date(new Date(b.date + "T12:00:00") - 864e5).toISOString().slice(0, 10);
+    return { date: last, label: (b.from && b.to ? `Price rises ${b.from} → ${b.to} SEK` : "Price rises") + " · last day at the current price" };
+  }
+  const rd = raceDay(r); return rd && rd >= today ? { date: rd, label: "Race day" } : null;
+}
+function headlineOf(r) {
+  if (typeof r.headline === "string" && r.headline.trim()) return r.headline;
+  const c = capStatus(r), b = nextBump(r), tiers = tiersOf(r), opens = dateOf(r.registration_opens);
+  if (c === "sold_out") return "Sold out for this edition.";
+  if (c === "upcoming") return opens ? `Registration opens ${fmt(opens, { day: "numeric", month: "long" })}.` : "Registration not open yet.";
+  if (b) return `Registration open — ${b.from} SEK until ${fmt(new Date(new Date(b.date + "T12:00:00") - 864e5).toISOString().slice(0, 10), { day: "numeric", month: "short" })}, then ${b.to} SEK.`;
+  if (tiers.length) return `Registration open — from ${Math.min(...tiers.map((t) => t.price).filter(Boolean))} SEK.`;
+  return "Registration open.";
+}
+const notesOf = (r) => (Array.isArray(r.notes) ? r.notes : []).map(val).filter((n) => typeof n === "string" && n.trim()).slice(0, 3);
+const bucketsOf = (r) => new Set((r.distances || []).map(bucket));
 
-$("copy").addEventListener("click", async () => {
-  const url = feedWebcal(DISTANCES.find((x) => x.id === selected).file);
-  try { await navigator.clipboard.writeText(url); toast("Feed link copied"); } catch { toast(url); }
+// ── render
+function renderChips() {
+  const counts = {}; races.forEach((r) => bucketsOf(r).forEach((b) => (counts[b] = (counts[b] || 0) + 1)));
+  $("distances").innerHTML = DISTANCES.filter((d) => d.id === "all" || !races.length || counts[d.id])
+    .map((d) => `<button class="chip" data-id="${d.id}" aria-pressed="${d.id === filter}">${d.label}</button>`).join("");
+  $("distances").querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => { filter = b.dataset.id; renderAll(); }));
+}
+function visible() { return races.filter((r) => filter === "all" || bucketsOf(r).has(filter)); }
+function renderTimeline() {
+  const list = visible().slice().sort((a, b) => (raceDay(a) || "9999").localeCompare(raceDay(b) || "9999"));
+  if (!races.length) { $("timeline").innerHTML = `<div class="empty">The first nightly update hasn't landed yet — "Add all" now and races appear automatically.</div>`; return; }
+  if (!list.length) { $("timeline").innerHTML = `<div class="empty">No races at this distance yet.</div>`; return; }
+  let html = "", month = "";
+  for (const r of list) {
+    const rd = raceDay(r), m = rd ? fmt(rd, { month: "long", year: "numeric" }) : "Date not announced";
+    if (m !== month) { html += `<div class="month">${esc(m)}</div>`; month = m; }
+    const badge = badgeOf(r), dl = deadlineOf(r), notes = notesOf(r), sel = selected.has(r.slug);
+    const url = val(r.registration_url), link = typeof url === "string" && url.startsWith("http") ? url : (val(r.official_url) || null);
+    const perDist = r.race_days && typeof r.race_days === "object" && new Set(Object.values(r.race_days).map(dateOf)).size > 1
+      ? Object.entries(r.race_days).map(([k, v]) => `${esc(k)} ${fmt(dateOf(v))}`).join(" · ")
+      : rd ? fmt(rd, { weekday: "long", day: "numeric", month: "long" }) : "";
+    html += `<article class="card${sel ? " sel" : ""}${rd && rd < todayISO() ? " past" : ""}">
+      <input class="check" type="checkbox" data-slug="${esc(r.slug)}" ${sel ? "checked" : ""} aria-label="Select ${esc(r.name)}">
+      <div>
+        <div class="top"><h2 class="name">${esc(r.name)}</h2><span class="badge b-${badge}">${BADGE_LABEL[badge]}</span></div>
+        <div class="when">${esc(perDist)}</div>
+        <div class="dist">${(r.distances || []).map((d) => `<span class="pill">${esc(val(d))}</span>`).join("")}</div>
+        <p class="headline">${esc(headlineOf(r))}</p>
+        ${dl ? `<p class="deadline">⏰ ${esc(dl.label)} — <span class="rel">${rel(dl.date)}</span> <span class="when">(${fmt(dl.date)})</span></p>` : ""}
+        ${notes.length ? `<ul class="notes">${notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
+        <div class="actions">${link ? `<a class="signup${badge === "sold_out" || badge === "closed" ? " muted" : ""}" href="${esc(link)}" target="_blank" rel="noopener">${badge === "sold_out" ? "Official page ↗" : badge === "opens_soon" ? "Registration page ↗" : "Sign up ↗"}</a>` : ""}</div>
+      </div></article>`;
+  }
+  $("timeline").innerHTML = html;
+  $("timeline").querySelectorAll(".check").forEach((c) => c.addEventListener("change", () => {
+    c.checked ? selected.add(c.dataset.slug) : selected.delete(c.dataset.slug); saveSel(); renderAll();
+  }));
+}
+function renderDock() {
+  const vis = visible().map((r) => r.slug), nSel = vis.filter((s) => selected.has(s)).length;
+  $("count").textContent = races.length ? `${nSel} of ${vis.length} selected` : "";
+  $("toggleAll").textContent = vis.length && nSel === vis.length ? "Deselect all" : "Select all";
+  $("download").disabled = !nSel;
+  $("download").textContent = `⬇ Download selected (${nSel})`;
+  const d = DISTANCES.find((x) => x.id === filter), https = new URL(d.file, location.href).href, webcal = https.replace(/^https?:/, "webcal:");
+  $("menuTitle").textContent = filter === "all" ? "Add all races — live feed" : `Add all ${d.label} races — live feed`;
+  $("apple").href = webcal;
+  $("google").href = "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(webcal);
+  $("outlook").href = "https://outlook.live.com/calendar/0/addfromweb?url=" + encodeURIComponent(https) + "&name=" + encodeURIComponent("Stockholm races — " + d.label);
+  $("feedurl").textContent = webcal;
+}
+function renderAll() { renderChips(); renderTimeline(); renderDock(); }
+
+// ── actions
+$("toggleAll").addEventListener("click", () => {
+  const vis = visible().map((r) => r.slug), all = vis.every((s) => selected.has(s));
+  vis.forEach((s) => (all ? selected.delete(s) : selected.add(s))); saveSel(); renderAll();
 });
-function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 2200); }
+$("addAll").addEventListener("click", (e) => {
+  e.stopPropagation(); const open = $("menu").classList.toggle("open"); $("addAll").setAttribute("aria-expanded", open);
+});
+document.addEventListener("click", (e) => { if (!$("menu").contains(e.target)) { $("menu").classList.remove("open"); $("addAll").setAttribute("aria-expanded", false); } });
+$("copy").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText($("feedurl").textContent); toast("Feed link copied"); } catch { toast($("feedurl").textContent); }
+});
+// Custom file: the agent's own stockholm-all.ics, filtered to the selected races (UIDs are <slug>-<year>-…)
+$("download").addEventListener("click", async () => {
+  const slugs = visible().map((r) => r.slug).filter((s) => selected.has(s));
+  try {
+    const ics = await (await fetch("stockholm-all.ics", { cache: "no-cache" })).text();
+    const first = ics.indexOf("BEGIN:VEVENT"), end = ics.lastIndexOf("END:VCALENDAR");
+    if (first < 0 || end < 0) throw new Error("feed not ready");
+    const head = ics.slice(0, first)
+      .replace(/^X-WR-CALNAME:.*$/m, "X-WR-CALNAME:My Stockholm races")
+      .replace(/^(X-PUBLISHED-TTL|REFRESH-INTERVAL)[^\n]*\n/gm, "");
+    const events = ics.slice(first, end).match(/BEGIN:VEVENT[\s\S]*?END:VEVENT\r?\n?/g) || [];
+    const keep = events.filter((ev) => {
+      const uid = (ev.replace(/\r?\n[ \t]/g, "").match(/^UID:(.*)$/m) || [])[1] || "";
+      return slugs.some((s) => uid.startsWith(s + "-"));
+    }).map((ev) => (ev.endsWith("\n") ? ev : ev + "\r\n"));
+    if (!keep.length) { toast("No calendar events for these races yet"); return; }
+    const blob = new Blob([head + keep.join("") + "END:VCALENDAR\r\n"], { type: "text/calendar" });
+    const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: "my-stockholm-races.ics" });
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    toast(`${keep.length} events from ${slugs.length} race${slugs.length > 1 ? "s" : ""} — open the file to import`);
+  } catch { toast("Couldn't build the file — try again after tonight's update"); }
+});
+function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 2600); }
 
-renderChips(); renderLinks(); renderUpcoming();
+renderAll();
 fetch("races.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).then((d) => {
-  if (!d || !Array.isArray(d.races)) return;
-  races = d.races;
-  if (d.generated_at) $("updated").textContent = "Last checked " + new Date(d.generated_at).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) + ".";
-  renderChips(); renderUpcoming();
-}).catch(() => {});
+  if (d && Array.isArray(d.races)) {
+    races = d.races.filter((r) => r && r.slug);
+    if (d.generated_at) $("updated").textContent = "Last checked " + new Date(d.generated_at).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" });
+  } else $("updated").textContent = "";
+  renderAll();
+}).catch(() => { $("updated").textContent = ""; renderAll(); });
 </script>
 </body>
 </html>
