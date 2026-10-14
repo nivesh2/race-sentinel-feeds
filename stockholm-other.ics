@@ -1,0 +1,163 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//race-sentinel//stockholm-race-sentinel//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:Registration milestones for Stockholm road races (race-sentin
+ el).
+X-WR-CALNAME:Stockholm Races – Other distances
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Stockholm
+BEGIN:VTIMEZONE
+TZID:Europe/Stockholm
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Lidingöloppet 15K (Saves ~70 SEK)
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+DTSTAMP:20261014T145421Z
+UID:lidingoloppet-2027-price-bump-15k-1@race-sentinel-feeds
+CATEGORIES:Running,lidingoloppet
+DESCRIPTION:Lidingöloppet 15K: 765 SEK is valid through 2027-04-30\; from
+  2027-05-01 the price is 835 SEK.\n\nSign up / registration: https://enter
+ .lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+TRANSP:TRANSPARENT
+URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Lidingöloppet 15K (Saves ~70 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Lidingöloppet 30K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+DTSTAMP:20261014T145421Z
+UID:lidingoloppet-2027-price-bump-30k-1@race-sentinel-feeds
+CATEGORIES:Running,lidingoloppet
+DESCRIPTION:Lidingöloppet 30K: 1095 SEK is valid through 2027-04-30\; fro
+ m 2027-05-01 the price is 1195 SEK.\n\nSign up / registration: https://ent
+ er.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+TRANSP:TRANSPARENT
+URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Lidingöloppet 30K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Lidingöloppet 15K (Saves ~60 SEK)
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+DTSTAMP:20261014T145421Z
+UID:lidingoloppet-2027-price-bump-15k-2@race-sentinel-feeds
+CATEGORIES:Running,lidingoloppet
+DESCRIPTION:Lidingöloppet 15K: 835 SEK is valid through 2027-06-30\; from
+  2027-07-01 the price is 895 SEK.\n\nSign up / registration: https://enter
+ .lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+TRANSP:TRANSPARENT
+URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Lidingöloppet 15K (Saves ~60 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Lidingöloppet 30K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+DTSTAMP:20261014T145421Z
+UID:lidingoloppet-2027-price-bump-30k-2@race-sentinel-feeds
+CATEGORIES:Running,lidingoloppet
+DESCRIPTION:Lidingöloppet 30K: 1195 SEK is valid through 2027-06-30\; fro
+ m 2027-07-01 the price is 1295 SEK.\n\nSign up / registration: https://ent
+ er.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+TRANSP:TRANSPARENT
+URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Lidingöloppet 30K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Lidingöloppet 15K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270824
+DTEND;VALUE=DATE:20270825
+DTSTAMP:20261014T145421Z
+UID:lidingoloppet-2027-price-bump-15k-3@race-sentinel-feeds
+CATEGORIES:Running,lidingoloppet
+DESCRIPTION:Lidingöloppet 15K: 895 SEK is valid through 2027-08-25\; from
+  2027-08-26 the price is 995 SEK.\n\nSign up / registration: https://enter
+ .lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+TRANSP:TRANSPARENT
+URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Lidingöloppet 15K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Lidingöloppet 30K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270824
+DTEND;VALUE=DATE:20270825
+DTSTAMP:20261014T145421Z
+UID:lidingoloppet-2027-price-bump-30k-3@race-sentinel-feeds
+CATEGORIES:Running,lidingoloppet
+DESCRIPTION:Lidingöloppet 30K: 1295 SEK is valid through 2027-08-25\; fro
+ m 2027-08-26 the price is 1395 SEK.\n\nSign up / registration: https://ent
+ er.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+TRANSP:TRANSPARENT
+URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Lidingöloppet 30K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Lidingöloppet 15K
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+DTSTAMP:20261014T145421Z
+UID:lidingoloppet-2027-race-day-15k@race-sentinel-feeds
+CATEGORIES:Running,lidingoloppet
+DESCRIPTION:Lidingöloppet 2027 – 15K. Start time not published.\n\nSign
+  up / registration: https://enter.lidingoloppet.se/Web/Step1.aspx?EventGro
+ upId=1
+TRANSP:TRANSPARENT
+URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Lidingöloppet 30K
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+DTSTAMP:20261014T145421Z
+UID:lidingoloppet-2027-race-day-30k@race-sentinel-feeds
+CATEGORIES:Running,lidingoloppet
+DESCRIPTION:Lidingöloppet 2027 – 30K. Start time not published.\n\nSign
+  up / registration: https://enter.lidingoloppet.se/Web/Step1.aspx?EventGro
+ upId=1
+TRANSP:TRANSPARENT
+URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+END:VEVENT
+END:VCALENDAR
