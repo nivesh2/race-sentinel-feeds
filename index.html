@@ -4,163 +4,315 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stockholm Race Alerts</title>
-<meta name="description" content="Registration openings, early-bird price cutoffs and sell-outs for Stockholm road races — straight into your calendar.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
+<meta name="description" content="The whole Stockholm race season on one line — sign-up days, price hikes and sell-outs, straight into your calendar.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%23ff5a1f'/></svg>">
 <style>
   :root {
-    --bg: #f6f7f9; --card: #ffffff; --ink: #14161a; --sub: #5b6270; --line: #e3e6eb; --chip: #eef0f3;
-    --accent: #ff5a1f; --accent-ink: #ffffff;
-    --red: #b42318; --red-bg: #fde8e6; --amber: #9a4a00; --amber-bg: #fff1d6;
-    --green: #17723f; --green-bg: #e3f5ea; --blue: #1d4ed8; --blue-bg: #e6edfd; --grey: #5b6270; --grey-bg: #eef0f3;
-    --radius: 14px; --shadow: 0 1px 2px rgba(16,24,40,.05), 0 4px 16px rgba(16,24,40,.06);
+    --bg: #fbfaf8; --surface: #ffffff; --ink: #17181b; --sub: #6b6f78; --faint: #a3a7af; --line: #e7e5e1; --zone: #f3f1ed;
+    --accent: #ff5a1f; --accent-ink: #ffffff; --accent-soft: rgba(255, 90, 31, .12);
+    --red: #d92d20; --amber: #e39b00; --green: #16a34a; --blue: #2f6bef; --grey: #a3a7af;
+    --shadow: 0 1px 2px rgba(20, 20, 20, .05), 0 12px 40px rgba(20, 20, 20, .12);
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #0f1115; --card: #171a20; --ink: #eef0f3; --sub: #9aa3b2; --line: #2a2f38; --chip: #232831;
-      --accent: #ff6a33; --accent-ink: #14161a;
-      --red: #ff8a80; --red-bg: #3a1714; --amber: #f6b25c; --amber-bg: #3a2810;
-      --green: #5fd393; --green-bg: #13301f; --blue: #8fb0ff; --blue-bg: #18233f; --grey: #9aa3b2; --grey-bg: #232831;
-      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+      --bg: #111214; --surface: #1a1b1f; --ink: #eceae6; --sub: #9a9ea8; --faint: #5f636c; --line: #2a2c31; --zone: #17181b;
+      --accent: #ff6a33; --accent-ink: #141414; --accent-soft: rgba(255, 106, 51, .16);
+      --red: #ff6b5e; --amber: #f5bd4f; --green: #4ade80; --blue: #7aa2ff; --grey: #6b6f78;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 48px rgba(0, 0, 0, .5);
+      color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #0f1115; --card: #171a20; --ink: #eef0f3; --sub: #9aa3b2; --line: #2a2f38; --chip: #232831;
-    --accent: #ff6a33; --accent-ink: #14161a;
-    --red: #ff8a80; --red-bg: #3a1714; --amber: #f6b25c; --amber-bg: #3a2810;
-    --green: #5fd393; --green-bg: #13301f; --blue: #8fb0ff; --blue-bg: #18233f; --grey: #9aa3b2; --grey-bg: #232831;
+    --bg: #111214; --surface: #1a1b1f; --ink: #eceae6; --sub: #9a9ea8; --faint: #5f636c; --line: #2a2c31; --zone: #17181b;
+    --accent: #ff6a33; --accent-ink: #141414; --accent-soft: rgba(255, 106, 51, .16);
+    --red: #ff6b5e; --amber: #f5bd4f; --green: #4ade80; --blue: #7aa2ff; --grey: #6b6f78;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 48px rgba(0, 0, 0, .5);
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--ink);
-    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding-bottom: 120px; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 24px; }
-  header h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 10px; letter-spacing: -.02em; }
-  header p { color: var(--sub); margin: 0; font-size: 17px; }
-  .updated { color: var(--sub); font-size: 13px; margin-top: 8px; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.5 var(--font);
+    padding-bottom: 112px; overflow-x: hidden; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 22px 16px 24px; }
+  @media (min-width: 640px) { .wrap { padding-top: 40px; } }
 
-  .toolbar { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 14px 0 10px; margin-top: 18px;
-    border-bottom: 1px solid var(--line); }
-  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .row + .row { margin-top: 10px; }
-  .chip { border: 1px solid var(--line); background: var(--chip); color: var(--ink); border-radius: 999px;
-    padding: 6px 13px; font: inherit; font-size: 14px; cursor: pointer; }
-  .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); font-weight: 600; }
-  .linkbtn { background: none; border: 0; padding: 4px 2px; font: inherit; font-size: 14px; color: var(--accent); cursor: pointer; font-weight: 600; }
-  .count { color: var(--sub); font-size: 14px; margin-left: auto; }
-  .legend { display: flex; flex-wrap: wrap; gap: 6px; }
+  /* ── head */
+  h1 { font-size: clamp(26px, 5.4vw, 36px); line-height: 1.15; font-weight: 600; letter-spacing: -.02em; margin: 0; }
+  .pitch { color: var(--sub); margin: 4px 0 0; font-size: 16px; line-height: 1.4; max-width: 34em; }
+  .updated { color: var(--faint); font-size: 12px; margin-top: 2px; min-height: 18px; }
 
-  .month { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--sub);
-    margin: 26px 0 10px; display: flex; align-items: center; gap: 10px; }
-  .month::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-  .timeline { position: relative; }
-  .card { display: grid; grid-template-columns: 28px 1fr; gap: 12px; background: var(--card); border: 1px solid var(--line);
-    border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; margin-bottom: 12px; transition: border-color .15s; }
-  .card.sel { border-color: var(--accent); }
-  .card.past { opacity: .55; }
-  .check { width: 22px; height: 22px; margin: 3px 0 0; accent-color: var(--accent); cursor: pointer; }
-  .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
-  .name { font-weight: 700; font-size: 18px; margin: 0; }
-  .when { color: var(--sub); font-size: 14px; }
-  .dist { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
-  .pill { font-size: 12px; padding: 2px 8px; border-radius: 6px; background: var(--chip); color: var(--sub); font-weight: 600; }
-  .badge { font-size: 12px; font-weight: 700; letter-spacing: .02em; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
-  .b-sold_out { color: var(--red); background: var(--red-bg); }
-  .b-price_hike_soon { color: var(--amber); background: var(--amber-bg); }
-  .b-registering { color: var(--green); background: var(--green-bg); }
-  .b-opens_soon { color: var(--blue); background: var(--blue-bg); }
-  .b-closed { color: var(--grey); background: var(--grey-bg); }
-  .headline { margin: 10px 0 0; font-size: 15px; }
-  .deadline { margin: 8px 0 0; font-size: 14px; font-weight: 600; }
-  .deadline .rel { font-weight: 700; }
-  .notes { margin: 8px 0 0; padding-left: 18px; color: var(--sub); font-size: 13px; }
-  .actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .signup { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; font-weight: 700; font-size: 14px;
-    padding: 8px 14px; border-radius: 10px; background: var(--accent); color: var(--accent-ink); }
-  .signup.muted { background: var(--chip); color: var(--ink); }
-  .empty { color: var(--sub); font-size: 15px; padding: 24px 4px; }
+  /* ── up next: the three soonest deadlines, one line each */
+  .upnext { margin-top: 14px; }
+  .upnext[hidden] { display: none; }
+  .un-label { font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); margin: 0 0 2px; }
+  .un-list { list-style: none; margin: 0; padding: 0; }
+  /* phone: one line (name · what … when); a long name lets "what" wrap under it rather than truncate */
+  .un { width: 100%; min-height: 40px; display: grid; grid-template-columns: 8px minmax(0, 1fr) auto; column-gap: 9px;
+    align-items: center; background: none; border: 0; padding: 4px; border-radius: 8px; text-align: left; cursor: pointer;
+    font-size: 14px; line-height: 1.3; transition: background .15s; }
+  .un:hover, .un.hot { background: var(--zone); }
+  .un i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+  .un .n { color: var(--ink); font-weight: 600; margin-right: 6px; }
+  .un .w { color: var(--sub); }
+  .un .t { color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .un .t.soon { color: var(--accent); font-weight: 600; }
+  .un-none { font-size: 13px; color: var(--faint); margin: 0; line-height: 40px; }
+  /* desktop: three small items side by side — name, then "what · when" */
+  @media (min-width: 640px) {
+    .un-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 16px; }
+    .un { grid-template-columns: 8px auto minmax(0, 1fr); grid-template-areas: "d n n" ". w t"; align-items: baseline;
+      padding: 6px 8px; margin-left: -8px; width: calc(100% + 8px); }
+    .un .nw { display: contents; }
+    .un i { grid-area: d; align-self: center; }
+    .un .n { grid-area: n; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .un .w { grid-area: w; font-size: 13px; white-space: nowrap; }
+    .un .t { grid-area: t; font-size: 13px; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+    .un .t::before { content: "· "; color: var(--faint); font-weight: 400; }
+  }
 
-  .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: var(--card); border-top: 1px solid var(--line);
-    box-shadow: 0 -4px 20px rgba(0,0,0,.08); }
-  .dock-in { max-width: 760px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-  .btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 12px; padding: 11px 16px;
-    font: inherit; font-weight: 700; font-size: 15px; cursor: pointer; }
+  /* ── distance segmented control */
+  .seg { display: inline-flex; gap: 2px; padding: 3px; margin-top: 14px; border-radius: 12px; background: var(--zone);
+    border: 1px solid var(--line); max-width: 100%; }
+  .seg button { border: 0; background: none; padding: 0 12px; height: 34px; border-radius: 9px; font-size: 14px;
+    color: var(--sub); cursor: pointer; white-space: nowrap; transition: background .2s, color .2s, box-shadow .2s; }
+  .seg button:hover { color: var(--ink); }
+  .seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .08), 0 0 0 1px var(--line); }
+  @media (max-width: 380px) { .seg button { padding: 0 9px; font-size: 13px; } }
+
+  /* ── season strip */
+  .season { margin-top: 16px; position: relative; }
+  @media (min-width: 640px) { .season { margin-top: 24px; } }
+  .strip { position: relative; width: 100%; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
+  .strip.intro .dot i { animation: pop .5s cubic-bezier(.2, .9, .3, 1.3) both; animation-delay: calc(var(--n) * 60ms + 120ms); }
+  .strip.intro .mark { animation: fade .4s ease both; animation-delay: calc(var(--n) * 40ms + 300ms); }
+  @keyframes pop { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  .zone { position: absolute; top: 0; background: var(--zone); border-radius: 8px; }
+  .cap { position: absolute; top: 4px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--faint);
+    white-space: nowrap; transform: translateX(-50%); }
+  .axis { position: absolute; left: 0; right: 0; height: 2px; background: var(--ink); opacity: .85; border-radius: 2px; }
+  .mtick { position: absolute; width: 1px; height: 6px; background: var(--faint); }
+  .mlab { position: absolute; font-size: 12px; color: var(--sub); transform: translateX(-50%); white-space: nowrap; }
+  .mlab.off { color: var(--faint); }
+  .today { position: absolute; width: 2px; margin-left: -1px; background: var(--accent); border-radius: 2px; }
+  .todaylab { position: absolute; font-size: 11px; font-weight: 600; color: var(--accent); white-space: nowrap; letter-spacing: .02em; }
+  .link { position: absolute; height: 2px; margin-top: -1px; border-radius: 2px; background: currentColor; opacity: .5; transition: opacity .25s; }
+  .dot { position: absolute; width: 28px; height: 28px; margin: -14px 0 0 -14px; padding: 0; border: 0; background: none;
+    cursor: pointer; display: grid; place-items: center; transition: opacity .25s; }
+  .dot i { width: 12px; height: 12px; border-radius: 50%; background: currentColor; display: block;
+    box-shadow: 0 0 0 2px var(--bg); transition: transform .2s cubic-bezier(.2, .9, .3, 1.3), box-shadow .2s; }
+  .dot.picked i { box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent); }
+  .dot:hover i, .dot.hot i { transform: scale(1.45); }
+  .dot.flash i { animation: flash 1.6s ease; }
+  @keyframes flash { 0%, 100% { transform: scale(1); } 20%, 60% { transform: scale(1.7); box-shadow: 0 0 0 2px var(--bg), 0 0 0 6px var(--accent-soft); } }
+  .lbl { position: absolute; font-size: 12px; line-height: 16px; margin-top: -8px; color: var(--ink); white-space: nowrap;
+    pointer-events: none; transition: opacity .25s; }
+  .lbl.picked { font-weight: 600; }
+  .mark { position: absolute; width: 16px; height: 14px; margin-left: -8px; padding: 0; border: 0; background: none; cursor: pointer;
+    display: flex; justify-content: center; transition: opacity .25s; }
+  .mark::before { content: ""; width: 2px; height: 10px; border-radius: 2px; background: currentColor; transition: height .2s; }
+  .mark:hover::before, .mark.hot::before { height: 14px; }
+  .mark.hot::before { width: 3px; box-shadow: 0 0 0 3px var(--accent-soft); }
+  .dim { opacity: .14; }
+  .lbl.dim { opacity: 0; }
+  .c-sold_out { color: var(--red); } .c-price_hike_soon { color: var(--amber); } .c-registering { color: var(--green); }
+  .c-opens_soon { color: var(--blue); } .c-closed { color: var(--grey); }
+  .tip { position: absolute; z-index: 4; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12px;
+    padding: 6px 9px; border-radius: 8px; width: max-content; max-width: min(300px, 100%); opacity: 0; transform: translate(-50%, 4px);
+    transition: opacity .15s, transform .15s; }
+  .tip.show { opacity: 1; transform: translate(-50%, 0); }
+  .legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-size: 12px; color: var(--sub); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+  .legend .tk i { width: 2px; height: 10px; border-radius: 2px; background: var(--sub); }
+  .legend b { font-weight: 400; color: var(--sub); }
+  .empty { color: var(--sub); font-size: 15px; padding: 28px 0; max-width: 32em; }
+
+  /* ── compact list */
+  .listhead { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; padding-bottom: 0;
+    border-bottom: 1px solid var(--line); font-size: 13px; color: var(--sub); }
+  .linkbtn { border: 0; background: none; color: var(--accent); font-weight: 600; font-size: 13px; cursor: pointer;
+    height: 40px; padding: 0 2px; }
+  .races { list-style: none; margin: 0; padding: 0; }
+  .races li { border-bottom: 1px solid var(--line); animation: fade .3s ease both; }
+  .rowb { width: 100%; min-height: 42px; display: grid; grid-template-columns: 20px 1fr auto 18px; gap: 10px; align-items: center;
+    background: none; border: 0; padding: 0 4px; text-align: left; cursor: pointer; border-radius: 8px; transition: background .15s; }
+  .rowb:hover, .rowb.hot { background: var(--zone); }
+  .rowb.flash { animation: rowflash 1.6s ease; }
+  @keyframes rowflash { 0%, 100% { background: transparent; } 20%, 60% { background: var(--accent-soft); } }
+  .rowb .d { width: 10px; height: 10px; border-radius: 50%; background: currentColor; justify-self: center; transition: box-shadow .2s; }
+  .rowb.picked .d { box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent); }
+  .rowb .n { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
+  .rowb.picked .n { font-weight: 600; }
+  .rowb .w { color: var(--sub); font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .rowb .p { color: var(--accent); font-size: 13px; text-align: center; opacity: 0; transform: scale(.5); transition: opacity .2s, transform .2s; }
+  .rowb.picked .p { opacity: 1; transform: none; }
+  .rowb.past { opacity: .5; }
+  footer { color: var(--faint); font-size: 12px; margin-top: 28px; }
+
+  /* ── bottom bar */
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent);
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid var(--line); }
+  .bar-in { max-width: 920px; margin: 0 auto; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .btn { height: 44px; border-radius: 12px; padding: 0 16px; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+    font-weight: 600; font-size: 15px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    text-decoration: none; white-space: nowrap; transition: transform .1s, background .2s, border-color .2s, opacity .2s; }
+  .btn:active { transform: scale(.97); }
   .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-  .btn[disabled] { opacity: .45; cursor: default; }
-  .dock small { color: var(--sub); font-size: 12px; flex-basis: 100%; }
-  .menu { position: fixed; bottom: 86px; left: 50%; transform: translateX(-50%); width: min(420px, calc(100% - 32px));
-    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
-    padding: 14px; z-index: 11; display: none; }
-  .menu.open { display: block; }
-  .menu h3 { margin: 0 0 4px; font-size: 16px; }
-  .menu p { margin: 0 0 12px; color: var(--sub); font-size: 13px; }
+  .btn[disabled] { opacity: .45; cursor: default; transform: none; }
+  .bar .btn { flex: 1 1 0; min-width: 0; }
+  @media (max-width: 400px) { .bar .btn { font-size: 14px; padding: 0 10px; } }
+  .bar small { flex-basis: 100%; font-size: 11px; color: var(--faint); text-align: center; }
+  .menu { position: fixed; z-index: 11; left: 50%; bottom: 96px; width: min(400px, calc(100% - 32px)); background: var(--surface);
+    border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); padding: 16px; transform: translate(-50%, 8px);
+    opacity: 0; visibility: hidden; transition: opacity .18s, transform .18s, visibility 0s .18s; }
+  .menu.open { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition: opacity .18s, transform .18s; }
+  .menu h2 { margin: 0; font-size: 16px; font-weight: 600; }
+  .menu p { margin: 4px 0 12px; color: var(--sub); font-size: 13px; }
   .apps { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-  .app { display: flex; align-items: center; justify-content: center; text-decoration: none; text-align: center;
-    border: 1px solid var(--line); border-radius: 10px; padding: 11px; color: var(--ink); background: var(--card);
-    font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; }
-  .app:hover { border-color: var(--accent); }
-  .feedurl { font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--sub); word-break: break-all; margin-top: 10px; }
-  footer { color: var(--sub); font-size: 13px; margin-top: 28px; text-align: center; }
-  .toast { position: fixed; left: 50%; bottom: 100px; transform: translateX(-50%); background: var(--ink); color: var(--bg);
-    padding: 10px 16px; border-radius: 10px; font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; z-index: 12; }
-  .toast.show { opacity: 1; }
+  .apps .btn { font-size: 14px; }
+  .apps .btn:hover { border-color: var(--accent); }
+  .feedurl { font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--faint); word-break: break-all; margin-top: 10px; }
+
+  /* ── detail sheet */
+  dialog.sheet { border: 0; padding: 0; margin: auto auto 0; width: 100%; max-width: 100%; max-height: 88vh; background: var(--surface);
+    color: var(--ink); border-radius: 20px 20px 0 0; box-shadow: var(--shadow); overflow: auto; }
+  dialog.sheet[open] { animation: up .28s cubic-bezier(.2, .8, .2, 1); }
+  dialog.sheet::backdrop { background: rgba(10, 10, 12, .35); }
+  @keyframes up { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+  @media (min-width: 640px) {
+    dialog.sheet { margin: auto; width: 440px; border-radius: 20px; }
+    @keyframes up { from { transform: translateY(12px) scale(.98); opacity: 0; } to { transform: none; opacity: 1; } }
+  }
+  .s-in { padding: 18px 20px calc(22px + env(safe-area-inset-bottom)); }
+  .grab { width: 36px; height: 4px; border-radius: 4px; background: var(--line); margin: -6px auto 12px; }
+  @media (min-width: 640px) { .grab { display: none; } }
+  .s-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .status { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; }
+  .status i { width: 10px; height: 10px; border-radius: 50%; background: currentColor; }
+  .x { width: 40px; height: 40px; margin: -8px -10px -8px 0; border: 0; background: none; border-radius: 50%; font-size: 22px;
+    line-height: 1; color: var(--sub); cursor: pointer; }
+  .x:hover { background: var(--zone); color: var(--ink); }
+  .sheet h2 { font-size: 22px; font-weight: 600; letter-spacing: -.01em; line-height: 1.2; margin: 6px 0 12px; }
+  .days { list-style: none; margin: 0; padding: 0; }
+  .days li { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; padding: 6px 0; border-top: 1px solid var(--line); }
+  .days li:last-child { border-bottom: 1px solid var(--line); }
+  .days .k { color: var(--sub); }
+  .days .v { text-align: right; font-variant-numeric: tabular-nums; }
+  .s-head { margin: 14px 0 0; font-size: 15px; }
+  .s-dl { margin: 14px 0 0; padding: 10px 12px; border-radius: 12px; background: var(--accent-soft); font-size: 14px; }
+  .s-dl strong { font-weight: 600; color: var(--accent); }
+  .s-dl .sub { color: var(--sub); }
+  .s-notes { margin: 12px 0 0; padding-left: 18px; color: var(--sub); font-size: 13px; }
+  .s-notes li + li { margin-top: 4px; }
+  .s-act { display: flex; gap: 8px; margin-top: 18px; }
+  .s-act > * { flex: 1 1 0; }
+  .btn.muted { background: var(--zone); }
+  .btn.pick[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+
+  .toast { position: fixed; left: 50%; bottom: 104px; transform: translate(-50%, 8px); background: var(--ink); color: var(--bg);
+    padding: 10px 16px; border-radius: 10px; font-size: 14px; opacity: 0; transition: opacity .2s, transform .2s; pointer-events: none;
+    z-index: 30; max-width: calc(100% - 32px); text-align: center; }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  /* ── Up next hover cue (F2 · zoom): the strip zooms to ±3 weeks around the deadline and the axis switches to dates */
+  .strip { overflow: hidden; }
+  .strip [data-d] { transition: transform .35s cubic-bezier(.3, .7, .2, 1), opacity .25s; }
+  .strip .link, .strip .zone { transition: transform .35s cubic-bezier(.3, .7, .2, 1), width .35s cubic-bezier(.3, .7, .2, 1), opacity .25s; }
+  .cap, .mtick, .todaylab { transition: opacity .25s; }
+  .strip.zoomed .cap, .strip.zoomed .mlab, .strip.zoomed .mtick, .strip.zoomed .todaylab { opacity: 0; }
+  .wtick { position: absolute; left: 0; width: 1px; height: 6px; background: var(--faint); opacity: 0; }
+  .wtick.wk { height: 8px; background: var(--sub); }
+  .wlab { position: absolute; left: 0; font-size: 12px; color: var(--sub); white-space: nowrap; opacity: 0; font-variant-numeric: tabular-nums; }
+  .wlab.m1 { color: var(--ink); font-weight: 600; }
+  .strip.zoomed .wtick, .strip.zoomed .wlab { opacity: 1; }
+  .strip.zoomed .wlab.off { opacity: 0; }
+  .zdate { position: absolute; left: 0; font-size: 12px; font-weight: 600; color: var(--accent); background: var(--bg); padding: 0 4px;
+    border-radius: 4px; white-space: nowrap; opacity: 0; pointer-events: none; }
+  .strip.zoomed .zdate { opacity: 1; }
+  .mark.target::before { height: 14px; width: 3px; box-shadow: 0 0 0 3px var(--accent-soft); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>🏃 Never miss sign-up day.</h1>
-    <p>Every Stockholm race of the season — when registration opens, when prices jump, when it sells out. Pick your races and put the deadlines in the calendar you already use.</p>
+    <h1>Stockholm Race Alerts</h1>
+    <p class="pitch">Every sign-up day, price hike and sell-out — in the calendar you already use.</p>
     <div class="updated" id="updated">Loading the latest check…</div>
   </header>
 
-  <div class="toolbar">
-    <div class="row" id="distances" role="group" aria-label="Distance"></div>
-    <div class="row">
-      <button class="linkbtn" id="toggleAll" type="button">Select all</button>
-      <div class="legend" aria-hidden="true">
-        <span class="badge b-sold_out">Sold out</span>
-        <span class="badge b-price_hike_soon">Price hike soon</span>
-        <span class="badge b-registering">Registering</span>
-        <span class="badge b-opens_soon">Opens soon</span>
-      </div>
-      <span class="count" id="count"></span>
-    </div>
-  </div>
+  <section class="upnext" id="upnext" aria-labelledby="unLabel" hidden>
+    <h2 class="un-label" id="unLabel">Up next</h2>
+    <ul class="un-list" id="unList"></ul>
+  </section>
 
-  <main class="timeline" id="timeline" aria-live="polite"></main>
+  <nav class="seg" id="distances" role="group" aria-label="Distance"></nav>
+
+  <section class="season" aria-labelledby="seasonTitle">
+    <h2 class="sr" id="seasonTitle">Season at a glance</h2>
+    <p class="sr" id="seasonSummary"></p>
+    <div class="strip" id="strip" aria-hidden="true"></div>
+    <div class="tip" id="tip" aria-hidden="true"></div>
+    <div class="legend" id="legend" aria-hidden="true"></div>
+  </section>
+
+  <section aria-labelledby="listTitle">
+    <div class="listhead">
+      <h2 class="sr" id="listTitle">Races</h2>
+      <span id="count" aria-live="polite"></span>
+      <button class="linkbtn" id="toggleAll" type="button">Pick all</button>
+    </div>
+    <ul class="races" id="races"></ul>
+  </section>
 
   <footer>Checked every night at 00:30 from organizer and registration sites. Always confirm on the official race page before you pay.</footer>
 </div>
 
-<div class="menu" id="menu" role="dialog" aria-label="Add all races">
-  <h3 id="menuTitle">Add all races — live feed</h3>
-  <p>Subscribes once; new races, dates and price changes appear on their own every day.</p>
+<div class="menu" id="menu" role="dialog" aria-labelledby="menuTitle">
+  <h2 id="menuTitle">Add all races — live feed</h2>
+  <p>Subscribe once; new races, dates and price changes appear on their own every day.</p>
   <div class="apps">
-    <a class="app" id="apple" href="#">Apple Calendar</a>
-    <a class="app" id="google" href="#" target="_blank" rel="noopener">Google Calendar</a>
-    <a class="app" id="outlook" href="#" target="_blank" rel="noopener">Outlook</a>
-    <button class="app" id="copy" type="button">Copy link</button>
+    <a class="btn" id="apple" href="#">Apple Calendar</a>
+    <a class="btn" id="google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+    <a class="btn" id="outlook" href="#" target="_blank" rel="noopener">Outlook</a>
+    <button class="btn" id="copy" type="button">Copy link</button>
   </div>
   <div class="feedurl" id="feedurl"></div>
 </div>
 
-<div class="dock">
-  <div class="dock-in">
-    <button class="btn primary" id="addAll" type="button" aria-expanded="false" aria-controls="menu">＋ Add all (live)</button>
-    <button class="btn" id="download" type="button" disabled>⬇ Download selected (0)</button>
-    <small id="dockHint">"Add all" stays up to date automatically. "Download selected" saves a one-time calendar file of just your picks.</small>
+<div class="bar">
+  <div class="bar-in">
+    <button class="btn primary" id="addAll" type="button" aria-expanded="false" aria-controls="menu">＋ Add all · live</button>
+    <button class="btn" id="download" type="button" disabled>Download 0 picked</button>
+    <small>Live feed updates itself · download is a one-time file</small>
   </div>
 </div>
+
+<dialog class="sheet" id="sheet" aria-labelledby="sName">
+  <div class="s-in" id="sheetBody"></div>
+</dialog>
 <div class="toast" id="toast" role="status"></div>
 
 <script>
 const DISTANCES = [
-  { id: "all", label: "All distances", file: "stockholm-all.ics" },
-  { id: "5k", label: "5K", file: "stockholm-5k.ics" },
-  { id: "10k", label: "10K", file: "stockholm-10k.ics" },
-  { id: "half", label: "Half", file: "stockholm-half.ics" },
-  { id: "marathon", label: "Marathon", file: "stockholm-marathon.ics" },
-  { id: "other", label: "Other", file: "stockholm-other.ics" },
+  { id: "all", label: "All", long: "All distances", file: "stockholm-all.ics" },
+  { id: "5k", label: "5K", long: "5K", file: "stockholm-5k.ics" },
+  { id: "10k", label: "10K", long: "10K", file: "stockholm-10k.ics" },
+  { id: "half", label: "Half", long: "Half", file: "stockholm-half.ics" },
+  { id: "marathon", label: "Marathon", long: "Marathon", file: "stockholm-marathon.ics" },
+  { id: "other", label: "Other", long: "Other", file: "stockholm-other.ics" },
 ];
+const BUCKETS = new Set(DISTANCES.map((d) => d.id));
 const BADGE_LABEL = { sold_out: "Sold out", price_hike_soon: "Price hike soon", registering: "Registering", opens_soon: "Opens soon", closed: "Closed" };
 const STORE_KEY = "rs-selected-v1";
 const $ = (id) => document.getElementById(id);
@@ -210,10 +362,23 @@ function nextBump(r) {
   return null;
 }
 function capStatus(r) { const c = val(r.capacity_status); return String((c && typeof c === "object" ? c.status : c) || "").toLowerCase(); }
-function raceDay(r) {
-  const days = r.race_days && typeof r.race_days === "object" ? Object.values(r.race_days).map(dateOf).filter(Boolean) : [];
-  return dateOf(r.race_day) || days.sort()[0] || null;
+// race_days comes either as [{distance,label,event_name,bucket,date,start_time}] or as {distance: date}
+function daysOf(r) {
+  const rd = val(r.race_days); let out = [];
+  if (Array.isArray(rd)) {
+    out = rd.filter((x) => x && typeof x === "object").map((x) => ({
+      label: String(val(x.label) || val(x.distance) || ""), name: String(val(x.event_name) || ""), date: dateOf(x.date) || dateOf(x),
+      time: typeof val(x.start_time) === "string" ? val(x.start_time) : "", bucket: BUCKETS.has(x.bucket) ? x.bucket : bucket(x.distance ?? x.label),
+    }));
+  } else if (rd && typeof rd === "object") {
+    out = Object.entries(rd).map(([k, v]) => ({ label: k, name: "", date: dateOf(v),
+      time: v && typeof v === "object" && typeof val(v.start_time) === "string" ? val(v.start_time) : "", bucket: bucket(k) }));
+  }
+  out = out.filter((x) => x.date);
+  if (!out.length && dateOf(r.race_day)) out = [{ label: (r.distances || []).map(val).join(" · "), name: "", date: dateOf(r.race_day), time: "", bucket: null }];
+  return out.sort((a, b) => a.date.localeCompare(b.date));
 }
+function raceDay(r) { return dateOf(r.race_day) || (daysOf(r)[0] || {}).date || null; }
 function badgeOf(r) {
   if (BADGE_LABEL[r.badge]) return r.badge;
   const c = capStatus(r), b = nextBump(r);
@@ -228,15 +393,17 @@ function deadlineOf(r) {
   if (nd && typeof nd === "object" && dateOf(nd.date)) {
     const label = String(nd.label || "").replace(/\s*after this date\s*$/i, "");
     // agent v3 dates a price_bump on the last day at the old price
-    return nd.type === "price_bump" ? { date: dateOf(nd.date), label: label + " · last day at the current price" } : { date: dateOf(nd.date), label };
+    return nd.type === "price_bump" ? { date: dateOf(nd.date), type: "price_bump", raw: label, label: label + " · last day at the current price" }
+      : { date: dateOf(nd.date), type: nd.type || "", raw: label, label };
   }
   const today = todayISO(), opens = dateOf(r.registration_opens), b = nextBump(r), c = capStatus(r);
-  if (c === "upcoming" && opens && opens >= today) return { date: opens, label: "Registration opens" };
+  if (c === "upcoming" && opens && opens >= today) return { date: opens, type: "reg_opens", raw: "Registration opens", label: "Registration opens" };
   if (b && c !== "sold_out") {
     const last = new Date(new Date(b.date + "T12:00:00") - 864e5).toISOString().slice(0, 10);
-    return { date: last, label: (b.from && b.to ? `Price rises ${b.from} → ${b.to} SEK` : "Price rises") + " · last day at the current price" };
+    const raw = b.from && b.to ? `Price rises ${b.from} → ${b.to} SEK` : "Price rises";
+    return { date: last, type: "price_bump", raw, label: raw + " · last day at the current price" };
   }
-  const rd = raceDay(r); return rd && rd >= today ? { date: rd, label: "Race day" } : null;
+  const rd = raceDay(r); return rd && rd >= today ? { date: rd, type: "race_day", raw: "Race day", label: "Race day" } : null;
 }
 function headlineOf(r) {
   if (typeof r.headline === "string" && r.headline.trim()) return r.headline;
@@ -249,69 +416,427 @@ function headlineOf(r) {
 }
 const notesOf = (r) => (Array.isArray(r.notes) ? r.notes : []).map(val).filter((n) => typeof n === "string" && n.trim()).slice(0, 3);
 const bucketsOf = (r) => new Set((r.distances || []).map(bucket));
+const shortName = (s) => String(s).replace(/\bStockholm\b/g, "").replace(/\s+/g, " ").trim() || String(s);
+const linkOf = (r) => { const u = val(r.registration_url), o = val(r.official_url); return typeof u === "string" && u.startsWith("http") ? u : typeof o === "string" && o.startsWith("http") ? o : null; };
+// deadline markers for the ruler: the race's next deadline (not race day itself) + a still-future registration opening
+function marksOf(r) {
+  const today = todayISO(), out = [], dl = deadlineOf(r), opens = dateOf(r.registration_opens);
+  if (dl && dl.type !== "race_day" && dl.date >= today) out.push(dl);
+  if (opens && opens >= today && !out.some((m) => m.date === opens)) out.push({ date: opens, type: "reg_opens", label: "Registration opens" });
+  return out;
+}
+const markColor = (t) => (t === "price_bump" ? "price_hike_soon" : t === "reg_opens" ? "opens_soon" : "closed");
+function visible() { return races.filter((r) => filter === "all" || bucketsOf(r).has(filter)); }
 
-// ── render
+// ── up next (selection + wording from variant B): a deadline the runner can act on is anything dated today or later that isn't the race itself
+const actionable = (dl) => dl && dl.type !== "race_day" && daysUntil(dl.date) >= 0;
+function shortWhat(dl) {
+  if (dl.type === "price_bump") {
+    const m = [...String(dl.raw || "").matchAll(/(\d[\d,\s ]*)\s*→/g)];
+    return m.length === 1 ? `last day at ${m[0][1].trim()} SEK` : "last day at current prices";
+  }
+  if (dl.type === "reg_opens") return "registration opens";
+  return dl.raw ? dl.raw.charAt(0).toLowerCase() + dl.raw.slice(1) : "deadline";
+}
+// dot colour follows the deadline: price bump within 14 days = amber, registration opening = blue, else the race's own status
+const upColor = (r, dl) => (dl.type === "reg_opens" ? "opens_soon" : dl.type === "price_bump" && daysUntil(dl.date) <= 14 ? "price_hike_soon" : badgeOf(r));
+function renderUpNext() {
+  const box = $("upnext");
+  if (!races.length) { box.hidden = true; return; }
+  const items = visible().map((r) => ({ r, dl: deadlineOf(r) })).filter((x) => actionable(x.dl))
+    .sort((a, b) => a.dl.date.localeCompare(b.dl.date)).slice(0, 3);
+  box.hidden = false;
+  $("unList").innerHTML = items.length ? items.map(({ r, dl }) => {
+    const soon = daysUntil(dl.date) <= 14;
+    return `<li><button class="un c-${upColor(r, dl)}" type="button" data-slug="${esc(r.slug)}" data-date="${esc(dl.date)}" title="${esc(dl.label)} — ${esc(fmt(dl.date))}">
+      <i aria-hidden="true"></i><span class="nw"><span class="n">${esc(shortName(r.name))}</span> <span class="w">${esc(shortWhat(dl))}</span></span>
+      <span class="t${soon ? " soon" : ""}">${esc(rel(dl.date))}</span></button></li>`;
+  }).join("") : `<li class="un-none">No deadlines coming up.</li>`;
+}
+
+// ── season scale: a compressed "sign-up" zone from today's month to the season start, then the race season itself
+const addMonths = (iso, n) => { const t = +iso.slice(0, 4) * 12 + +iso.slice(5, 7) - 1 + n; return `${Math.floor(t / 12)}-${String(t % 12 + 1).padStart(2, "0")}-01`; };
+const dayNum = (iso) => Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10)) / 864e5;
+function scaleFor(width) {
+  const all = races.flatMap((r) => daysOf(r).map((d) => d.date)).sort();
+  if (!all.length) return null;
+  const today = todayISO(), sStart = all[0].slice(0, 7) + "-01", sEnd = addMonths(all[all.length - 1], 1);
+  const t0 = today < sStart ? today.slice(0, 7) + "-01" : sStart;
+  const pre = dayNum(sStart) - dayNum(t0), season = dayNum(sEnd) - dayNum(sStart);
+  const frac = pre > 0 ? Math.min(.3, Math.max(.14, pre / (pre + season))) : 0;
+  const pad = 10, inner = width - pad * 2, split = pad + inner * frac;
+  const x = (iso) => {
+    const n = dayNum(iso);
+    if (n < dayNum(sStart)) return pad + (n - dayNum(t0)) / pre * (split - pad);
+    return split + Math.min(1, (n - dayNum(sStart)) / season) * (width - pad - split);
+  };
+  return { t0, sStart, sEnd, x, split, pad, width, inDomain: (iso) => iso >= t0 && iso < sEnd };
+}
+
+// greedy lane packing: each item claims [a, b] px; lane 0 is closest to the axis
+function pack(items, gap) {
+  const ends = [];
+  items.sort((p, q) => p.a - q.a).forEach((it) => {
+    let l = ends.findIndex((e) => e + gap <= it.a);
+    if (l < 0) { l = ends.length; ends.push(0); }
+    ends[l] = it.b; it.lane = l;
+  });
+  return ends.length;
+}
+let measureCtx;
+function textW(s) {
+  measureCtx = measureCtx || document.createElement("canvas").getContext("2d");
+  measureCtx.font = `400 12px ${getComputedStyle(document.body).fontFamily}`;
+  return measureCtx.measureText(s).width;
+}
+
+// ── render: the season strip (rebuilt on data/resize; filter & picks only toggle classes)
+let built = false, stripS = null;
+const midDay = (a, b) => new Date(Math.floor((dayNum(a) + dayNum(b)) / 2) * 864e5).toISOString().slice(0, 10);
+function renderStrip() {
+  const strip = $("strip"), W = strip.clientWidth;
+  if (!races.length) {
+    strip.style.height = "auto";
+    strip.innerHTML = `<div class="empty">The first nightly update hasn't landed yet — “Add all” now and races appear automatically.</div>`;
+    $("legend").innerHTML = ""; $("seasonSummary").textContent = ""; return;
+  }
+  const S = scaleFor(W); if (!S) { strip.innerHTML = ""; return; }
+  stripS = S;
+  const wide = W >= 600, today = todayISO();
+
+  // race groups: one dot per distinct race date, linked when a race spans several days
+  const groups = races.map((r) => {
+    const byDate = new Map();
+    daysOf(r).forEach((d) => { if (!byDate.has(d.date)) byDate.set(d.date, []); byDate.get(d.date).push(d); });
+    const dots = [...byDate.entries()].filter(([d]) => S.inDomain(d)).map(([date, ds]) => ({
+      date, x: S.x(date), buckets: ds.some((d) => !d.bucket) ? null : new Set(ds.map((d) => d.bucket)),
+      name: ds.map((d) => d.name).find(Boolean) || "",
+    }));
+    if (!dots.length) return null;
+    // each day of a multi-day race gets its own event name only when it fits before the next dot
+    const multi = wide && dots.length > 1 && dots.every((d, i) => d.name && (i === dots.length - 1 || dots[i + 1].x - d.x >= textW(d.name) + 26));
+    dots.forEach((d, i) => { d.label = wide ? (multi ? d.name : i === dots.length - 1 ? shortName(r.name) : "") : ""; d.lw = d.label ? textW(d.label) + 6 : 0; });
+    const last = dots[dots.length - 1], right = last.x + 14 + last.lw <= W;
+    dots.forEach((d) => { d.right = right; });
+    const xs = dots.map((d) => d.x);
+    return { r, dots, a: Math.min(...xs) - 12 - (right ? 0 : last.lw), b: Math.max(...xs) + 12 + (right ? last.lw : 0) };
+  }).filter(Boolean);
+  const lanes = Math.max(1, pack(groups, wide ? 6 : 2));
+
+  const marks = races.flatMap((r) => marksOf(r).filter((m) => S.inDomain(m.date)).map((m) => ({ r, ...m, x: S.x(m.date), a: S.x(m.date) - 5, b: S.x(m.date) + 5 })));
+  const mlanes = marks.length ? pack(marks, 2) : 0;
+
+  // marks sit across the axis (lane 0) and stack downward when deadlines crowd
+  const LANE = 28, CAP = 24, top = CAP + 6, axisY = top + lanes * LANE + 4;
+  const markY = axisY - 5, monthY = markY + Math.max(mlanes, 1) * 14 + 6, H = monthY + 18;
+  strip.style.height = H + "px";
+
+  let html = "";
+  if (S.split > S.pad + 1) {
+    html += `<div class="zone" style="left:0;width:${S.split - 4}px;height:${axisY + 1}px"></div>`;
+    html += `<div class="cap" style="left:${(S.split) / 2}px">${S.split > 150 ? "Sign-up window" : "Sign-ups"}</div>`;
+  }
+  html += `<div class="cap" style="left:${(S.split + W) / 2}px">Race season ${esc(S.sStart.slice(0, 4))}</div>`;
+  html += `<div class="axis" style="top:${axisY - 1}px"></div>`;
+
+  // "Today" shares the month row; month labels it would cover are skipped
+  const tx = S.inDomain(today) ? S.x(today) : null, tl = tx === null ? 0 : Math.max(0, Math.min(tx - 2, W - 40)), tr = tl + textW("Today") + 6;
+  // months: tick at the 1st, label centred over the month span; label length adapts to the space
+  for (let m = S.t0; m < S.sEnd; m = addMonths(m, 1)) {
+    const x1 = S.x(m), x2 = S.x(addMonths(m, 1) < S.sEnd ? addMonths(m, 1) : S.sEnd) , span = x2 - x1;
+    const nm = fmt(m, { month: "short" }), lab = span >= 30 ? nm : span >= 10 ? nm[0] : "";
+    html += `<div class="mtick" data-d="${m}" style="left:${x1}px;top:${axisY + 1}px"></div>`;
+    const cx = (x1 + x2) / 2, hw = textW(lab) / 2 + 2;
+    if (lab && !(tx !== null && cx + hw > tl && cx - hw < tr)) html += `<div class="mlab${m < S.sStart ? " off" : ""}" data-c="1" data-d="${midDay(m, addMonths(m, 1) < S.sEnd ? addMonths(m, 1) : S.sEnd)}" style="left:${(x1 + x2) / 2}px;top:${monthY}px;transform:none">${esc(lab)}</div>`;
+  }
+
+  // today
+  if (tx !== null) {
+    html += `<div class="today" data-d="${today}" style="left:${tx}px;top:${top - 2}px;height:${monthY - top}px"></div>`;
+    html += `<div class="todaylab" style="left:${tl}px;top:${monthY}px">Today</div>`;
+  }
+
+  // deadline marks below the axis
+  marks.forEach((m, i) => {
+    html += `<button class="mark c-${markColor(m.type)}" tabindex="-1" data-slug="${esc(m.r.slug)}" data-date="${esc(m.date)}" data-d="${esc(m.date)}" data-tip="${esc(shortName(m.r.name) + " · " + m.label.replace(/ · last day at the current price$/, " (last day at current price)") + " · " + fmt(m.date) + ", " + rel(m.date))}"
+      style="left:${m.x}px;top:${markY + m.lane * 14}px;--n:${i}"></button>`;
+  });
+
+  // race dots in lanes above the axis
+  groups.forEach((g, gi) => {
+    const y = axisY - 16 - g.lane * LANE, badge = badgeOf(g.r), slug = esc(g.r.slug);
+    if (g.dots.length > 1) {
+      const xs = g.dots.map((d) => d.x);
+      html += `<div class="link c-${badge}" data-slug="${slug}" data-d1="${g.dots[0].date}" data-d2="${g.dots[g.dots.length - 1].date}" style="left:${Math.min(...xs)}px;width:${Math.max(...xs) - Math.min(...xs)}px;top:${y}px"></div>`;
+    }
+    g.dots.forEach((d) => {
+      const tip = `${d.name || g.r.name} · ${fmt(d.date)}`;
+      html += `<button class="dot c-${badge}" tabindex="-1" data-slug="${slug}" data-b="${d.buckets ? esc([...d.buckets].join(" ")) : ""}" data-tip="${esc(tip)}" data-d="${d.date}"
+        style="left:${d.x}px;top:${y}px;--n:${gi}"><i></i></button>`;
+      if (d.label) html += `<div class="lbl" data-d="${d.date}" data-side="${d.right ? "r" : "l"}" data-slug="${slug}" data-b="${d.buckets ? esc([...d.buckets].join(" ")) : ""}" style="top:${y}px;${d.right ? `left:${d.x + 12}px` : `right:${W - d.x + 12}px`}">${esc(d.label)}</div>`;
+    });
+  });
+  const daily = W >= 600;
+  for (let n = dayNum(S.t0); n < dayNum(S.sEnd); n++) {
+    const d = new Date(n * 864e5).toISOString().slice(0, 10), dow = new Date(n * 864e5).getUTCDay(), first = d.endsWith("-01");
+    if (daily || dow === 1) html += `<div class="wtick${dow === 1 ? " wk" : ""}" data-d="${d}" style="top:${axisY + 1}px"></div>`;
+    if (daily ? true : dow === 1) {
+      const txt = daily ? (first ? fmt(d, { day: "numeric", month: "short" }) : String(+d.slice(8))) : fmt(d, { day: "numeric", month: "short" });
+      html += `<div class="wlab${first ? " m1" : ""}" data-c="1" data-d="${d}" style="top:${monthY}px">${esc(txt)}</div>`;
+    }
+  }
+  html += `<div class="zdate" data-c="1" style="top:${monthY}px" aria-hidden="true"></div>`;
+  strip.innerHTML = html;
+  stripPlace(S.x, W);
+  if (zoomFor && zoomFor.isConnected && !reduceMotion()) { const b = zoomFor; zoomFor = null; requestAnimationFrame(() => fxOn(b)); }
+  if (!built) { built = true; strip.classList.add("intro"); setTimeout(() => strip.classList.remove("intro"), 1400); }
+
+  const present = [...new Set(races.map(badgeOf))];
+  $("legend").innerHTML = Object.keys(BADGE_LABEL).filter((b) => present.includes(b)).map((b) => `<span class="c-${b}"><i></i><b>${BADGE_LABEL[b]}</b></span>`).join("")
+    + (marks.length ? `<span class="tk"><i></i><b>Deadline</b></span>` : "");
+  $("seasonSummary").textContent = `Season from ${fmt(S.sStart, { month: "long", year: "numeric" })} to ${fmt(addMonths(S.sEnd, -1), { month: "long", year: "numeric" })}; ${races.length} races listed below.`;
+  updateStrip();
+}
+function dotMatches(el) {
+  if (filter === "all") return true;
+  const b = el.dataset.b; return b ? b.split(" ").includes(filter) : bucketsOf(races.find((r) => r.slug === el.dataset.slug) || {}).has(filter);
+}
+function updateStrip() {
+  const vis = new Set(visible().map((r) => r.slug));
+  $("strip").querySelectorAll("[data-slug]").forEach((el) => {
+    const on = vis.has(el.dataset.slug) && (el.matches(".dot, .lbl") ? dotMatches(el) : true);
+    el.classList.toggle("dim", !on);
+    el.classList.toggle("picked", selected.has(el.dataset.slug));
+  });
+}
+
+// ── render: filter, list, bar
 function renderChips() {
   const counts = {}; races.forEach((r) => bucketsOf(r).forEach((b) => (counts[b] = (counts[b] || 0) + 1)));
   $("distances").innerHTML = DISTANCES.filter((d) => d.id === "all" || !races.length || counts[d.id])
-    .map((d) => `<button class="chip" data-id="${d.id}" aria-pressed="${d.id === filter}">${d.label}</button>`).join("");
-  $("distances").querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => { filter = b.dataset.id; renderAll(); }));
+    .map((d) => `<button type="button" data-id="${d.id}" aria-pressed="${d.id === filter}">${d.label}</button>`).join("");
 }
-function visible() { return races.filter((r) => filter === "all" || bucketsOf(r).has(filter)); }
-function renderTimeline() {
-  const list = visible().slice().sort((a, b) => (raceDay(a) || "9999").localeCompare(raceDay(b) || "9999"));
-  if (!races.length) { $("timeline").innerHTML = `<div class="empty">The first nightly update hasn't landed yet — "Add all" now and races appear automatically.</div>`; return; }
-  if (!list.length) { $("timeline").innerHTML = `<div class="empty">No races at this distance yet.</div>`; return; }
-  let html = "", month = "";
-  for (const r of list) {
-    const rd = raceDay(r), m = rd ? fmt(rd, { month: "long", year: "numeric" }) : "Date not announced";
-    if (m !== month) { html += `<div class="month">${esc(m)}</div>`; month = m; }
-    const badge = badgeOf(r), dl = deadlineOf(r), notes = notesOf(r), sel = selected.has(r.slug);
-    const url = val(r.registration_url), link = typeof url === "string" && url.startsWith("http") ? url : (val(r.official_url) || null);
-    const perDist = r.race_days && typeof r.race_days === "object" && new Set(Object.values(r.race_days).map(dateOf)).size > 1
-      ? Object.entries(r.race_days).map(([k, v]) => `${esc(k)} ${fmt(dateOf(v))}`).join(" · ")
-      : rd ? fmt(rd, { weekday: "long", day: "numeric", month: "long" }) : "";
-    html += `<article class="card${sel ? " sel" : ""}${rd && rd < todayISO() ? " past" : ""}">
-      <input class="check" type="checkbox" data-slug="${esc(r.slug)}" ${sel ? "checked" : ""} aria-label="Select ${esc(r.name)}">
-      <div>
-        <div class="top"><h2 class="name">${esc(r.name)}</h2><span class="badge b-${badge}">${BADGE_LABEL[badge]}</span></div>
-        <div class="when">${esc(perDist)}</div>
-        <div class="dist">${(r.distances || []).map((d) => `<span class="pill">${esc(val(d))}</span>`).join("")}</div>
-        <p class="headline">${esc(headlineOf(r))}</p>
-        ${dl ? `<p class="deadline">⏰ ${esc(dl.label)} — <span class="rel">${rel(dl.date)}</span> <span class="when">(${fmt(dl.date)})</span></p>` : ""}
-        ${notes.length ? `<ul class="notes">${notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
-        <div class="actions">${link ? `<a class="signup${badge === "sold_out" || badge === "closed" ? " muted" : ""}" href="${esc(link)}" target="_blank" rel="noopener">${badge === "sold_out" ? "Official page ↗" : badge === "opens_soon" ? "Registration page ↗" : "Sign up ↗"}</a>` : ""}</div>
-      </div></article>`;
-  }
-  $("timeline").innerHTML = html;
-  $("timeline").querySelectorAll(".check").forEach((c) => c.addEventListener("change", () => {
-    c.checked ? selected.add(c.dataset.slug) : selected.delete(c.dataset.slug); saveSel(); renderAll();
-  }));
+function renderList() {
+  const list = visible().slice().sort((a, b) => (raceDay(a) || "9999").localeCompare(raceDay(b) || "9999")), today = todayISO();
+  if (!races.length) { $("races").innerHTML = ""; return; }
+  if (!list.length) { $("races").innerHTML = `<li class="empty">No races at this distance yet.</li>`; return; }
+  $("races").innerHTML = list.map((r, i) => {
+    const days = daysOf(r), badge = badgeOf(r), sel = selected.has(r.slug), rd = raceDay(r);
+    const dates = [...new Set(days.map((d) => d.date))];
+    const lastD = dates[dates.length - 1], sameMonth = dates[0].slice(0, 7) === lastD.slice(0, 7);
+    const when = dates.length > 1 ? `${fmt(dates[0], sameMonth ? { day: "numeric" } : { day: "numeric", month: "short" })} & ${fmt(lastD, { day: "numeric", month: "short" })}`
+      : rd ? fmt(rd) : "Date TBA";
+    return `<li style="animation-delay:${i * 30}ms"><button type="button" class="rowb c-${badge}${sel ? " picked" : ""}${rd && rd < today ? " past" : ""}" data-slug="${esc(r.slug)}">
+      <span class="d" aria-hidden="true"></span><span class="n">${esc(r.name)}<span class="sr">, ${BADGE_LABEL[badge]}${sel ? ", picked" : ""}</span></span>
+      <span class="w">${esc(when)}</span><span class="p" aria-hidden="true">✓</span></button></li>`;
+  }).join("");
 }
-function renderDock() {
+function renderBar() {
   const vis = visible().map((r) => r.slug), nSel = vis.filter((s) => selected.has(s)).length;
-  $("count").textContent = races.length ? `${nSel} of ${vis.length} selected` : "";
-  $("toggleAll").textContent = vis.length && nSel === vis.length ? "Deselect all" : "Select all";
+  $("count").textContent = races.length ? (nSel ? `${nSel} of ${vis.length} picked` : `${vis.length} race${vis.length === 1 ? "" : "s"} · tap one for details`) : "";
+  $("toggleAll").hidden = !vis.length;
+  $("toggleAll").textContent = vis.length && nSel === vis.length ? "Deselect all" : "Pick all";
   $("download").disabled = !nSel;
-  $("download").textContent = `⬇ Download selected (${nSel})`;
+  $("download").textContent = `⬇ Download ${nSel} picked`;
   const d = DISTANCES.find((x) => x.id === filter), https = new URL(d.file, location.href).href, webcal = https.replace(/^https?:/, "webcal:");
-  $("menuTitle").textContent = filter === "all" ? "Add all races — live feed" : `Add all ${d.label} races — live feed`;
+  $("menuTitle").textContent = filter === "all" ? "Add all races — live feed" : `Add all ${d.long} races — live feed`;
   $("apple").href = webcal;
   $("google").href = "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(webcal);
-  $("outlook").href = "https://outlook.live.com/calendar/0/addfromweb?url=" + encodeURIComponent(https) + "&name=" + encodeURIComponent("Stockholm races — " + d.label);
+  $("outlook").href = "https://outlook.live.com/calendar/0/addfromweb?url=" + encodeURIComponent(https) + "&name=" + encodeURIComponent("Stockholm races — " + d.long);
   $("feedurl").textContent = webcal;
 }
-function renderAll() { renderChips(); renderTimeline(); renderDock(); }
+function renderPicks() { renderList(); renderBar(); updateStrip(); if (openSlug) renderSheet(openSlug); }
+function renderAll() { renderChips(); renderUpNext(); renderStrip(); renderList(); renderBar(); }
+
+// ── detail sheet
+let openSlug = null, opener = null;
+function renderSheet(slug) {
+  const r = races.find((x) => x.slug === slug); if (!r) return;
+  const badge = badgeOf(r), dl = deadlineOf(r), notes = notesOf(r), link = linkOf(r), sel = selected.has(slug), days = daysOf(r);
+  // one shared race day → a date row, then each distance with its start time; several race days → one row per distance
+  const oneDate = new Set(days.map((d) => d.date)).size <= 1, rd = raceDay(r);
+  const rows = oneDate
+    ? [["Race day", rd ? `${fmt(rd, { weekday: "short", day: "numeric", month: "long", year: "numeric" })}` : "Not announced"],
+       ...(days.length > 1 || days.some((d) => d.time) ? days.map((d) => [[d.label, d.name].filter(Boolean).join(" · "), d.time ? `${d.time} start` : ""]) : [])]
+    : days.map((d) => [[d.label, d.name].filter(Boolean).join(" · "), `${fmt(d.date, { weekday: "short", day: "numeric", month: "long" })}${d.time ? " · " + d.time : ""}`]);
+  const raceRel = rd ? rel(rd) : "";
+  $("sheetBody").innerHTML = `<div class="grab" aria-hidden="true"></div>
+    <div class="s-top"><span class="status c-${badge}"><i></i>${BADGE_LABEL[badge]}</span>
+      <button class="x" type="button" data-close aria-label="Close">×</button></div>
+    <h2 id="sName">${esc(r.name)}</h2>
+    <ul class="days">${rows.map(([k, v]) => `<li><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></li>`).join("")}</ul>
+    <p class="s-head">${esc(headlineOf(r))}${raceRel && rd >= todayISO() ? ` <span style="color:var(--sub)">Race day ${esc(raceRel)}.</span>` : ""}</p>
+    ${dl && dl.type !== "race_day" ? `<div class="s-dl"><strong>${esc(rel(dl.date).replace(/^./, (c) => c.toUpperCase()))}</strong> — ${esc(dl.label)} <span class="sub">(${esc(fmt(dl.date))})</span></div>` : ""}
+    ${notes.length ? `<ul class="s-notes">${notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
+    <div class="s-act">
+      ${link ? `<a class="btn${badge === "sold_out" || badge === "closed" ? " muted" : " primary"}" href="${esc(link)}" target="_blank" rel="noopener">${badge === "sold_out" ? "Official page ↗" : badge === "opens_soon" ? "Registration page ↗" : "Sign up ↗"}</a>` : ""}
+      <button class="btn pick" type="button" data-pick="${esc(slug)}" aria-pressed="${sel}">${sel ? "✓ Picked" : "＋ Pick"}</button>
+    </div>`;
+}
+function openSheet(slug, from) {
+  hideTip(); closeMenu();
+  openSlug = slug; opener = from || document.activeElement; renderSheet(slug);
+  const dlg = $("sheet");
+  if (typeof dlg.showModal === "function") { if (!dlg.open) dlg.showModal(); } else dlg.setAttribute("open", "");
+  const pick = dlg.querySelector("[data-pick]"); if (pick) pick.focus();
+}
+function closeSheet() { const dlg = $("sheet"); if (dlg.open) (dlg.close ? dlg.close() : dlg.removeAttribute("open")); }
+$("sheet").addEventListener("close", () => {
+  // the list re-renders on pick, so fall back to the race's fresh row
+  const slug = openSlug; openSlug = null;
+  const row = slug && $("races").querySelector(`[data-slug="${CSS.escape(slug)}"]`);
+  restoring = true; (opener && document.contains(opener) ? opener : row || $("toggleAll")).focus(); restoring = false;
+  // opened from Up next: show where that race lives on the strip and in the list
+  if (slug && opener && opener.closest && opener.closest("#unList")) flash(slug);
+});
+$("sheet").addEventListener("click", (e) => {
+  if (e.target === $("sheet") || e.target.closest("[data-close]")) return closeSheet();
+  const p = e.target.closest("[data-pick]");
+  if (p) {
+    const s = p.dataset.pick; selected.has(s) ? selected.delete(s) : selected.add(s); saveSel(); renderPicks();
+    const np = $("sheet").querySelector("[data-pick]"); np && np.focus();
+    toast(selected.has(s) ? "Picked — it's in your download" : "Removed from your picks");
+  }
+});
+
+// ── interactions: strip ↔ list linked highlighting, tooltips
+function hot(slug, on) {
+  document.querySelectorAll(`#strip [data-slug="${CSS.escape(slug)}"], #races [data-slug="${CSS.escape(slug)}"], #unList [data-slug="${CSS.escape(slug)}"]`).forEach((el) => el.classList.toggle("hot", on));
+}
+function flash(slug) {
+  document.querySelectorAll(`#strip .dot[data-slug="${CSS.escape(slug)}"], #races .rowb[data-slug="${CSS.escape(slug)}"]`).forEach((el) => {
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+    clearTimeout(el._fl); el._fl = setTimeout(() => el.classList.remove("flash"), 1700);
+  });
+}
+function showTip(el) {
+  const tip = $("tip"), b = el.getBoundingClientRect(), sec = $("strip").parentElement.getBoundingClientRect();
+  tip.textContent = el.dataset.tip;
+  const w = tip.offsetWidth, cx = b.left + b.width / 2 - sec.left;
+  tip.style.left = Math.max(w / 2, Math.min(cx, sec.width - w / 2)) + "px";
+  tip.style.top = (b.top - sec.top - tip.offsetHeight - 4) + "px";
+  tip.classList.add("show");
+}
+function hideTip() { $("tip").classList.remove("show"); }
+$("strip").addEventListener("pointerover", (e) => {
+  const el = e.target.closest(".dot, .mark"); if (!el) return;
+  hot(el.dataset.slug, true); if (e.pointerType !== "touch") showTip(el);
+});
+$("strip").addEventListener("pointerout", (e) => {
+  const el = e.target.closest(".dot, .mark"); if (!el || el.contains(e.relatedTarget)) return;
+  hot(el.dataset.slug, false); hideTip();
+});
+$("strip").addEventListener("click", (e) => {
+  const el = e.target.closest(".dot, .mark"); if (!el) return;
+  hot(el.dataset.slug, false);
+  openSheet(el.dataset.slug, $("races").querySelector(`[data-slug="${CSS.escape(el.dataset.slug)}"]`));
+});
+$("races").addEventListener("click", (e) => { const b = e.target.closest(".rowb"); if (b) openSheet(b.dataset.slug, b); });
+// Up next ↔ strip: hover (or keyboard focus) gives a wordless "it's here" cue on the strip — see fxOn/fxOff; tap opens the sheet.
+// Touch has no hover: a tap goes straight to the sheet. Leaving is debounced so moving item → item doesn't flicker.
+const tickFor = (b) => $("strip").querySelector(`.mark[data-slug="${CSS.escape(b.dataset.slug)}"][data-date="${CSS.escape(b.dataset.date)}"]`);
+const stripEls = (slug, sel) => $("strip").querySelectorAll(`${sel}[data-slug="${CSS.escape(slug)}"]`);
+const reduceMotion = () => window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+let unActive = null, unLeaveT = 0, restoring = false;
+function unEnter(b) {
+  clearTimeout(unLeaveT);
+  if (unActive === b) return;
+  const prev = unActive; unActive = b;
+  if (prev) fxOff(prev, true);
+  fxOn(b, !!prev);
+}
+function unLeave(now) {
+  clearTimeout(unLeaveT);
+  const go = () => { if (unActive) { const b = unActive; unActive = null; fxOff(b, false); } };
+  now ? go() : (unLeaveT = setTimeout(go, 140));
+}
+$("unList").addEventListener("click", (e) => { const b = e.target.closest(".un"); if (b) { unLeave(true); flash(b.dataset.slug); openSheet(b.dataset.slug, b); } });
+$("unList").addEventListener("pointerover", (e) => { if (e.pointerType === "touch") return; const b = e.target.closest(".un"); if (b) unEnter(b); });
+$("unList").addEventListener("pointerout", (e) => { if (e.pointerType === "touch") return; const b = e.target.closest(".un"); if (b && !b.contains(e.relatedTarget)) unLeave(); });
+$("unList").addEventListener("focusin", (e) => { const b = e.target.closest(".un"); if (b && !restoring && b.matches(":focus-visible")) unEnter(b); });
+$("unList").addEventListener("focusout", (e) => { const b = e.target.closest(".un"); if (b && b === unActive && !b.contains(e.relatedTarget)) unLeave(); });
+["pointerover", "focusin"].forEach((ev) => $("races").addEventListener(ev, (e) => { const b = e.target.closest(".rowb"); if (b) hot(b.dataset.slug, true); }));
+["pointerout", "focusout"].forEach((ev) => $("races").addEventListener(ev, (e) => { const b = e.target.closest(".rowb"); if (b && !b.contains(e.relatedTarget)) hot(b.dataset.slug, false); }));
+// F2 · zoom: hovering pans/zooms the strip to a ±3-week window around the deadline; leaving zooms back to the season
+let zoomFor = null;
+function stripPlace(xf, W) {
+  const strip = $("strip");
+  strip.querySelectorAll("[data-d]").forEach((el) => {
+    const x = xf(el.dataset.d);
+    el.style.left = "0px";
+    el.style.right = "auto";
+    if (el.dataset.side === "l") el.style.transform = `translateX(calc(${x - 12}px - 100%))`;
+    else if (el.dataset.side === "r") el.style.transform = `translateX(${x + 12}px)`;
+    else if (el.dataset.c) el.style.transform = `translateX(calc(${x}px - 50%))`;
+    else el.style.transform = `translateX(${x}px)`;
+  });
+  strip.querySelectorAll(".link").forEach((el) => {
+    const a = xf(el.dataset.d1), b = xf(el.dataset.d2);
+    el.style.left = "0px"; el.style.transform = `translateX(${a}px)`; el.style.width = Math.max(0, b - a) + "px";
+  });
+  const z = strip.querySelector(".zone"); if (z && stripS) z.style.width = Math.max(0, Math.min(W, xf(stripS.sStart) - 4)) + "px";
+}
+function zoomWindow(iso) {
+  const S = stripS, half = 21;
+  let a = dayNum(iso) - half, b = dayNum(iso) + half;
+  const lo = dayNum(S.t0), hi = dayNum(S.sEnd);
+  if (a < lo) { b += lo - a; a = lo; }
+  if (b > hi) { a -= b - hi; b = hi; }
+  a = Math.max(a, lo);
+  const W = $("strip").clientWidth, pad = S.pad;
+  return (d) => pad + (dayNum(d) - a) / (b - a) * (W - pad * 2);
+}
+function fxOn(b) {
+  const t = tickFor(b), iso = b.dataset.date, strip = $("strip");
+  strip.querySelectorAll(".mark.target").forEach((m) => m.classList.remove("target"));
+  if (t) t.classList.add("target");
+  stripEls(b.dataset.slug, ".dot").forEach((d) => d.classList.add("hot"));
+  if (reduceMotion() || !stripS || !stripS.inDomain(iso)) return; // static highlight only
+  zoomFor = b;
+  const xf = zoomWindow(iso), W = strip.clientWidth, tx = xf(iso);
+  stripPlace(xf, W);
+  const zd = strip.querySelector(".zdate");
+  zd.dataset.d = iso; zd.textContent = fmt(iso, { day: "numeric", month: "short" });
+  zd.style.transform = `translateX(calc(${Math.max(24, Math.min(W - 24, tx))}px - 50%))`;
+  // date labels claim space in priority order — the target's date, then month starts, then the rest; anything colliding or clipped steps aside
+  const zw = textW(zd.textContent) + 14, taken = [[tx - zw / 2, tx + zw / 2]];
+  const labs = [...strip.querySelectorAll(".wlab")].map((l) => ({ l, x: xf(l.dataset.d), w: textW(l.textContent) + (l.classList.contains("m1") ? 10 : 6) }));
+  labs.sort((p, q) => q.l.classList.contains("m1") - p.l.classList.contains("m1"));
+  labs.forEach(({ l, x, w }) => {
+    const a = x - w / 2, b = x + w / 2;
+    const ok = a >= 0 && b <= W && !taken.some(([c, d]) => a < d && b > c);
+    if (ok) taken.push([a, b]);
+    l.classList.toggle("off", !ok);
+  });
+  strip.classList.add("zoomed");
+}
+function fxOff(b, switching) {
+  stripEls(b.dataset.slug, ".dot").forEach((d) => d.classList.remove("hot"));
+  $("strip").querySelectorAll(".mark.target").forEach((m) => m.classList.remove("target"));
+  if (switching) return; // the next fxOn pans straight there
+  zoomFor = null;
+  $("strip").classList.remove("zoomed");
+  if (stripS) stripPlace(stripS.x, $("strip").clientWidth);
+}
+$("distances").addEventListener("click", (e) => {
+  const b = e.target.closest("button"); if (!b || b.dataset.id === filter) return;
+  filter = b.dataset.id;
+  $("distances").querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", x.dataset.id === filter));
+  renderUpNext(); updateStrip(); renderList(); renderBar();
+});
 
 // ── actions
 $("toggleAll").addEventListener("click", () => {
   const vis = visible().map((r) => r.slug), all = vis.every((s) => selected.has(s));
-  vis.forEach((s) => (all ? selected.delete(s) : selected.add(s))); saveSel(); renderAll();
+  vis.forEach((s) => (all ? selected.delete(s) : selected.add(s))); saveSel(); renderPicks();
 });
+const closeMenu = () => { $("menu").classList.remove("open"); $("addAll").setAttribute("aria-expanded", false); };
 $("addAll").addEventListener("click", (e) => {
   e.stopPropagation(); const open = $("menu").classList.toggle("open"); $("addAll").setAttribute("aria-expanded", open);
+  if (open) $("apple").focus();
 });
-document.addEventListener("click", (e) => { if (!$("menu").contains(e.target)) { $("menu").classList.remove("open"); $("addAll").setAttribute("aria-expanded", false); } });
+document.addEventListener("click", (e) => { if (!$("menu").contains(e.target)) closeMenu(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && $("menu").classList.contains("open")) { closeMenu(); $("addAll").focus(); } });
 $("copy").addEventListener("click", async () => {
   try { await navigator.clipboard.writeText($("feedurl").textContent); toast("Feed link copied"); } catch { toast($("feedurl").textContent); }
 });
@@ -334,10 +859,13 @@ $("download").addEventListener("click", async () => {
     const blob = new Blob([head + keep.join("") + "END:VCALENDAR\r\n"], { type: "text/calendar" });
     const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: "my-stockholm-races.ics" });
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
-    toast(`${keep.length} events from ${slugs.length} race${slugs.length > 1 ? "s" : ""} — open the file to import`);
+    toast(`${keep.length} events from ${slugs.length} race${slugs.length > 1 ? "s" : ""} — a one-time file; open it to import`);
   } catch { toast("Couldn't build the file — try again after tonight's update"); }
 });
 function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 2600); }
+
+let rw = 0;
+new ResizeObserver(() => { const w = $("strip").clientWidth; if (w !== rw) { rw = w; hideTip(); renderStrip(); } }).observe($("strip"));
 
 renderAll();
 fetch("races.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).then((d) => {
