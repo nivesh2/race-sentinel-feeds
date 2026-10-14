@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//race-sentinel//stockholm-race-sentinel//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:Registration milestones for Stockholm road races (race-sentin
+ el).
+X-WR-CALNAME:Stockholm Races – Marathon
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Stockholm
+BEGIN:VTIMEZONE
+TZID:Europe/Stockholm
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Stockholm Marathon 2027
+DTSTART;TZID=Europe/Stockholm:20260824T090000
+DTSTAMP:20261014T145421Z
+UID:stockholm-marathon-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,stockholm-marathon
+DESCRIPTION:Registration for Stockholm Marathon 2027 opens. Note: Re-openi
+ ng for the remaining ~4\,000 places (sold out the same day). The first two
+ -week window ran around the turn of May/June 2026\; its exact opening date
+  is not published on the sources checked.\n\nSign up / registration: https
+ ://events.marathongruppen.se/ab4b4e164c269a523608
+URL:https://events.marathongruppen.se/ab4b4e164c269a523608
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Sold Out] Stockholm Marathon
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+DTSTAMP:20261014T145421Z
+UID:stockholm-marathon-2027-sold-out@race-sentinel-feeds
+CATEGORIES:Running,stockholm-marathon
+DESCRIPTION:Status first detected by race-sentinel on 2026-10-14: "29 Maj 
+ 2027 – slutsålt (official site)\; 'Utsåld' on the registration page". 
+ Organizer announced it on 2026-08-24.\n\nSign up / registration: https://e
+ vents.marathongruppen.se/ab4b4e164c269a523608
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/ab4b4e164c269a523608
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Stockholm Marathon 42.2K
+DTSTART;TZID=Europe/Stockholm:20270529T120000
+DTSTAMP:20261014T145421Z
+UID:stockholm-marathon-2027-race-day-marathon@race-sentinel-feeds
+CATEGORIES:Running,stockholm-marathon
+DESCRIPTION:Stockholm Marathon 2027 – 42.2K. Start 12:00 (preliminary).
+ \n\nSign up / registration: https://events.marathongruppen.se/ab4b4e164c26
+ 9a523608
+URL:https://events.marathongruppen.se/ab4b4e164c269a523608
+END:VEVENT
+END:VCALENDAR
