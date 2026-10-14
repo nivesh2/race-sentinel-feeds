@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T17:14:00+02:00",
+  "generated_at": "2026-10-14T17:18:00+02:00",
   "timezone": "Europe/Stockholm",
   "races": [
     {
@@ -35,25 +35,29 @@
           "distance": "marathon",
           "tier": 1,
           "price_sek": 1295,
-          "valid_until": "not announced"
+          "valid_until": "not announced",
+          "valid_until_note": "Official 'Prisstegen 2027' (stockholmmarathon.se/start/lopare/, re-read 2026-10-14) lists Period 1-4 prices with no dates; period end dates are not published anywhere found."
         },
         {
           "distance": "marathon",
           "tier": 2,
           "price_sek": 1495,
-          "valid_until": "not announced"
+          "valid_until": "not announced",
+          "valid_until_note": "Official 'Prisstegen 2027' (stockholmmarathon.se/start/lopare/, re-read 2026-10-14) lists Period 1-4 prices with no dates; period end dates are not published anywhere found."
         },
         {
           "distance": "marathon",
           "tier": 3,
           "price_sek": 1795,
-          "valid_until": "not announced"
+          "valid_until": "not announced",
+          "valid_until_note": "Official 'Prisstegen 2027' (stockholmmarathon.se/start/lopare/, re-read 2026-10-14) lists Period 1-4 prices with no dates; period end dates are not published anywhere found."
         },
         {
           "distance": "marathon",
           "tier": 4,
           "price_sek": 1995,
-          "valid_until": "not announced"
+          "valid_until": "not announced",
+          "valid_until_note": "Official 'Prisstegen 2027' (stockholmmarathon.se/start/lopare/, re-read 2026-10-14) lists Period 1-4 prices with no dates; period end dates are not published anywhere found."
         }
       ],
       "price_tiers_note": "Official 'Prisstegen 2027' lists Period 1-4 prices without dates; moot while sold out.",
@@ -68,27 +72,27 @@
         {
           "field": "race_day",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-10-14T17:08:37+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-10-14T17:08:37+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-10-14T17:08:37+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-10-14T17:08:37+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://stockholmmarathon.se/",
-          "fetched_at": "2026-10-14T17:08:37+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "capacity_status",
@@ -174,27 +178,27 @@
         {
           "field": "race_day",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-10-14T16:51:09+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-10-14T16:51:09+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-10-14T16:51:09+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-10-14T16:51:09+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-10-14T16:51:09+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "price_tiers",
@@ -252,8 +256,15 @@
         "time": null,
         "note": "'Registration opens 1/11!' – no time stated."
       },
-      "price_tiers": "not announced",
-      "price_tiers_note": "Start-fee page still shows the 2026 table only (499–799 SEK); 2027 prices not published. Not carried over.",
+      "price_tiers": [
+        {
+          "distance": "5K/10K/21K",
+          "tier": 1,
+          "price_sek": "not announced",
+          "valid_until": "not announced"
+        }
+      ],
+      "price_tiers_note": "2027 prices not published: /startavgifter/ (re-read 2026-10-14T17:11) still shows only the 2026 table (499–799 SEK), which is not carried over. Registration opens 2026-11-01.",
       "capacity_status": {
         "status": "upcoming",
         "wording": "Registration opens 1/11!",
@@ -456,14 +467,16 @@
           "tier": "places 501-2000",
           "price_sek": 499,
           "coop_member_price_sek": 399,
-          "valid_until": "not announced (capacity-based tier: places 501–2000)"
+          "valid_until": "not announced",
+          "valid_until_note": "Capacity-based tier (\"Plats 501-2000\"), not date-based; no end date is published."
         },
         {
           "distance": "10K",
           "tier": "places 501-2000",
           "price_sek": 399,
           "coop_member_price_sek": 299,
-          "valid_until": "not announced (capacity-based tier: places 501–2000)"
+          "valid_until": "not announced",
+          "valid_until_note": "Capacity-based tier (\"Plats 501-2000\"), not date-based; no end date is published."
         }
       ],
       "price_tiers_note": "Fees are tiered by number of entries, not by date; the next tier's price is not published.",
@@ -722,7 +735,7 @@
         {
           "field": "race_day",
           "source_url": "https://stockholmmarathon.se/premiarhalvan/",
-          "fetched_at": "2026-10-14T16:49:30+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "distances",
@@ -732,7 +745,7 @@
         {
           "field": "distances",
           "source_url": "https://stockholmmarathon.se/premiarhalvan/",
-          "fetched_at": "2026-10-14T16:49:30+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "race_day.start_time",
@@ -742,7 +755,7 @@
         {
           "field": "race_day.start_time",
           "source_url": "https://stockholmmarathon.se/premiarhalvan/",
-          "fetched_at": "2026-10-14T16:49:30+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "registration_opens",
@@ -752,7 +765,7 @@
         {
           "field": "registration_opens",
           "source_url": "https://stockholmmarathon.se/premiarhalvan/",
-          "fetched_at": "2026-10-14T16:49:30+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "price_tiers",
@@ -762,7 +775,7 @@
         {
           "field": "price_tiers",
           "source_url": "https://stockholmmarathon.se/premiarhalvan/",
-          "fetched_at": "2026-10-14T16:49:30+02:00"
+          "fetched_at": "2026-10-14T17:16:00+02:00"
         },
         {
           "field": "price_tiers",
