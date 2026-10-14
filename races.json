@@ -1,0 +1,786 @@
+{
+  "generated_at": "2026-10-14T16:54:21+02:00",
+  "timezone": "Europe/Stockholm",
+  "races": [
+    {
+      "slug": "stockholm-marathon",
+      "name": "Stockholm Marathon",
+      "edition_year": 2027,
+      "official_url": "https://stockholmmarathon.se/",
+      "race_day": "2027-05-29",
+      "distances": [
+        "marathon"
+      ],
+      "race_days": [
+        {
+          "distance": "marathon",
+          "label": "42.2K",
+          "bucket": "marathon",
+          "date": "2027-05-29",
+          "start_time": "12:00",
+          "start_time_note": "preliminary"
+        }
+      ],
+      "registration_opens": {
+        "date": "2026-08-24",
+        "time": "09:00",
+        "note": "Re-opening for the remaining ~4,000 places (sold out the same day). The first two-week window ran around the turn of May/June 2026; its exact opening date is not published on the sources checked."
+      },
+      "price_tiers": [
+        {
+          "distance": "marathon",
+          "tier": 1,
+          "price_sek": 1295,
+          "valid_until": "not announced"
+        },
+        {
+          "distance": "marathon",
+          "tier": 2,
+          "price_sek": 1495,
+          "valid_until": "not announced"
+        },
+        {
+          "distance": "marathon",
+          "tier": 3,
+          "price_sek": 1795,
+          "valid_until": "not announced"
+        },
+        {
+          "distance": "marathon",
+          "tier": 4,
+          "price_sek": 1995,
+          "valid_until": "not announced"
+        }
+      ],
+      "price_tiers_note": "Official 'Prisstegen 2027' lists Period 1-4 prices without dates; moot while sold out.",
+      "capacity_status": {
+        "status": "sold_out",
+        "wording": "29 Maj 2027 – slutsålt (official site); 'Utsåld' on the registration page",
+        "first_detected": "2026-10-14",
+        "organizer_announced": "2026-08-24"
+      },
+      "registration_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://stockholmmarathon.se/start/lopare/",
+          "fetched_at": "2026-10-14T16:47:00+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://stockholmmarathon.se/start/lopare/",
+          "fetched_at": "2026-10-14T16:47:00+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://stockholmmarathon.se/start/lopare/",
+          "fetched_at": "2026-10-14T16:47:00+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://www.mynewsdesk.com/se/stockholm_marathon/pressreleases/adidas-stockholm-marathon-2027-aer-slutsaalt-paa-rekordtid-3462095",
+          "fetched_at": "2026-10-14T16:52:41+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://stockholmmarathon.se/start/lopare/",
+          "fetched_at": "2026-10-14T16:47:00+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://stockholmmarathon.se/",
+          "fetched_at": "2026-10-14T16:51:09+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
+          "fetched_at": "2026-10-14T16:52:17+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
+          "fetched_at": "2026-10-14T16:52:17+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "stockholm-half",
+      "name": "Stockholm Half Marathon",
+      "edition_year": 2027,
+      "official_url": "https://stockholmhalfmarathon.se/",
+      "race_day": "2027-08-21",
+      "distances": [
+        "half"
+      ],
+      "race_days": [
+        {
+          "distance": "half",
+          "label": "21.1K",
+          "bucket": "half",
+          "date": "2027-08-21",
+          "start_time": "15:30",
+          "start_time_note": "first start, preliminary"
+        }
+      ],
+      "registration_opens": {
+        "date": "2026-08-25",
+        "time": null,
+        "note": "Start date of price Period 1 (25/8 – 6/9) on the official 'Prisstegen 2026-2027'."
+      },
+      "price_tiers": [
+        {
+          "distance": "half",
+          "tier": 1,
+          "price_sek": 895,
+          "valid_from": "2026-08-25",
+          "valid_until": "2026-09-06"
+        },
+        {
+          "distance": "half",
+          "tier": 2,
+          "price_sek": 1045,
+          "valid_from": "2026-09-07",
+          "valid_until": "2027-02-14"
+        },
+        {
+          "distance": "half",
+          "tier": 3,
+          "price_sek": 1195,
+          "valid_from": "2027-02-15",
+          "valid_until": "2027-08-21"
+        }
+      ],
+      "capacity_status": {
+        "status": "open",
+        "wording": "Anmälan öppen – 1 045,00 kr, 'Ökar till 1 195,00 kr den 2027-02-15'",
+        "first_detected": "2026-10-14"
+      },
+      "registration_url": "https://events.marathongruppen.se/8ca268887b77af349904",
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
+          "fetched_at": "2026-10-14T16:51:09+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
+          "fetched_at": "2026-10-14T16:51:09+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
+          "fetched_at": "2026-10-14T16:51:09+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
+          "fetched_at": "2026-10-14T16:51:09+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
+          "fetched_at": "2026-10-14T16:51:09+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
+          "fetched_at": "2026-10-14T16:52:23+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
+          "fetched_at": "2026-10-14T16:52:23+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
+          "fetched_at": "2026-10-14T16:52:23+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "midnattsloppet",
+      "name": "Midnattsloppet Stockholm",
+      "edition_year": 2027,
+      "official_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
+      "race_day": "2027-08-14",
+      "distances": [
+        "5K",
+        "10K",
+        "21K"
+      ],
+      "race_days": [
+        {
+          "distance": "21K",
+          "label": "21K",
+          "bucket": "half",
+          "date": "2027-08-14",
+          "start_time": "21:10"
+        },
+        {
+          "distance": "10K",
+          "label": "10K",
+          "bucket": "10k",
+          "date": "2027-08-14",
+          "start_time": "21:10"
+        },
+        {
+          "distance": "5K",
+          "label": "5K",
+          "bucket": "5k",
+          "date": "2027-08-14",
+          "start_time": "21:40"
+        }
+      ],
+      "registration_opens": {
+        "date": "2026-11-01",
+        "time": null,
+        "note": "'Registration opens 1/11!' – no time stated."
+      },
+      "price_tiers": "not announced",
+      "price_tiers_note": "Start-fee page still shows the 2026 table only (499–799 SEK); 2027 prices not published. Not carried over.",
+      "capacity_status": {
+        "status": "upcoming",
+        "wording": "Registration opens 1/11!",
+        "first_detected": "2026-10-14"
+      },
+      "registration_url": "https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&LanguageId=2",
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
+          "fetched_at": "2026-10-14T16:52:43+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
+          "fetched_at": "2026-10-14T16:52:43+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
+          "fetched_at": "2026-10-14T16:52:43+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
+          "fetched_at": "2026-10-14T16:52:43+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://midnattsloppet.com/startavgifter/",
+          "fetched_at": "2026-10-14T16:52:48+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
+          "fetched_at": "2026-10-14T16:52:43+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
+          "fetched_at": "2026-10-14T16:52:43+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "lidingoloppet",
+      "name": "Lidingöloppet",
+      "edition_year": 2027,
+      "official_url": "https://www.lidingoloppet.se/tcs-lidingoloppet",
+      "race_day": "2027-09-25",
+      "distances": [
+        "30K",
+        "15K"
+      ],
+      "race_days": [
+        {
+          "distance": "30K",
+          "label": "30K",
+          "bucket": "other",
+          "date": "2027-09-25",
+          "start_time": null
+        },
+        {
+          "distance": "15K",
+          "label": "15K",
+          "bucket": "other",
+          "date": "2027-09-25",
+          "start_time": null
+        }
+      ],
+      "registration_opens": "not announced",
+      "registration_opens_note": "Registration for 2027 is already open; the opening date is not published on the sources checked.",
+      "price_tiers": [
+        {
+          "distance": "30K",
+          "tier": 1,
+          "price_sek": 1095,
+          "valid_until": "2027-04-30"
+        },
+        {
+          "distance": "30K",
+          "tier": 2,
+          "price_sek": 1195,
+          "valid_until": "2027-06-30"
+        },
+        {
+          "distance": "30K",
+          "tier": 3,
+          "price_sek": 1295,
+          "valid_until": "2027-08-25"
+        },
+        {
+          "distance": "30K",
+          "tier": 4,
+          "price_sek": 1395,
+          "valid_until": "2027-09-25"
+        },
+        {
+          "distance": "15K",
+          "tier": 1,
+          "price_sek": 765,
+          "valid_until": "2027-04-30"
+        },
+        {
+          "distance": "15K",
+          "tier": 2,
+          "price_sek": 835,
+          "valid_until": "2027-06-30"
+        },
+        {
+          "distance": "15K",
+          "tier": 3,
+          "price_sek": 895,
+          "valid_until": "2027-08-25"
+        },
+        {
+          "distance": "15K",
+          "tier": 4,
+          "price_sek": 995,
+          "valid_until": "2027-09-25"
+        }
+      ],
+      "capacity_status": {
+        "status": "open",
+        "wording": "Registration page lists 'TCS Lidingöloppet 30 2027 25/9' and 'TCS Lidingöloppet 15 2027 25/9'",
+        "first_detected": "2026-10-14"
+      },
+      "registration_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
+          "fetched_at": "2026-10-14T16:52:55+02:00"
+        },
+        {
+          "field": "race_day",
+          "source_url": "https://www.lidingoloppet.se/tcs-lidingoloppet",
+          "fetched_at": "2026-10-14T16:52:53+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://www.lidingoloppet.se/tcs-lidingoloppet",
+          "fetched_at": "2026-10-14T16:52:53+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
+          "fetched_at": "2026-10-14T16:52:55+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://www.lidingoloppet.se/hem/om-anmalan",
+          "fetched_at": "2026-10-14T16:52:49+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
+          "fetched_at": "2026-10-14T16:52:55+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://www.lidingoloppet.se/tcs-lidingoloppet",
+          "fetched_at": "2026-10-14T16:52:53+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "kungsholmen-runt",
+      "name": "Kungsholmen Runt",
+      "edition_year": 2027,
+      "official_url": "https://www.coopkungsholmenrunt.se/",
+      "race_day": "2027-05-08",
+      "distances": [
+        "10K",
+        "half"
+      ],
+      "race_days": [
+        {
+          "distance": "10K",
+          "label": "10K",
+          "bucket": "10k",
+          "date": "2027-05-08",
+          "start_time": "11:00",
+          "start_time_note": "first start group"
+        },
+        {
+          "distance": "half",
+          "label": "21.1K",
+          "bucket": "half",
+          "date": "2027-05-08",
+          "start_time": "12:05",
+          "start_time_note": "first start group"
+        }
+      ],
+      "registration_opens": "not announced",
+      "registration_opens_note": "Registration for 2027 is already open; the opening date is not published.",
+      "price_tiers": [
+        {
+          "distance": "half",
+          "tier": "places 501-2000",
+          "price_sek": 499,
+          "coop_member_price_sek": 399,
+          "valid_until": "not announced (capacity-based tier: places 501–2000)"
+        },
+        {
+          "distance": "10K",
+          "tier": "places 501-2000",
+          "price_sek": 399,
+          "coop_member_price_sek": 299,
+          "valid_until": "not announced (capacity-based tier: places 501–2000)"
+        }
+      ],
+      "price_tiers_note": "Fees are tiered by number of entries, not by date; the next tier's price is not published.",
+      "capacity_status": {
+        "status": "open",
+        "wording": "Fee table 'Plats 501-2000'; registration form offers Milen and Halvmaraton (2027-05-08)",
+        "first_detected": "2026-10-14"
+      },
+      "registration_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
+          "fetched_at": "2026-10-14T16:52:57+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
+          "fetched_at": "2026-10-14T16:52:57+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
+          "fetched_at": "2026-10-14T16:52:57+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
+          "fetched_at": "2026-10-14T16:52:59+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
+          "fetched_at": "2026-10-14T16:52:57+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
+          "fetched_at": "2026-10-14T16:52:59+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
+          "fetched_at": "2026-10-14T16:52:57+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "hasselbyloppet",
+      "name": "Hässelbyloppet",
+      "edition_year": 2027,
+      "official_url": "https://hasselbyloppet.se/",
+      "race_day": "2027-10-03",
+      "distances": [
+        "10K"
+      ],
+      "race_days": [
+        {
+          "distance": "10K",
+          "label": "10K",
+          "bucket": "10k",
+          "date": "2027-10-03",
+          "start_time": "12:00",
+          "start_time_note": "preliminary"
+        }
+      ],
+      "registration_opens": {
+        "date": "2026-10-11",
+        "time": null,
+        "note": "News post 'Anmälan till Hässelbyloppet 2027 ÖPPEN' dated 2026-10-11."
+      },
+      "price_tiers": [
+        {
+          "distance": "10K",
+          "tier": 1,
+          "price_sek": 325,
+          "valid_from": "2026-10-11",
+          "valid_until": "2026-10-25"
+        },
+        {
+          "distance": "10K",
+          "tier": 2,
+          "price_sek": 395,
+          "valid_from": "2026-10-26",
+          "valid_until": "2027-05-02"
+        },
+        {
+          "distance": "10K",
+          "tier": 3,
+          "price_sek": 445,
+          "valid_from": "2027-05-03",
+          "valid_until": "2027-08-08"
+        },
+        {
+          "distance": "10K",
+          "tier": 4,
+          "price_sek": 495,
+          "valid_from": "2027-08-09",
+          "valid_until": "2027-09-26"
+        },
+        {
+          "distance": "10K",
+          "tier": 5,
+          "price_sek": 575,
+          "valid_from": "2027-09-27",
+          "valid_until": "2027-10-03"
+        }
+      ],
+      "price_tiers_note": "Adult prices; youth 14-18: 195 SEK (250 SEK in race week).",
+      "capacity_status": {
+        "status": "open",
+        "wording": "Anmälan öppen – 325,00 kr, 'Ökar till 395,00 kr den 2026-10-26'",
+        "first_detected": "2026-10-14"
+      },
+      "registration_url": "https://events.marathongruppen.se/hasselbyloppet",
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://events.marathongruppen.se/hasselbyloppet",
+          "fetched_at": "2026-10-14T16:52:38+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://events.marathongruppen.se/hasselbyloppet",
+          "fetched_at": "2026-10-14T16:52:38+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://events.marathongruppen.se/hasselbyloppet",
+          "fetched_at": "2026-10-14T16:52:38+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://hasselbyloppet.se/nyheter/anmaelan-till-haesselbyloppet-2027-oeppen/31866.aspx",
+          "fetched_at": "2026-10-14T16:52:40+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://events.marathongruppen.se/hasselbyloppet",
+          "fetched_at": "2026-10-14T16:52:38+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://events.marathongruppen.se/hasselbyloppet",
+          "fetched_at": "2026-10-14T16:52:38+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://hasselbyloppet.se/nyheter/anmaelan-till-haesselbyloppet-2027-oeppen/31866.aspx",
+          "fetched_at": "2026-10-14T16:52:40+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "premiarmilen",
+      "name": "Premiärmilen / Premiärhalvan",
+      "edition_year": 2027,
+      "official_url": "https://stockholmmarathon.se/premiarmilen/",
+      "race_day": "2027-04-03",
+      "distances": [
+        "10K",
+        "half"
+      ],
+      "race_days": [
+        {
+          "distance": "10K",
+          "label": "10K",
+          "event_name": "Premiärmilen",
+          "bucket": "10k",
+          "date": "2027-04-03",
+          "start_time": "11:00",
+          "start_time_note": "preliminary"
+        },
+        {
+          "distance": "half",
+          "label": "21.1K",
+          "event_name": "Premiärhalvan",
+          "bucket": "half",
+          "date": "2027-04-24",
+          "start_time": "11:00",
+          "start_time_note": "preliminary"
+        }
+      ],
+      "registration_opens": {
+        "date": "2026-05-25",
+        "time": null,
+        "note": "Start date of price Period 1 (25/5 – 7/6) for both races on the official 'Prisstegen 2027'."
+      },
+      "price_tiers": [
+        {
+          "distance": "10K",
+          "tier": 1,
+          "price_sek": 395,
+          "valid_from": "2026-05-25",
+          "valid_until": "2026-06-07"
+        },
+        {
+          "distance": "10K",
+          "tier": 2,
+          "price_sek": 495,
+          "valid_from": "2026-06-08",
+          "valid_until": "2026-11-01"
+        },
+        {
+          "distance": "10K",
+          "tier": 3,
+          "price_sek": 595,
+          "valid_from": "2026-11-02",
+          "valid_until": "2027-04-03"
+        },
+        {
+          "distance": "half",
+          "tier": 1,
+          "price_sek": 495,
+          "valid_from": "2026-05-25",
+          "valid_until": "2026-06-07"
+        },
+        {
+          "distance": "half",
+          "tier": 2,
+          "price_sek": 595,
+          "valid_from": "2026-06-08",
+          "valid_until": "2026-11-01"
+        },
+        {
+          "distance": "half",
+          "tier": 3,
+          "price_sek": 695,
+          "valid_from": "2026-11-02",
+          "valid_until": "2027-04-04"
+        },
+        {
+          "distance": "half",
+          "tier": 4,
+          "price_sek": 795,
+          "valid_from": "2027-04-05",
+          "valid_until": "2027-04-24"
+        }
+      ],
+      "capacity_status": {
+        "status": "open",
+        "wording": "Premiärmilen: Anmälan öppen – 495,00 kr, 'Ökar till 595,00 kr den 2026-11-02'; Premiärhalvan: Anmälan öppen – 595,00 kr, 'Ökar till 695,00 kr den 2026-11-02'",
+        "first_detected": "2026-10-14"
+      },
+      "registration_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
+      "registration_urls": {
+        "10K": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
+        "half": "https://events.marathongruppen.se/6b8a2540a8ef886750bf"
+      },
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://stockholmmarathon.se/premiarmilen/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "race_day",
+          "source_url": "https://stockholmmarathon.se/premiarhalvan/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://stockholmmarathon.se/premiarmilen/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://stockholmmarathon.se/premiarhalvan/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://stockholmmarathon.se/premiarmilen/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://stockholmmarathon.se/premiarhalvan/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://stockholmmarathon.se/premiarmilen/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://stockholmmarathon.se/premiarhalvan/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://stockholmmarathon.se/premiarmilen/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://stockholmmarathon.se/premiarhalvan/",
+          "fetched_at": "2026-10-14T16:49:30+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
+          "fetched_at": "2026-10-14T16:52:28+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
+          "fetched_at": "2026-10-14T16:52:33+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
+          "fetched_at": "2026-10-14T16:52:28+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
+          "fetched_at": "2026-10-14T16:52:33+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
+          "fetched_at": "2026-10-14T16:52:28+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
+          "fetched_at": "2026-10-14T16:52:33+02:00"
+        }
+      ]
+    }
+  ]
+}
