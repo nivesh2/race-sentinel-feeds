@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//race-sentinel//stockholm-race-sentinel//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:Registration milestones for Stockholm road races (race-sentin
+ el).
+X-WR-CALNAME:Stockholm Races – 5K
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Stockholm
+BEGIN:VTIMEZONE
+TZID:Europe/Stockholm
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Midnattsloppet Stockholm 2027
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+DTSTAMP:20261014T145421Z
+UID:midnattsloppet-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,midnattsloppet
+DESCRIPTION:Registration for Midnattsloppet Stockholm 2027 opens. Note: 'R
+ egistration opens 1/11!' – no time stated.\n\nSign up / registration: ht
+ tps://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&Langu
+ ageId=2
+TRANSP:TRANSPARENT
+URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
+ &LanguageId=2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Midnattsloppet Stockholm 5K
+DTSTART;TZID=Europe/Stockholm:20270814T214000
+DTSTAMP:20261014T145421Z
+UID:midnattsloppet-2027-race-day-5k@race-sentinel-feeds
+CATEGORIES:Running,midnattsloppet
+DESCRIPTION:Midnattsloppet Stockholm 2027 – 5K. Start 21:40.\n\nSign up 
+ / registration: https://registration.midnattsloppet.com/Web/Step1.aspx?Eve
+ ntGroupId=96&LanguageId=2
+URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
+ &LanguageId=2
+END:VEVENT
+END:VCALENDAR
