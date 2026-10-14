@@ -28,15 +28,17 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 SUMMARY:[Reg Opens Today] Stockholm Marathon 2027
-DTSTART;TZID=Europe/Stockholm:20260824T090000
-DTSTAMP:20261014T145421Z
+DTSTART:20260525
+DTEND:20260526
+DTSTAMP:2026-10-14 15:08:37+00:00
 UID:stockholm-marathon-2027-reg-opens@race-sentinel-feeds
 CATEGORIES:Running,stockholm-marathon
-DESCRIPTION:Registration for Stockholm Marathon 2027 opens. Note: Re-openi
- ng for the remaining ~4\,000 places (sold out the same day). The first two
- -week window ran around the turn of May/June 2026\; its exact opening date
-  is not published on the sources checked.\n\nSign up / registration: https
- ://events.marathongruppen.se/ab4b4e164c269a523608
+DESCRIPTION:Registration for Stockholm Marathon 2027 opens. Note: First sa
+ le window ran about two weeks around the turn of May/June 2026 (opening ti
+ me not stated)\; the remaining ~4\,000 places re-opened 2026-08-24 09:00 a
+ nd sold out the same day.\n\nSign up / registration: https://events.marath
+ ongruppen.se/ab4b4e164c269a523608
+TRANSP:TRANSPARENT
 URL:https://events.marathongruppen.se/ab4b4e164c269a523608
 END:VEVENT
 BEGIN:VEVENT
