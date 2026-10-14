@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T17:19:01+02:00",
+  "generated_at": "2026-10-14T17:25:19+02:00",
   "timezone": "Europe/Stockholm",
   "races": [
     {
@@ -68,26 +68,38 @@
         "organizer_announced": "2026-08-24"
       },
       "registration_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
+      "badge": "sold_out",
+      "headline": "Sold out; the last 4,000 places went the day they were re-released (24 Aug 2026).",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2027-05-29",
+        "label": "Race day: Stockholm Marathon"
+      },
+      "notes": [
+        "Sold out for the fourth year in a row; the 2027 race sold out faster than ever (Marathongruppen press release, mynewsdesk).",
+        "21,000 of 25,000 places were sold in the first two weeks after the 25 May 2026 opening; the remaining 4,000 re-opened 24 Aug 2026 (Runner's World).",
+        "Official price ladder has four periods (1,295 / 1,495 / 1,795 / 1,995 SEK) but no dates are published for them."
+      ],
       "sources": [
         {
           "field": "race_day",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-10-14T17:16:00+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-10-14T17:16:00+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-10-14T17:16:00+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-10-14T17:16:00+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "capacity_status",
@@ -97,12 +109,12 @@
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_opens",
@@ -112,12 +124,12 @@
         {
           "field": "registration_opens.reopened",
           "source_url": "https://www.mynewsdesk.com/se/stockholm_marathon/pressreleases/adidas-stockholm-marathon-2027-aer-slutsaalt-paa-rekordtid-3462095",
-          "fetched_at": "2026-10-14T17:08:37+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_opens.window",
           "source_url": "https://runnersworld.se/rekordintresse-for-stockholm-marathon-och-goteborgsvarvet-2027-ar-slutsalt/",
-          "fetched_at": "2026-10-14T17:08:37+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         }
       ]
     },
@@ -174,6 +186,17 @@
         "first_detected": "2026-10-14"
       },
       "registration_url": "https://events.marathongruppen.se/8ca268887b77af349904",
+      "badge": "registering",
+      "headline": "Registration open — 1,045 SEK until 14 Feb 2027, then 1,195 SEK.",
+      "next_deadline": {
+        "type": "price_bump",
+        "date": "2027-02-14",
+        "label": "Price rises 1,045 → 1,195 SEK after this date"
+      },
+      "notes": [
+        "Earlier price steps: 895 SEK ran 25 Aug–6 Sep 2026, then 1,045 SEK (official price ladder, stockholmhalfmarathon.se).",
+        "Finisher T-shirt is included; you can choose a medal plus T-shirt or donate the equivalent value to Löparakademin (registration page)."
+      ],
       "sources": [
         {
           "field": "race_day",
@@ -203,17 +226,17 @@
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         }
       ]
     },
@@ -271,41 +294,52 @@
         "first_detected": "2026-10-14"
       },
       "registration_url": "https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&LanguageId=2",
+      "badge": "opens_soon",
+      "headline": "Registration opens 1 Nov 2026; 2027 prices not announced.",
+      "next_deadline": {
+        "type": "reg_opens",
+        "date": "2026-11-01",
+        "label": "Registration opens"
+      },
+      "notes": [
+        "The start-fee page still shows only the 2026 table (499–799 SEK); 2027 prices are not published and are not carried over.",
+        "Race day 14 Aug 2027: 21K and 10K start 21:10, 5K starts 21:40 (event page)."
+      ],
       "sources": [
         {
           "field": "race_day",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://midnattsloppet.com/startavgifter/",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         }
       ]
     },
@@ -393,11 +427,22 @@
         "first_detected": "2026-10-14"
       },
       "registration_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
+      "badge": "registering",
+      "headline": "Registration open — 30K 1,095 SEK and 15K 765 SEK until 30 Apr 2027, then 1,195 / 835 SEK.",
+      "next_deadline": {
+        "type": "price_bump",
+        "date": "2027-04-30",
+        "label": "Price rises 1,095 → 1,195 SEK (30K), 765 → 835 SEK (15K)"
+      },
+      "notes": [
+        "The 30K for the 2026 edition sold out; the organizer's news item of 28 Sep 2026 is headlined 'Slutsåld tremil' (lidingoloppet.se home page).",
+        "Prices step up four times by date (30 Apr, 30 Jun, 25 Aug, 25 Sep 2027); the opening date of 2027 registration is not published."
+      ],
       "sources": [
         {
           "field": "race_day",
           "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "race_day",
@@ -412,22 +457,27 @@
         {
           "field": "registration_opens",
           "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://www.lidingoloppet.se/hem/om-anmalan",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://www.lidingoloppet.se/tcs-lidingoloppet",
           "fetched_at": "2026-10-14T16:52:53+02:00"
+        },
+        {
+          "field": "notes",
+          "source_url": "https://www.lidingoloppet.se/",
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         }
       ]
     },
@@ -486,41 +536,52 @@
         "first_detected": "2026-10-14"
       },
       "registration_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
+      "badge": "registering",
+      "headline": "Registration open — 10K 399 SEK and half 499 SEK at the current tier (places 501–2000); race day 8 May 2027.",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2027-05-08",
+        "label": "Race day: Kungsholmen Runt"
+      },
+      "notes": [
+        "Fees depend on how many places are taken (capacity-based tiers), not on dates; the next tier's price is not published.",
+        "COOP members pay less: 10K 299 SEK and half 399 SEK in the current tier, via campaign code on the invitation page."
+      ],
       "sources": [
         {
           "field": "race_day",
           "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         }
       ]
     },
@@ -592,21 +653,32 @@
         "first_detected": "2026-10-14"
       },
       "registration_url": "https://events.marathongruppen.se/hasselbyloppet",
+      "badge": "price_hike_soon",
+      "headline": "Registration open — 325 SEK until 25 Oct 2026, then 395 SEK.",
+      "next_deadline": {
+        "type": "price_bump",
+        "date": "2026-10-25",
+        "label": "Price rises 325 → 395 SEK after this date"
+      },
+      "notes": [
+        "Three further steps follow: 445 SEK from 3 May 2027, 495 SEK from 9 Aug 2027, 575 SEK from 27 Sep 2027 (event page).",
+        "Youth aged 14–18 pay 195 SEK, rising to 250 SEK in race week."
+      ],
       "sources": [
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_opens",
@@ -616,12 +688,12 @@
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_url",
@@ -726,6 +798,17 @@
         "10K": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
         "half": "https://events.marathongruppen.se/6b8a2540a8ef886750bf"
       },
+      "badge": "registering",
+      "headline": "Registration open — Premiärmilen 495 SEK and Premiärhalvan 595 SEK until 1 Nov 2026, then 595 / 695 SEK.",
+      "next_deadline": {
+        "type": "price_bump",
+        "date": "2026-11-01",
+        "label": "Price rises 495 → 595 SEK (Premiärmilen), 595 → 695 SEK (Premiärhalvan)"
+      },
+      "notes": [
+        "Different race days: Premiärmilen 3 Apr 2027, Premiärhalvan 24 Apr 2027.",
+        "Premiärhalvan has a further step to 795 SEK from 5 Apr 2027 (official price ladder)."
+      ],
       "sources": [
         {
           "field": "race_day",
@@ -780,32 +863,32 @@
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-10-14T17:19:01+02:00"
+          "fetched_at": "2026-10-14T17:25:19+02:00"
         }
       ]
     }
