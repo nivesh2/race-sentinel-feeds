@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stockholm Race Alerts</title>
+<meta name="description" content="Registration openings, early-bird price cutoffs and sell-outs for Stockholm road races — straight into your calendar.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏃</text></svg>">
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #14161a; --sub: #5b6270; --line: #e3e6eb;
+    --accent: #ff5a1f; --accent-ink: #ffffff; --accent-soft: #fff1ea;
+    --chip: #eef0f3; --ok: #1f8a4c; --warn: #b8560c; --bad: #b42318;
+    --radius: 14px; --shadow: 0 1px 2px rgba(16,24,40,.05), 0 4px 16px rgba(16,24,40,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1115; --card: #171a20; --ink: #eef0f3; --sub: #9aa3b2; --line: #2a2f38;
+      --accent: #ff6a33; --accent-ink: #14161a; --accent-soft: #2a1a12;
+      --chip: #232831; --ok: #4cc27f; --warn: #f0a25a; --bad: #f2786c;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1115; --card: #171a20; --ink: #eef0f3; --sub: #9aa3b2; --line: #2a2f38;
+    --accent: #ff6a33; --accent-ink: #14161a; --accent-soft: #2a1a12;
+    --chip: #232831; --ok: #4cc27f; --warn: #f0a25a; --bad: #f2786c;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  header h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 10px; letter-spacing: -.02em; }
+  header p { color: var(--sub); margin: 0; font-size: 17px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 20px; margin-top: 20px; }
+  .step { display: flex; align-items: center; gap: 10px; font-weight: 600; margin: 0 0 12px; }
+  .num { width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: var(--accent-ink);
+    display: grid; place-items: center; font-size: 13px; flex: none; }
+  .step + .chips, .step + .apps { margin-bottom: 22px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { border: 1px solid var(--line); background: var(--chip); color: var(--ink); border-radius: 999px;
+    padding: 8px 14px; font: inherit; font-size: 15px; cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+  .chip[disabled] { opacity: .5; cursor: default; }
+  .chip small { opacity: .75; margin-left: 4px; }
+  .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .app { display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none;
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px; color: var(--ink); background: var(--card);
+    font-weight: 600; font-size: 15px; cursor: pointer; font-family: inherit; }
+  .app:hover { border-color: var(--accent); }
+  .app.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .hint { color: var(--sub); font-size: 13px; margin: 10px 0 0; }
+  .feedurl { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--sub); word-break: break-all; }
+  h2 { font-size: 18px; margin: 0 0 4px; }
+  .muted { color: var(--sub); font-size: 14px; margin: 0 0 14px; }
+  .preview { display: grid; gap: 8px; }
+  .ev { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: center;
+    padding: 10px 12px; border-radius: 10px; background: var(--chip); }
+  .date { text-align: center; line-height: 1.1; }
+  .date b { display: block; font-size: 20px; }
+  .date span { font-size: 12px; text-transform: uppercase; color: var(--sub); letter-spacing: .04em; }
+  .ev .t { font-weight: 600; font-size: 15px; }
+  .ev .s { font-size: 13px; color: var(--sub); }
+  .ev a { color: inherit; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase;
+    padding: 2px 7px; border-radius: 6px; margin-right: 6px; vertical-align: 1px; }
+  .tag.open { background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok); }
+  .tag.price { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
+  .tag.cap { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); }
+  .tag.race { background: var(--accent-soft); color: var(--accent); }
+  .empty { color: var(--sub); font-size: 14px; padding: 8px 2px; }
+  footer { color: var(--sub); font-size: 13px; margin-top: 28px; text-align: center; }
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: var(--bg);
+    padding: 10px 16px; border-radius: 10px; font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🏃 Never miss sign-up day.</h1>
+    <p>Registration openings, early-bird price cutoffs and sell-outs for Stockholm races — added to the calendar you already use. No app, no account.</p>
+  </header>
+
+  <section class="card" aria-label="Subscribe">
+    <p class="step"><span class="num">1</span>Region</p>
+    <div class="chips" role="group" aria-label="Region">
+      <button class="chip" aria-pressed="true">Greater Stockholm</button>
+      <button class="chip" disabled>More cities soon</button>
+    </div>
+
+    <p class="step"><span class="num">2</span>Distance</p>
+    <div class="chips" id="distances" role="group" aria-label="Distance"></div>
+
+    <p class="step"><span class="num">3</span>Add to your calendar</p>
+    <div class="apps">
+      <a class="app primary" id="apple" href="#">Apple Calendar</a>
+      <a class="app" id="google" href="#" target="_blank" rel="noopener">Google Calendar</a>
+      <a class="app" id="outlook" href="#" target="_blank" rel="noopener">Outlook</a>
+      <button class="app" id="copy" type="button">Copy link</button>
+    </div>
+    <p class="hint">Subscribing is one tap — new dates and price changes show up on their own, every day. <br><span class="feedurl" id="feedurl"></span></p>
+  </section>
+
+  <section class="card" aria-label="Coming up">
+    <h2>Coming up</h2>
+    <p class="muted" id="updated">What lands in your calendar next.</p>
+    <div class="preview" id="upcoming"></div>
+  </section>
+
+  <footer>Checked every night at 00:30 from organizer and registration sites. Always confirm on the official race page before you pay.</footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const DISTANCES = [
+  { id: "all", label: "All races", file: "stockholm-all.ics" },
+  { id: "5k", label: "5K", file: "stockholm-5k.ics" },
+  { id: "10k", label: "10K", file: "stockholm-10k.ics" },
+  { id: "half", label: "Half marathon", file: "stockholm-half.ics" },
+  { id: "marathon", label: "Marathon", file: "stockholm-marathon.ics" },
+  { id: "other", label: "Other distances", file: "stockholm-other.ics" },
+];
+let selected = "all";
+let races = [];
+
+const $ = (id) => document.getElementById(id);
+const feedHttps = (file) => new URL(file, location.href).href;
+const feedWebcal = (file) => feedHttps(file).replace(/^https?:/, "webcal:");
+
+function bucket(d) {
+  const s = String(d).toLowerCase().replace(/\s+/g, "");
+  if (/half|halv|21\.?1|21k/.test(s)) return "half";
+  if (/marathon|maraton|42/.test(s)) return "marathon";
+  if (/^10(k|km)?$|^10\b|mil(en)?$/.test(s) || s === "10km") return "10k";
+  if (/^5(k|km)?$/.test(s)) return "5k";
+  return "other";
+}
+const val = (v) => (v && typeof v === "object" && "value" in v ? v.value : v);
+const isDate = (s) => typeof s === "string" && /^\d{4}-\d{2}-\d{2}/.test(s);
+const raceBuckets = (r) => new Set((r.distances || []).map((d) => bucket(val(d))));
+
+function renderChips() {
+  const counts = {};
+  races.forEach((r) => raceBuckets(r).forEach((b) => (counts[b] = (counts[b] || 0) + 1)));
+  $("distances").innerHTML = DISTANCES.map((d) => {
+    const n = d.id === "all" ? races.length : counts[d.id] || 0;
+    const hide = races.length && d.id !== "all" && !n;
+    return hide ? "" : `<button class="chip" data-id="${d.id}" aria-pressed="${d.id === selected}">${d.label}${races.length ? `<small>${n}</small>` : ""}</button>`;
+  }).join("");
+  $("distances").querySelectorAll(".chip").forEach((b) =>
+    b.addEventListener("click", () => { selected = b.dataset.id; renderChips(); renderLinks(); renderUpcoming(); }));
+}
+
+function renderLinks() {
+  const d = DISTANCES.find((x) => x.id === selected);
+  const name = `Stockholm races — ${d.label}`;
+  $("apple").href = feedWebcal(d.file);
+  $("google").href = "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(feedWebcal(d.file));
+  $("outlook").href = "https://outlook.live.com/calendar/0/addfromweb?url=" + encodeURIComponent(feedHttps(d.file)) + "&name=" + encodeURIComponent(name);
+  $("feedurl").textContent = feedWebcal(d.file);
+}
+
+function milestones() {
+  const today = new Date().toISOString().slice(0, 10);
+  const out = [];
+  races.filter((r) => selected === "all" || raceBuckets(r).has(selected)).forEach((r) => {
+    const url = val(r.registration_url);
+    const link = typeof url === "string" && url.startsWith("http") ? url : null;
+    const opens = val(r.registration_opens);
+    if (isDate(opens)) out.push({ date: opens.slice(0, 10), kind: "open", tag: "Reg opens", title: r.name, link });
+    const tiers = (r.price_tiers || []).map((t) => ({ price: Number(val(t.price_sek)), until: val(t.valid_until) }));
+    tiers.forEach((t, i) => {
+      const next = tiers[i + 1];
+      if (!isDate(t.until) || !next) return;
+      const save = next.price && t.price ? ` · last day at ${t.price} SEK (saves ${next.price - t.price} SEK)` : "";
+      out.push({ date: t.until.slice(0, 10), kind: "price", tag: "Price goes up", title: r.name + save, link });
+    });
+    const cap = String(val(r.capacity_status) || "").toLowerCase();
+    if (cap === "final_batch" || cap === "sold_out")
+      out.push({ date: today, kind: "cap", tag: cap === "sold_out" ? "Sold out" : "Final batch", title: r.name, link });
+    const day = val(r.race_day);
+    if (isDate(day)) out.push({ date: day.slice(0, 10), kind: "race", tag: "Race day", title: r.name, link });
+  });
+  return out.filter((m) => m.date >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 8);
+}
+
+function renderUpcoming() {
+  if (!races.length) {
+    $("upcoming").innerHTML = `<div class="empty">The first nightly update hasn't landed yet — subscribe now and dates appear automatically.</div>`;
+    return;
+  }
+  const items = milestones();
+  $("upcoming").innerHTML = items.length ? items.map((m) => {
+    const dt = new Date(m.date + "T12:00:00");
+    const mon = dt.toLocaleDateString("en-GB", { month: "short" });
+    const title = m.link ? `<a href="${m.link}" target="_blank" rel="noopener">${m.title}</a>` : m.title;
+    return `<div class="ev"><div class="date"><b>${dt.getDate()}</b><span>${mon}</span></div>
+      <div><div class="t"><span class="tag ${m.kind}">${m.tag}</span>${title}</div>
+      <div class="s">${dt.toLocaleDateString("en-GB", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}</div></div></div>`;
+  }).join("") : `<div class="empty">Nothing announced for this distance yet — you'll get it the day it is.</div>`;
+}
+
+$("copy").addEventListener("click", async () => {
+  const url = feedWebcal(DISTANCES.find((x) => x.id === selected).file);
+  try { await navigator.clipboard.writeText(url); toast("Feed link copied"); } catch { toast(url); }
+});
+function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 2200); }
+
+renderChips(); renderLinks(); renderUpcoming();
+fetch("races.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).then((d) => {
+  if (!d || !Array.isArray(d.races)) return;
+  races = d.races;
+  if (d.generated_at) $("updated").textContent = "Last checked " + new Date(d.generated_at).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) + ".";
+  renderChips(); renderUpcoming();
+}).catch(() => {});
+</script>
+</body>
+</html>
