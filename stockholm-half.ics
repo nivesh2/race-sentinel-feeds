@@ -1,0 +1,209 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//race-sentinel//stockholm-race-sentinel//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:Registration milestones for Stockholm road races (race-sentin
+ el).
+X-WR-CALNAME:Stockholm Races – Half Marathon
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Stockholm
+BEGIN:VTIMEZONE
+TZID:Europe/Stockholm
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Premiärmilen / Premiärhalvan 2027
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260526
+DTSTAMP:20261014T145421Z
+UID:premiarmilen-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,premiarmilen
+DESCRIPTION:Registration for Premiärmilen / Premiärhalvan 2027 opens. No
+ te: Start date of price Period 1 (25/5 – 7/6) for both races on the offi
+ cial 'Prisstegen 2027'.\n\nSign up / registration: https://events.marathon
+ gruppen.se/acf9545de3114ebef5bf
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/acf9545de3114ebef5bf
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20260606
+DTEND;VALUE=DATE:20260607
+DTSTAMP:20261014T145421Z
+UID:premiarmilen-2027-price-bump-half-1@race-sentinel-feeds
+CATEGORIES:Running,premiarmilen
+DESCRIPTION:Premiärhalvan 21.1K: 495 SEK is valid through 2026-06-07\; fr
+ om 2026-06-08 the price is 595 SEK.\n\nSign up / registration: https://eve
+ nts.marathongruppen.se/6b8a2540a8ef886750bf
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/6b8a2540a8ef886750bf
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Stockholm Half Marathon 2027
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+DTSTAMP:20261014T145421Z
+UID:stockholm-half-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,stockholm-half
+DESCRIPTION:Registration for Stockholm Half Marathon 2027 opens. Note: Sta
+ rt date of price Period 1 (25/8 – 6/9) on the official 'Prisstegen 2026-
+ 2027'.\n\nSign up / registration: https://events.marathongruppen.se/8ca268
+ 887b77af349904
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/8ca268887b77af349904
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 SEK)
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+DTSTAMP:20261014T145421Z
+UID:stockholm-half-2027-price-bump-half-1@race-sentinel-feeds
+CATEGORIES:Running,stockholm-half
+DESCRIPTION:Stockholm Half Marathon 21.1K: 895 SEK is valid through 2026-0
+ 9-06\; from 2026-09-07 the price is 1045 SEK.\n\nSign up / registration: h
+ ttps://events.marathongruppen.se/8ca268887b77af349904
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/8ca268887b77af349904
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 
+ SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+DTSTAMP:20261014T145421Z
+UID:premiarmilen-2027-price-bump-half-2@race-sentinel-feeds
+CATEGORIES:Running,premiarmilen
+DESCRIPTION:Premiärhalvan 21.1K: 595 SEK is valid through 2026-11-01\; fr
+ om 2026-11-02 the price is 695 SEK.\n\nSign up / registration: https://eve
+ nts.marathongruppen.se/6b8a2540a8ef886750bf
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/6b8a2540a8ef886750bf
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Midnattsloppet Stockholm 2027
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+DTSTAMP:20261014T145421Z
+UID:midnattsloppet-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,midnattsloppet
+DESCRIPTION:Registration for Midnattsloppet Stockholm 2027 opens. Note: 'R
+ egistration opens 1/11!' – no time stated.\n\nSign up / registration: ht
+ tps://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&Langu
+ ageId=2
+TRANSP:TRANSPARENT
+URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
+ &LanguageId=2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 SEK)
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+DTSTAMP:20261014T145421Z
+UID:stockholm-half-2027-price-bump-half-2@race-sentinel-feeds
+CATEGORIES:Running,stockholm-half
+DESCRIPTION:Stockholm Half Marathon 21.1K: 1045 SEK is valid through 2027-
+ 02-14\; from 2027-02-15 the price is 1195 SEK.\n\nSign up / registration: 
+ https://events.marathongruppen.se/8ca268887b77af349904
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/8ca268887b77af349904
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 
+ SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+DTSTAMP:20261014T145421Z
+UID:premiarmilen-2027-price-bump-half-3@race-sentinel-feeds
+CATEGORIES:Running,premiarmilen
+DESCRIPTION:Premiärhalvan 21.1K: 695 SEK is valid through 2027-04-04\; fr
+ om 2027-04-05 the price is 795 SEK.\n\nSign up / registration: https://eve
+ nts.marathongruppen.se/6b8a2540a8ef886750bf
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/6b8a2540a8ef886750bf
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Premiärhalvan 21.1K
+DTSTART;TZID=Europe/Stockholm:20270424T110000
+DTSTAMP:20261014T145421Z
+UID:premiarmilen-2027-race-day-half@race-sentinel-feeds
+CATEGORIES:Running,premiarmilen
+DESCRIPTION:Premiärhalvan 2027 – 21.1K. Start 11:00 (preliminary).\n\nS
+ ign up / registration: https://events.marathongruppen.se/6b8a2540a8ef88675
+ 0bf
+URL:https://events.marathongruppen.se/6b8a2540a8ef886750bf
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Kungsholmen Runt 21.1K
+DTSTART;TZID=Europe/Stockholm:20270508T120500
+DTSTAMP:20261014T145421Z
+UID:kungsholmen-runt-2027-race-day-half@race-sentinel-feeds
+CATEGORIES:Running,kungsholmen-runt
+DESCRIPTION:Kungsholmen Runt 2027 – 21.1K. Start 12:05 (first start grou
+ p).\n\nSign up / registration: https://anmalan.kungsholmenrunt.se/Web/Step
+ 1.aspx?EventGroupId=97
+URL:https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Midnattsloppet Stockholm 21K
+DTSTART;TZID=Europe/Stockholm:20270814T211000
+DTSTAMP:20261014T145421Z
+UID:midnattsloppet-2027-race-day-21k@race-sentinel-feeds
+CATEGORIES:Running,midnattsloppet
+DESCRIPTION:Midnattsloppet Stockholm 2027 – 21K. Start 21:10.\n\nSign up
+  / registration: https://registration.midnattsloppet.com/Web/Step1.aspx?Ev
+ entGroupId=96&LanguageId=2
+URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
+ &LanguageId=2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Stockholm Half Marathon 21.1K
+DTSTART;TZID=Europe/Stockholm:20270821T153000
+DTSTAMP:20261014T145421Z
+UID:stockholm-half-2027-race-day-half@race-sentinel-feeds
+CATEGORIES:Running,stockholm-half
+DESCRIPTION:Stockholm Half Marathon 2027 – 21.1K. Start 15:30 (first sta
+ rt\, preliminary).\n\nSign up / registration: https://events.marathongrupp
+ en.se/8ca268887b77af349904
+URL:https://events.marathongruppen.se/8ca268887b77af349904
+END:VEVENT
+END:VCALENDAR
