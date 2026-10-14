@@ -28,9 +28,9 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 SUMMARY:[Reg Opens Today] Stockholm Marathon 2027
-DTSTART:20260525
-DTEND:20260526
-DTSTAMP:2026-10-14 15:08:37+00:00
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260526
+DTSTAMP:20261014T150837Z
 UID:stockholm-marathon-2027-reg-opens@race-sentinel-feeds
 CATEGORIES:Running,stockholm-marathon
 DESCRIPTION:Registration for Stockholm Marathon 2027 opens. Note: First sa
