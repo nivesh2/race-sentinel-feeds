@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:43:32+02:00",
+  "generated_at": "2026-10-16T00:43:39+02:00",
   "timezone": "Europe/Stockholm",
   "clubs": [
     {
@@ -7,7 +7,7 @@
       "name": "DOPEST Runners",
       "tagline": "Founded in 2021 to make running fun and inclusive for everyone, with bag drop at every run.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": true,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -21,7 +21,7 @@
         "post_run_social": "not announced",
         "signup_required": "not announced"
       },
-      "pace_range": "Thursdays: groups from 7:00 down to 4:15 min/km; Sundays: 3K beginner walk/run, then 7:00, 6:30, 6:00 and 5:30 min/km groups",
+      "pace_range": "Thursdays: 5K–7K groups from 7:00 down to 4:30 min/km (22 Oct run); Sundays: 3K beginner walk/run, then 7:00, 6:30, 6:00 and 5:30 min/km groups",
       "distances_km": "3–12 km",
       "weekly_schedule": [
         {
@@ -56,62 +56,62 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/dopest-runners/",
-          "fetched_at": "2026-10-15T22:38:50+02:00"
+          "fetched_at": "2026-10-16T00:40:00+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/dopest-runners/",
-          "fetched_at": "2026-10-15T22:38:50+02:00"
+          "fetched_at": "2026-10-16T00:40:00+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/dopest-runners",
-          "fetched_at": "2026-10-15T22:39:38+02:00"
+          "fetched_at": "2026-10-16T00:40:53+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/dopest-runners/",
-          "fetched_at": "2026-10-15T22:38:50+02:00"
+          "fetched_at": "2026-10-16T00:40:00+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/dopest-runners/",
-          "fetched_at": "2026-10-15T22:38:50+02:00"
+          "fetched_at": "2026-10-16T00:40:00+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/dopest-runners/",
-          "fetched_at": "2026-10-15T22:38:50+02:00"
+          "fetched_at": "2026-10-16T00:40:00+02:00"
         }
       ]
     },
@@ -120,7 +120,7 @@
       "name": "Hagaparken parkrun",
       "tagline": "A free, fun and friendly 5K event for everyone.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": true,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -155,47 +155,67 @@
         {
           "field": "tagline",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/hagaparken-parkrun",
-          "fetched_at": "2026-10-15T22:39:36+02:00"
+          "fetched_at": "2026-10-16T00:40:55+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/hagaparken-parkrun",
-          "fetched_at": "2026-10-15T22:39:36+02:00"
+          "fetched_at": "2026-10-16T00:40:55+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/hagaparken-parkrun",
-          "fetched_at": "2026-10-15T22:39:36+02:00"
+          "fetched_at": "2026-10-16T00:40:55+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/hagaparken-parkrun",
-          "fetched_at": "2026-10-15T22:39:36+02:00"
+          "fetched_at": "2026-10-16T00:40:55+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/hagaparken-parkrun",
-          "fetched_at": "2026-10-15T22:39:36+02:00"
+          "fetched_at": "2026-10-16T00:40:55+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/hagaparken-parkrun",
-          "fetched_at": "2026-10-15T22:39:36+02:00"
+          "fetched_at": "2026-10-16T00:40:55+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/hagaparken-parkrun",
-          "fetched_at": "2026-10-15T22:39:36+02:00"
+          "fetched_at": "2026-10-16T00:40:55+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/hagaparken-parkrun",
-          "fetched_at": "2026-10-15T22:39:36+02:00"
+          "fetched_at": "2026-10-16T00:40:55+02:00"
         },
         {
           "field": "links",
           "source_url": "https://www.parkrun.se/haga/",
-          "fetched_at": "2026-10-15T22:43:32+02:00"
+          "fetched_at": "2026-10-16T00:41:15+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.parkrun.se/haga/",
+          "fetched_at": "2026-10-16T00:41:15+02:00"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://www.parkrun.se/haga/",
+          "fetched_at": "2026-10-16T00:41:15+02:00"
+        },
+        {
+          "field": "links",
+          "source_url": "https://www.strava.com/clubs/240004/group_events/129069",
+          "fetched_at": "2026-10-16T00:41:15+02:00"
+        },
+        {
+          "field": "links",
+          "source_url": "https://www.instagram.com/hagaparkrun/",
+          "fetched_at": "2026-10-16T00:41:15+02:00"
         }
       ]
     },
@@ -204,7 +224,7 @@
       "name": "Mikkeller Running Club",
       "tagline": "Global running community built around great beer, friendship and adventure — everyone is welcome.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": true,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -239,67 +259,67 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/mikkeller-running-club-sthlm/",
-          "fetched_at": "2026-10-15T22:38:53+02:00"
+          "fetched_at": "2026-10-16T00:40:03+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/mikkeller-running-club-sthlm/",
-          "fetched_at": "2026-10-15T22:38:53+02:00"
+          "fetched_at": "2026-10-16T00:40:03+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/mikkeller-running-club",
-          "fetched_at": "2026-10-15T22:39:40+02:00"
+          "fetched_at": "2026-10-16T00:40:57+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm/mikkeller-running-club-sthlm/",
-          "fetched_at": "2026-10-15T22:38:53+02:00"
+          "fetched_at": "2026-10-16T00:40:03+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/mikkeller-running-club-sthlm/",
-          "fetched_at": "2026-10-15T22:38:53+02:00"
+          "fetched_at": "2026-10-16T00:40:03+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/mikkeller-running-club-sthlm/",
-          "fetched_at": "2026-10-15T22:38:53+02:00"
+          "fetched_at": "2026-10-16T00:40:03+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://www.mikkeller.com/mrc/mikkeller-running-club",
-          "fetched_at": "2026-10-15T22:39:21+02:00"
+          "fetched_at": "2026-10-16T00:42:13+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/mikkeller-running-club-sthlm/",
-          "fetched_at": "2026-10-15T22:38:53+02:00"
+          "fetched_at": "2026-10-16T00:40:03+02:00"
         }
       ]
     },
@@ -308,7 +328,7 @@
       "name": "Run Collective Stockholm",
       "tagline": "Runs to explore Stockholm and the rest of the world together, known for a welcoming atmosphere and a social hang after every run.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": true,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -351,67 +371,72 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/run-collective-stockholm/",
-          "fetched_at": "2026-10-15T22:38:54+02:00"
+          "fetched_at": "2026-10-16T00:40:05+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runcollective.se",
-          "fetched_at": "2026-10-15T22:39:16+02:00"
+          "fetched_at": "2026-10-16T00:40:47+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/run-collective-stockholm/",
-          "fetched_at": "2026-10-15T22:38:54+02:00"
+          "fetched_at": "2026-10-16T00:40:05+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/run-collective-stockholm",
-          "fetched_at": "2026-10-15T22:39:41+02:00"
+          "fetched_at": "2026-10-16T00:41:00+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runcollective.se",
-          "fetched_at": "2026-10-15T22:39:16+02:00"
+          "fetched_at": "2026-10-16T00:40:47+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runcollective.se",
-          "fetched_at": "2026-10-15T22:39:16+02:00"
+          "fetched_at": "2026-10-16T00:40:47+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm/run-collective-stockholm/",
-          "fetched_at": "2026-10-15T22:38:54+02:00"
+          "fetched_at": "2026-10-16T00:40:05+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/run-collective-stockholm/",
-          "fetched_at": "2026-10-15T22:38:54+02:00"
+          "fetched_at": "2026-10-16T00:40:05+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runcollective.se",
-          "fetched_at": "2026-10-15T22:39:16+02:00"
+          "fetched_at": "2026-10-16T00:40:47+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/run-collective-stockholm/",
-          "fetched_at": "2026-10-15T22:38:54+02:00"
+          "fetched_at": "2026-10-16T00:40:05+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runcollective.se",
-          "fetched_at": "2026-10-15T22:39:16+02:00"
+          "fetched_at": "2026-10-16T00:40:47+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/run-collective-stockholm/",
-          "fetched_at": "2026-10-15T22:38:54+02:00"
+          "fetched_at": "2026-10-16T00:40:05+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runcollective.se",
-          "fetched_at": "2026-10-15T22:39:16+02:00"
+          "fetched_at": "2026-10-16T00:40:47+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm-running-events",
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         }
       ]
     },
@@ -420,7 +445,7 @@
       "name": "Slowrunners Sthlm",
       "tagline": "For people who want to run slowly — everyone is welcome, whatever your level.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": true,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -445,12 +470,7 @@
           "maps_query": "Tanto+utegym+Tantolunden+Stockholm"
         }
       ],
-      "next_special_event": {
-        "title": "Slowrun extrapass STHLM",
-        "date": "2026-10-15",
-        "start_time": "18:00",
-        "location": "Hornsviksstigen, Stockholm (runs up to about 45 minutes; drop out any time)"
-      },
+      "next_special_event": "not announced",
       "links": {
         "primary_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
         "strava_url": "https://www.strava.com/clubs/1730433",
@@ -460,72 +480,77 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
-          "fetched_at": "2026-10-15T22:38:56+02:00"
+          "fetched_at": "2026-10-16T00:40:07+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
-          "fetched_at": "2026-10-15T22:38:56+02:00"
+          "fetched_at": "2026-10-16T00:40:07+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
-        },
-        {
-          "field": "weekly_schedule",
-          "source_url": "https://www.strava.com/clubs/1730433/group_events/3545000405719024446",
-          "fetched_at": "2026-10-15T22:40:02+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
-          "fetched_at": "2026-10-15T22:38:56+02:00"
-        },
-        {
-          "field": "pace_range",
-          "source_url": "https://www.strava.com/clubs/1730433/group_events/3545000405719024446",
-          "fetched_at": "2026-10-15T22:40:02+02:00"
+          "fetched_at": "2026-10-16T00:40:07+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
-          "fetched_at": "2026-10-15T22:38:56+02:00"
+          "fetched_at": "2026-10-16T00:40:07+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
-          "fetched_at": "2026-10-15T22:38:56+02:00"
+          "fetched_at": "2026-10-16T00:40:07+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
-          "fetched_at": "2026-10-15T22:38:56+02:00"
+          "fetched_at": "2026-10-16T00:40:07+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
-          "fetched_at": "2026-10-15T22:38:56+02:00"
-        },
-        {
-          "field": "next_special_event",
-          "source_url": "https://www.strava.com/clubs/1730433/group_events/3545000405719024446",
-          "fetched_at": "2026-10-15T22:40:02+02:00"
+          "fetched_at": "2026-10-16T00:40:07+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/slowrunners-sthlm/",
-          "fetched_at": "2026-10-15T22:38:56+02:00"
+          "fetched_at": "2026-10-16T00:40:07+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.strava.com/clubs/1730433/group_events/3545871748987389818",
+          "fetched_at": "2026-10-16T00:42:16+02:00"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://www.strava.com/clubs/1730433/group_events/3545871748987389818",
+          "fetched_at": "2026-10-16T00:42:16+02:00"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://www.strava.com/clubs/1730433/group_events/3545871748987389818",
+          "fetched_at": "2026-10-16T00:42:16+02:00"
+        },
+        {
+          "field": "next_special_event",
+          "source_url": "https://runclubs.se/stockholm-running-events",
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "links",
-          "source_url": "https://www.strava.com/clubs/1730433/group_events/3545000405719024446",
-          "fetched_at": "2026-10-15T22:40:02+02:00"
+          "source_url": "https://www.strava.com/clubs/1730433/group_events/3545871748987389818",
+          "fetched_at": "2026-10-16T00:42:16+02:00"
         }
       ]
     },
@@ -534,7 +559,7 @@
       "name": "Söderlöparna Stockholm",
       "tagline": "A relaxed 1.5–2 hour run every Saturday, with a cosy fika after.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": true,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -569,62 +594,62 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/soderloparna-stockholm/",
-          "fetched_at": "2026-10-15T22:38:57+02:00"
+          "fetched_at": "2026-10-16T00:40:08+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/soderloparna-stockholm/",
-          "fetched_at": "2026-10-15T22:38:57+02:00"
+          "fetched_at": "2026-10-16T00:40:08+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/s-derl-parna-stockholm",
-          "fetched_at": "2026-10-15T22:39:43+02:00"
+          "fetched_at": "2026-10-16T00:41:04+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm/soderloparna-stockholm/",
-          "fetched_at": "2026-10-15T22:38:57+02:00"
+          "fetched_at": "2026-10-16T00:40:08+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:52+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/soderloparna-stockholm/",
-          "fetched_at": "2026-10-15T22:38:57+02:00"
+          "fetched_at": "2026-10-16T00:40:08+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/soderloparna-stockholm/",
-          "fetched_at": "2026-10-15T22:38:57+02:00"
+          "fetched_at": "2026-10-16T00:40:08+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://localrunclubs.com/directory/sweden/stockholm/s-derl-parna-stockholm",
-          "fetched_at": "2026-10-15T22:39:43+02:00"
+          "fetched_at": "2026-10-16T00:41:04+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/soderloparna-stockholm/",
-          "fetched_at": "2026-10-15T22:38:57+02:00"
+          "fetched_at": "2026-10-16T00:40:08+02:00"
         }
       ]
     },
@@ -633,7 +658,7 @@
       "name": "Stockholm Run Club (SRC)",
       "tagline": "Running is the excuse, community is the reason — free, no membership, everyone welcome.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": true,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -676,72 +701,72 @@
         {
           "field": "tagline",
           "source_url": "https://www.stockholmrunclub.com/",
-          "fetched_at": "2026-10-15T22:39:18+02:00"
+          "fetched_at": "2026-10-16T00:40:42+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://www.stockholmrunclub.com/",
-          "fetched_at": "2026-10-15T22:39:18+02:00"
+          "fetched_at": "2026-10-16T00:40:42+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/stockholm-run-club/",
-          "fetched_at": "2026-10-15T22:38:58+02:00"
+          "fetched_at": "2026-10-16T00:40:12+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://www.stockholmrunclub.com/",
-          "fetched_at": "2026-10-15T22:39:18+02:00"
+          "fetched_at": "2026-10-16T00:40:42+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:52+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://www.stockholmrunclub.com/",
-          "fetched_at": "2026-10-15T22:39:18+02:00"
+          "fetched_at": "2026-10-16T00:40:42+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/stockholm-run-club/",
-          "fetched_at": "2026-10-15T22:38:58+02:00"
+          "fetched_at": "2026-10-16T00:40:12+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://www.stockholmrunclub.com/",
-          "fetched_at": "2026-10-15T22:39:18+02:00"
+          "fetched_at": "2026-10-16T00:40:42+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://www.stockholmrunclub.com/",
-          "fetched_at": "2026-10-15T22:39:18+02:00"
+          "fetched_at": "2026-10-16T00:40:42+02:00"
         },
         {
           "field": "links",
           "source_url": "https://www.stockholmrunclub.com/",
-          "fetched_at": "2026-10-15T22:39:18+02:00"
+          "fetched_at": "2026-10-16T00:40:42+02:00"
         }
       ]
     },
@@ -750,7 +775,7 @@
       "name": "Svedjans Löpsällskap",
       "tagline": "The running society that loves buns and running — good company and magical pastries, everyone welcome.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": true,
       "beginner_friendly": "not announced",
       "vibe_tags": [
@@ -785,52 +810,52 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/svedjans-lopsallskap/",
-          "fetched_at": "2026-10-15T22:38:59+02:00"
+          "fetched_at": "2026-10-16T00:40:15+02:00"
         }
       ]
     },
@@ -839,7 +864,7 @@
       "name": "Stockholm Summer Run Club",
       "tagline": "Social 5K runs every Tuesday at 18:00 from St Paul Bageri, with fika at a karma price afterwards.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": false,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -874,52 +899,52 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:52+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/stockholm-summer-run-club/",
-          "fetched_at": "2026-10-15T22:40:29+02:00"
+          "fetched_at": "2026-10-16T00:40:14+02:00"
         }
       ]
     },
@@ -928,7 +953,7 @@
       "name": "Solemates Runclub",
       "tagline": "A running group for everyone — beginners and experienced runners alike — that encourages learning from each other.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": false,
       "beginner_friendly": true,
       "vibe_tags": [
@@ -963,57 +988,57 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm-running-events",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/solemates-runclub/",
-          "fetched_at": "2026-10-15T22:40:31+02:00"
+          "fetched_at": "2026-10-16T00:40:10+02:00"
         }
       ]
     },
@@ -1022,7 +1047,7 @@
       "name": "Grand Run Club",
       "tagline": "Wednesday and Saturday runs from Grand Fitness at Fridhemsplan — running for all levels.",
       "first_seen_date": "2026-10-15",
-      "last_seen_date": "2026-10-15",
+      "last_seen_date": "2026-10-16",
       "seeded": false,
       "beginner_friendly": "not announced",
       "vibe_tags": [
@@ -1064,52 +1089,355 @@
         {
           "field": "tagline",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
         },
         {
           "field": "weekly_schedule",
           "source_url": "https://runclubs.se/stockholm",
-          "fetched_at": "2026-10-15T22:38:32+02:00"
+          "fetched_at": "2026-10-16T00:39:52+02:00"
         },
         {
           "field": "pace_range",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
         },
         {
           "field": "distances_km",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
         },
         {
           "field": "beginner_friendly",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
         },
         {
           "field": "vibe_tags",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
         },
         {
           "field": "perks",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
         },
         {
           "field": "next_special_event",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
         },
         {
           "field": "links",
           "source_url": "https://runclubs.se/stockholm/grand-run-club/",
-          "fetched_at": "2026-10-15T22:40:32+02:00"
+          "fetched_at": "2026-10-16T00:40:01+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "triple-threshold-rc",
+      "name": "Triple Threshold RC",
+      "tagline": "A running communion on Södermalm that started because long runs alone are boring — free to join, everyone welcome.",
+      "first_seen_date": "2026-10-16",
+      "last_seen_date": "2026-10-16",
+      "seeded": false,
+      "beginner_friendly": "not announced",
+      "vibe_tags": [
+        "🤝 Running communion",
+        "🏃 Social long runs on weekends",
+        "⚡ Intervals midweek"
+      ],
+      "perks": {
+        "free": true,
+        "bag_drop": "not announced",
+        "post_run_social": "not announced",
+        "signup_required": "not announced"
+      },
+      "pace_range": "Groups for different paces (min/km not announced)",
+      "distances_km": "not announced",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Wednesday",
+          "start_time": "18:00",
+          "neighborhood": "Södermalm",
+          "meeting_point": "Reimersholmsgatan 5 (Reimersholme Hotel)",
+          "maps_query": "Reimersholmsgatan+5+Stockholm"
+        },
+        {
+          "day_of_week": "Saturday",
+          "start_time": "09:00",
+          "neighborhood": "Södermalm",
+          "meeting_point": "Reimersholmsgatan 5 (Reimersholme Hotel)",
+          "maps_query": "Reimersholmsgatan+5+Stockholm"
+        },
+        {
+          "day_of_week": "Saturday",
+          "start_time": "10:00",
+          "neighborhood": "Södermalm",
+          "meeting_point": "Reimersholmsgatan 5 (Reimersholme Hotel)",
+          "maps_query": "Reimersholmsgatan+5+Stockholm"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+        "strava_url": "https://www.strava.com/clubs/1164660",
+        "instagram_handle": "@triplethresholdrc"
+      },
+      "sources": [
+        {
+          "field": "tagline",
+          "source_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+          "fetched_at": "2026-10-16T00:41:33+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+          "fetched_at": "2026-10-16T00:41:33+02:00"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+          "fetched_at": "2026-10-16T00:41:33+02:00"
+        },
+        {
+          "field": "vibe_tags",
+          "source_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+          "fetched_at": "2026-10-16T00:41:33+02:00"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+          "fetched_at": "2026-10-16T00:41:33+02:00"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+          "fetched_at": "2026-10-16T00:41:33+02:00"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+          "fetched_at": "2026-10-16T00:41:33+02:00"
+        },
+        {
+          "field": "links",
+          "source_url": "https://runclubs.se/stockholm/triple-threshold-rc/",
+          "fetched_at": "2026-10-16T00:41:33+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm",
+          "fetched_at": "2026-10-16T00:39:52+02:00"
+        },
+        {
+          "field": "next_special_event",
+          "source_url": "https://runclubs.se/stockholm-running-events",
+          "fetched_at": "2026-10-16T00:39:54+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm-running-events",
+          "fetched_at": "2026-10-16T00:39:54+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "runday",
+      "name": "Runday",
+      "tagline": "A running group for both beginners and experienced runners, with free sessions on Mondays and Wednesdays.",
+      "first_seen_date": "2026-10-16",
+      "last_seen_date": "2026-10-16",
+      "seeded": false,
+      "beginner_friendly": true,
+      "vibe_tags": [
+        "🆓 Free to join",
+        "⚡ Intervals and threshold sessions",
+        "🌱 Beginners and experienced runners"
+      ],
+      "perks": {
+        "free": true,
+        "bag_drop": "not announced",
+        "post_run_social": "not announced",
+        "signup_required": "not announced"
+      },
+      "pace_range": "Combo sessions of intervals and threshold runs (min/km not announced)",
+      "distances_km": "not announced",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Monday",
+          "start_time": "18:00",
+          "neighborhood": "Östermalm",
+          "meeting_point": "Scandic Park, Karlavägen 43",
+          "maps_query": "Scandic+Park+Karlavägen+43+Stockholm"
+        },
+        {
+          "day_of_week": "Wednesday",
+          "start_time": "18:00",
+          "neighborhood": "Östermalm",
+          "meeting_point": "Scandic Park, Karlavägen 43",
+          "maps_query": "Scandic+Park+Karlavägen+43+Stockholm"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://runclubs.se/stockholm/runday/",
+        "strava_url": "not announced",
+        "instagram_handle": "@rundaymonday"
+      },
+      "sources": [
+        {
+          "field": "tagline",
+          "source_url": "https://runclubs.se/stockholm/runday/",
+          "fetched_at": "2026-10-16T00:41:35+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm/runday/",
+          "fetched_at": "2026-10-16T00:41:35+02:00"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://runclubs.se/stockholm/runday/",
+          "fetched_at": "2026-10-16T00:41:35+02:00"
+        },
+        {
+          "field": "vibe_tags",
+          "source_url": "https://runclubs.se/stockholm/runday/",
+          "fetched_at": "2026-10-16T00:41:35+02:00"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://runclubs.se/stockholm/runday/",
+          "fetched_at": "2026-10-16T00:41:35+02:00"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://runclubs.se/stockholm/runday/",
+          "fetched_at": "2026-10-16T00:41:35+02:00"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://runclubs.se/stockholm/runday/",
+          "fetched_at": "2026-10-16T00:41:35+02:00"
+        },
+        {
+          "field": "links",
+          "source_url": "https://runclubs.se/stockholm/runday/",
+          "fetched_at": "2026-10-16T00:41:35+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm-running-events",
+          "fetched_at": "2026-10-16T00:39:54+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm",
+          "fetched_at": "2026-10-16T00:39:52+02:00"
+        },
+        {
+          "field": "next_special_event",
+          "source_url": "https://runclubs.se/stockholm-running-events",
+          "fetched_at": "2026-10-16T00:39:54+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "bbrs",
+      "name": "BBRS (Beyond Borders Running Society)",
+      "tagline": "A run club based in Södermalm and Östermalm for varied runs with good company and a comfortable pace.",
+      "first_seen_date": "2026-10-16",
+      "last_seen_date": "2026-10-16",
+      "seeded": false,
+      "beginner_friendly": "not announced",
+      "vibe_tags": [
+        "🆓 Free to join",
+        "🍕 Meets at Magari Pizza or Nabo",
+        "⏱️ 5:30 and 6:00 min/km groups"
+      ],
+      "perks": {
+        "free": true,
+        "bag_drop": "not announced",
+        "post_run_social": "not announced",
+        "signup_required": "not announced"
+      },
+      "pace_range": "5:30 and 6:00 min/km groups",
+      "distances_km": "not announced",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Thursday",
+          "start_time": "18:00",
+          "neighborhood": "Södermalm / Östermalm",
+          "meeting_point": "see source link",
+          "maps_query": "Magari+Pizza+Karlaplan+Stockholm"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://runclubs.se/stockholm/bbrs/",
+        "strava_url": "not announced",
+        "instagram_handle": "@beyondbordersrunningsociety"
+      },
+      "sources": [
+        {
+          "field": "tagline",
+          "source_url": "https://runclubs.se/stockholm/bbrs/",
+          "fetched_at": "2026-10-16T00:41:36+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm/bbrs/",
+          "fetched_at": "2026-10-16T00:41:36+02:00"
+        },
+        {
+          "field": "vibe_tags",
+          "source_url": "https://runclubs.se/stockholm/bbrs/",
+          "fetched_at": "2026-10-16T00:41:36+02:00"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://runclubs.se/stockholm/bbrs/",
+          "fetched_at": "2026-10-16T00:41:36+02:00"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://runclubs.se/stockholm/bbrs/",
+          "fetched_at": "2026-10-16T00:41:36+02:00"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://runclubs.se/stockholm/bbrs/",
+          "fetched_at": "2026-10-16T00:41:36+02:00"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://runclubs.se/stockholm/bbrs/",
+          "fetched_at": "2026-10-16T00:41:36+02:00"
+        },
+        {
+          "field": "links",
+          "source_url": "https://runclubs.se/stockholm/bbrs/",
+          "fetched_at": "2026-10-16T00:41:36+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm-running-events",
+          "fetched_at": "2026-10-16T00:39:54+02:00"
+        },
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://runclubs.se/stockholm",
+          "fetched_at": "2026-10-16T00:39:52+02:00"
+        },
+        {
+          "field": "next_special_event",
+          "source_url": "https://runclubs.se/stockholm-running-events",
+          "fetched_at": "2026-10-16T00:39:54+02:00"
         }
       ]
     }
