@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T00:42:43+02:00",
+  "generated_at": "2026-10-16T06:46:09+02:00",
   "timezone": "Europe/Stockholm",
   "races": [
     {
@@ -668,37 +668,37 @@
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T00:39:07+02:00"
+          "fetched_at": "2026-10-16T06:45:54+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T00:39:07+02:00"
+          "fetched_at": "2026-10-16T06:45:54+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T00:39:07+02:00"
+          "fetched_at": "2026-10-16T06:45:54+02:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://hasselbyloppet.se/nyheter/anmaelan-till-haesselbyloppet-2027-oeppen/31866.aspx",
-          "fetched_at": "2026-10-16T00:39:34+02:00"
+          "fetched_at": "2026-10-16T06:46:00+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T00:39:07+02:00"
+          "fetched_at": "2026-10-16T06:45:54+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T00:39:07+02:00"
+          "fetched_at": "2026-10-16T06:45:54+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://hasselbyloppet.se/nyheter/anmaelan-till-haesselbyloppet-2027-oeppen/31866.aspx",
-          "fetched_at": "2026-10-16T00:39:34+02:00"
+          "fetched_at": "2026-10-16T06:46:00+02:00"
         }
       ]
     },
