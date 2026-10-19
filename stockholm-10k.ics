@@ -59,6 +59,38 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Tjejmilen 2027
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Registration for Tjejmilen Stockholm 2027 (10K\, 4 Sep 2027) o
+ pens. Note: start of the first price period (31 Aug – 13 Sep\, 450 SEK) 
+ on tjejmilen.se.\n\nSign up / registration: https://events.marathongruppen
+ .se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~145 SEK)
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-price-bump-10k-1@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 10K: 450 SEK is valid through 2026-09-13\; from 2026
+ -09-14 the price is 595 SEK.\n\nSign up / registration: https://events.mar
+ athongruppen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~145 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Reg Opens Today] Hässelbyloppet 2027
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
@@ -123,6 +155,42 @@ URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
  &LanguageId=2
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-price-bump-10k-2@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 10K: 595 SEK is valid through 2027-01-13\; from 2027
+ -01-14 the price is 645 SEK.\n\nSign up / registration: https://events.mar
+ athongruppen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~50 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-price-bump-10k-3@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 10K: 645 SEK is valid through 2027-03-14\; from 2027
+ -03-15 the price is 745 SEK.\n\nSign up / registration: https://events.mar
+ athongruppen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Race Day] Premiärmilen 10K
 DTSTART;TZID=Europe/Stockholm:20270403T110000
 DTSTAMP:20261014T145421Z
@@ -162,6 +230,37 @@ DESCRIPTION:Kungsholmen Runt 2027 – 10K. Start 11:00 (first start group)
 URL:https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Race Day] Run for Pride 10K
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+DTSTAMP:20261019T004930Z
+UID:run-for-pride-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,run-for-pride
+DESCRIPTION:Run for Pride 2027 – 10K\, Djurgården. Date per organizer h
+ eading\; start time\, registration opening and prices not announced.\n\nSi
+ gn up / registration: https://runforpride.se/startsida-en/
+TRANSP:TRANSPARENT
+URL:https://runforpride.se/startsida-en/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270620
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-price-bump-10k-4@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 10K: 745 SEK is valid through 2027-06-20\; from 2027
+ -06-21 the price is 845 SEK.\n\nSign up / registration: https://events.mar
+ athongruppen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Hässelbyloppet 10K (Saves ~50 SEK)
 DTSTART;VALUE=DATE:20270807
 DTEND;VALUE=DATE:20270808
@@ -190,6 +289,18 @@ DESCRIPTION:Midnattsloppet Stockholm 2027 – 10K. Start 21:10.\n\nSign up
  entGroupId=96&LanguageId=2
 URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
  &LanguageId=2
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Tjejmilen 10K
+DTSTART;TZID=Europe/Stockholm:20270904T120000
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 2027 – 10K\, Södra Djurgården. First start 12:00
+  (Haku event page).\n\nSign up / registration: https://events.marathongrup
+ pen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Hässelbyloppet 10K (Saves ~80 SEK)
