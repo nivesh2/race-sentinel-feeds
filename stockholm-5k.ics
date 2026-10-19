@@ -42,6 +42,19 @@ URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
  &LanguageId=2
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Race Day] Run for Pride 5K
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+DTSTAMP:20261019T004930Z
+UID:run-for-pride-2027-race-day-5k@race-sentinel-feeds
+CATEGORIES:Running,run-for-pride
+DESCRIPTION:Run for Pride 2027 – 5K\, Djurgården. Date per organizer he
+ ading\; start time\, registration opening and prices not announced.\n\nSig
+ n up / registration: https://runforpride.se/startsida-en/
+TRANSP:TRANSPARENT
+URL:https://runforpride.se/startsida-en/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Race Day] Midnattsloppet Stockholm 5K
 DTSTART;TZID=Europe/Stockholm:20270814T214000
 DTSTAMP:20261014T145421Z
