@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T06:59:01+02:00",
+  "generated_at": "2026-10-19T02:52:26+02:00",
   "timezone": "Europe/Stockholm",
   "races": [
     {
@@ -309,37 +309,37 @@
         {
           "field": "race_day",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-16T00:39:16+02:00"
+          "fetched_at": "2026-10-19T02:47:23+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-16T00:39:16+02:00"
+          "fetched_at": "2026-10-19T02:47:23+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-16T00:39:16+02:00"
+          "fetched_at": "2026-10-19T02:47:23+02:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-16T00:39:16+02:00"
+          "fetched_at": "2026-10-19T02:47:23+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://midnattsloppet.com/startavgifter/",
-          "fetched_at": "2026-10-16T00:39:20+02:00"
+          "fetched_at": "2026-10-19T02:47:24+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-16T00:39:16+02:00"
+          "fetched_at": "2026-10-19T02:47:23+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-10-16T00:39:16+02:00"
+          "fetched_at": "2026-10-19T02:47:23+02:00"
         }
       ]
     },
@@ -668,37 +668,37 @@
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T06:58:47+02:00"
+          "fetched_at": "2026-10-19T02:47:17+02:00"
         },
         {
           "field": "distances",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T06:58:47+02:00"
+          "fetched_at": "2026-10-19T02:47:17+02:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T06:58:47+02:00"
+          "fetched_at": "2026-10-19T02:47:17+02:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://hasselbyloppet.se/nyheter/anmaelan-till-haesselbyloppet-2027-oeppen/31866.aspx",
-          "fetched_at": "2026-10-16T06:58:48+02:00"
+          "fetched_at": "2026-10-19T02:47:19+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T06:58:47+02:00"
+          "fetched_at": "2026-10-19T02:47:17+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-10-16T06:58:47+02:00"
+          "fetched_at": "2026-10-19T02:47:17+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://hasselbyloppet.se/nyheter/anmaelan-till-haesselbyloppet-2027-oeppen/31866.aspx",
-          "fetched_at": "2026-10-16T06:58:48+02:00"
+          "fetched_at": "2026-10-19T02:47:19+02:00"
         }
       ]
     },
@@ -798,7 +798,7 @@
         "10K": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
         "half": "https://events.marathongruppen.se/6b8a2540a8ef886750bf"
       },
-      "badge": "registering",
+      "badge": "price_hike_soon",
       "headline": "Registration open — Premiärmilen 495 SEK and Premiärhalvan 595 SEK until 1 Nov 2026, then 595 / 695 SEK.",
       "next_deadline": {
         "type": "price_bump",
@@ -863,32 +863,490 @@
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-10-16T00:39:02+02:00"
+          "fetched_at": "2026-10-19T02:47:20+02:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-10-16T00:39:04+02:00"
+          "fetched_at": "2026-10-19T02:47:22+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-10-16T00:39:02+02:00"
+          "fetched_at": "2026-10-19T02:47:20+02:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-10-16T00:39:04+02:00"
+          "fetched_at": "2026-10-19T02:47:22+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-10-16T00:39:02+02:00"
+          "fetched_at": "2026-10-19T02:47:20+02:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-10-16T00:39:04+02:00"
+          "fetched_at": "2026-10-19T02:47:22+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "tjejmilen",
+      "name": "Tjejmilen (Stockholm)",
+      "edition_year": 2027,
+      "official_url": "https://tjejmilen.se/",
+      "race_day": "2027-09-04",
+      "distances": [
+        "10K"
+      ],
+      "race_days": [
+        {
+          "distance": "10K",
+          "label": "10K",
+          "bucket": "10k",
+          "date": "2027-09-04",
+          "start_time": "12:00",
+          "start_time_note": "first start (Haku event page); start time per group not yet published on tjejmilen.se"
+        }
+      ],
+      "registration_opens": {
+        "date": "2026-08-31",
+        "time": null,
+        "note": "Start of the first price period ('31 aug – 13 Sept', Early Bird) on tjejmilen.se; the site does not state an opening time."
+      },
+      "price_tiers": [
+        {
+          "distance": "10K",
+          "tier": 1,
+          "price_sek": 450,
+          "valid_from": "2026-08-31",
+          "valid_until": "2026-09-13"
+        },
+        {
+          "distance": "10K",
+          "tier": 2,
+          "price_sek": 595,
+          "valid_from": "2026-09-14",
+          "valid_until": "2027-01-13"
+        },
+        {
+          "distance": "10K",
+          "tier": 3,
+          "price_sek": 645,
+          "valid_from": "2027-01-14",
+          "valid_until": "2027-03-14"
+        },
+        {
+          "distance": "10K",
+          "tier": 4,
+          "price_sek": 745,
+          "valid_from": "2027-03-15",
+          "valid_until": "2027-06-20"
+        },
+        {
+          "distance": "10K",
+          "tier": 5,
+          "price_sek": 845,
+          "valid_from": "2027-06-21",
+          "valid_until": "2027-09-04"
+        }
+      ],
+      "capacity_status": {
+        "status": "open",
+        "wording": "Anmälan öppen – 595,00 kr, 'Ökar till 645,00 kr den 2027-01-14'",
+        "first_detected": "2026-10-19"
+      },
+      "registration_url": "https://events.marathongruppen.se/tjejmilen",
+      "badge": "registering",
+      "headline": "Registration open — 595 SEK until 13 Jan 2027, then 645 SEK.",
+      "next_deadline": {
+        "type": "price_bump",
+        "date": "2027-01-13",
+        "label": "Price rises 595 → 645 SEK after this date"
+      },
+      "notes": [
+        "Five date-based price steps: 450 → 595 → 645 → 745 → 845 SEK (tjejmilen.se); the 845 SEK step runs 21 Jun – 4 Sep 2027.",
+        "New for 2027: the price is the same with or without timing (tjejmilen.se).",
+        "Marathongruppen also runs Tjejmilen Sälen (19 Jun 2027); only the Stockholm edition is tracked here."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://tjejmilen.se/tjejmilen-10k-stockholm/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://tjejmilen.se/tjejmilen-10k-stockholm/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://events.marathongruppen.se/tjejmilen",
+          "fetched_at": "2026-10-19T02:49:28+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://tjejmilen.se/tjejmilen-10k-stockholm/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://tjejmilen.se/tjejmilen-10k-stockholm/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://events.marathongruppen.se/tjejmilen",
+          "fetched_at": "2026-10-19T02:49:28+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://events.marathongruppen.se/tjejmilen",
+          "fetched_at": "2026-10-19T02:49:28+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "varruset-stockholm",
+      "name": "Vårruset (Stockholm)",
+      "edition_year": "not announced",
+      "official_url": "https://varruset.se/stockholm-2/",
+      "race_day": "not announced",
+      "distances": [
+        "not announced"
+      ],
+      "race_days": [],
+      "registration_opens": "not announced",
+      "price_tiers": [
+        {
+          "distance": "not announced",
+          "tier": 1,
+          "price_sek": "not announced",
+          "valid_until": "not announced"
+        }
+      ],
+      "capacity_status": {
+        "status": "upcoming",
+        "wording": "'Vårruset Stockholm 2026' page: 'Anmäl dig och bli notifierad när anmälan öppnar för nästa års evenemang' (Haku event page)",
+        "first_detected": "2026-10-19"
+      },
+      "registration_url": "https://events.marathongruppen.se/varruset-stockholm",
+      "badge": "opens_soon",
+      "headline": "Next Stockholm edition not announced yet — no 2027 race day, opening date or prices are published.",
+      "next_deadline": "not announced",
+      "notes": [
+        "The organizer page varruset.se/stockholm-2 still shows only the 2026 edition (19 May 2026, price steps 305–485 SEK); none of that is carried over to 2027.",
+        "The registration page offers a sign-up for an e-mail when next year's registration opens (Haku event page)."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://events.marathongruppen.se/varruset-stockholm",
+          "fetched_at": "2026-10-19T02:49:46+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://events.marathongruppen.se/varruset-stockholm",
+          "fetched_at": "2026-10-19T02:49:46+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://varruset.se/stockholm-2/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://events.marathongruppen.se/varruset-stockholm",
+          "fetched_at": "2026-10-19T02:49:46+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://events.marathongruppen.se/varruset-stockholm",
+          "fetched_at": "2026-10-19T02:49:46+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "blodomloppet-stockholm",
+      "name": "Blodomloppet (Stockholm)",
+      "edition_year": "not announced",
+      "official_url": "https://blodomloppet.se/",
+      "race_day": "not announced",
+      "distances": [
+        "not announced"
+      ],
+      "race_days": [],
+      "registration_opens": "not announced",
+      "price_tiers": [
+        {
+          "distance": "not announced",
+          "tier": 1,
+          "price_sek": "not announced",
+          "valid_until": "not announced"
+        }
+      ],
+      "capacity_status": {
+        "status": "upcoming",
+        "wording": "Stockholm page: 'Prenumerera på vårt nyhetsbrev och bli först att veta när vi öppnar anmälan för nästa år.'",
+        "first_detected": "2026-10-19"
+      },
+      "registration_url": "https://blodomloppet.se/vara-lopp/stockholm/",
+      "badge": "opens_soon",
+      "headline": "Next Stockholm edition not announced yet — no 2027 race day, opening date or prices are published.",
+      "next_deadline": "not announced",
+      "notes": [
+        "The Stockholm page lists only the 2026 edition (3 & 4 Jun 2026, 19,732 participants); none of that is carried over to 2027.",
+        "Blodomloppet is held in 24 cities; only the Stockholm edition is tracked here."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
+          "fetched_at": "2026-10-19T02:47:48+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
+          "fetched_at": "2026-10-19T02:47:48+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
+          "fetched_at": "2026-10-19T02:47:48+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
+          "fetched_at": "2026-10-19T02:47:48+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
+          "fetched_at": "2026-10-19T02:47:48+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "run-for-pride",
+      "name": "Run for Pride (Stockholm)",
+      "edition_year": 2027,
+      "official_url": "https://runforpride.se/",
+      "race_day": "2027-05-20",
+      "distances": [
+        "5K",
+        "10K"
+      ],
+      "race_days": [
+        {
+          "distance": "5K",
+          "label": "5K",
+          "bucket": "5k",
+          "date": "2027-05-20",
+          "start_time": null
+        },
+        {
+          "distance": "10K",
+          "label": "10K",
+          "bucket": "10k",
+          "date": "2027-05-20",
+          "start_time": null
+        }
+      ],
+      "registration_opens": "not announced",
+      "price_tiers": [
+        {
+          "distance": "5K/10K",
+          "tier": 1,
+          "price_sek": "not announced",
+          "valid_until": "not announced"
+        }
+      ],
+      "price_tiers_note": "runforpride.se still lists 545 kr tickets, but its ticket section and sign-up link are still 2026 content; no 2027 prices are published, so none are carried over.",
+      "capacity_status": {
+        "status": "upcoming",
+        "wording": "Organizer heading 'Thursday May 20th 2027'; the ticket link (mittlopp.se …/runforpride2026) answers 'Ooops… inget arrangemang att anmäla sig till'",
+        "first_detected": "2026-10-19"
+      },
+      "registration_url": "https://runforpride.se/startsida-en/",
+      "badge": "opens_soon",
+      "headline": "Race day 20 May 2027; registration opening and prices not announced.",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2027-05-20",
+        "label": "Race day: Run for Pride"
+      },
+      "notes": [
+        "The date comes from the heading of runforpride.se/startsida-en; the page body and ticket section below it still read as 2026 content.",
+        "The sign-up link on the page (MittLopp group 'runforpride2026') currently has no event to register for (MittLopp), so registration is treated as not open."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://runforpride.se/startsida-en/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://runforpride.se/startsida-en/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://runforpride.se/startsida-en/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://runforpride.se/startsida-en/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://mittlopp.se/Anmalan/Arrangemangsgrupp/runforpride2026",
+          "fetched_at": "2026-10-19T02:49:30+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://runforpride.se/startsida-en/",
+          "fetched_at": "2026-10-19T02:52:26+02:00"
+        }
+      ]
+    },
+    {
+      "slug": "uppsala-marathon",
+      "name": "Uppsala Marathon (Uppsala)",
+      "edition_year": 2027,
+      "official_url": "https://www.uppsalamarathon.se/",
+      "race_day": "2027-10-16",
+      "distances": [
+        "marathon",
+        "half",
+        "relay"
+      ],
+      "race_days": [
+        {
+          "distance": "marathon",
+          "label": "42.2K",
+          "bucket": "marathon",
+          "date": "2027-10-16",
+          "start_time": "09:30"
+        },
+        {
+          "distance": "half",
+          "label": "21.1K",
+          "bucket": "half",
+          "date": "2027-10-16",
+          "start_time": "11:30"
+        },
+        {
+          "distance": "relay",
+          "label": "Relay",
+          "bucket": "other",
+          "date": "2027-10-16",
+          "start_time": "09:30"
+        }
+      ],
+      "registration_opens": {
+        "date": "2026-10-16",
+        "time": "00:00",
+        "note": "Per distance on RaceID: half marathon 2026-10-16, marathon and relay 2026-10-17 (registration_starts_at 00:00).",
+        "per_distance": {
+          "half": "2026-10-16",
+          "marathon": "2026-10-17",
+          "relay": "2026-10-17"
+        }
+      },
+      "price_tiers": [
+        {
+          "distance": "marathon",
+          "tier": 1,
+          "price_sek": 910,
+          "valid_from": "2026-08-31",
+          "valid_until": "2027-10-10"
+        },
+        {
+          "distance": "half",
+          "tier": 1,
+          "price_sek": 710,
+          "valid_from": "2026-08-31",
+          "valid_until": "2027-10-10"
+        },
+        {
+          "distance": "relay",
+          "tier": 1,
+          "price_sek": 2000,
+          "valid_from": "2026-10-17",
+          "valid_until": "2027-10-10",
+          "note": "per team (up to 4 runners)"
+        }
+      ],
+      "price_tiers_note": "RaceID lists one price period per distance ending 2027-10-10 (also the registration end date); no dated price increase is published.",
+      "capacity_status": {
+        "status": "open",
+        "wording": "'Anmälan till Uppsala Marathon 2027 är nu öppen.' (uppsalamarathon.se); RaceID: allow_registration true, registration_starts_at passed for all three distances",
+        "first_detected": "2026-10-19"
+      },
+      "registration_url": "https://raceid.com/sv/races/15398/about",
+      "badge": "registering",
+      "headline": "Registration open — marathon 910 SEK, half marathon 710 SEK, relay 2,000 SEK per team; no price increase published (registration closes 10 Oct 2027).",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2027-10-16",
+        "label": "Race day: Uppsala Marathon"
+      },
+      "notes": [
+        "Registration opened in two steps: half marathon 16 Oct 2026, marathon and relay 17 Oct 2026 (RaceID).",
+        "RaceID lists capacity of 2,000 (marathon), 3,000 (half) and 150 (relay teams); 90 participants were listed on 19 Oct 2026 (RaceID participants-count).",
+        "Held in Uppsala, not Stockholm; the relay is filed under the \"other\" calendar feed."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://api.raceid.com/api/v2/web/races/15398",
+          "fetched_at": "2026-10-19T02:48:57+02:00"
+        },
+        {
+          "field": "distances",
+          "source_url": "https://api.raceid.com/api/v2/web/races/15398",
+          "fetched_at": "2026-10-19T02:48:57+02:00"
+        },
+        {
+          "field": "race_day.start_time",
+          "source_url": "https://api.raceid.com/api/v1/web/races/15398/distances",
+          "fetched_at": "2026-10-19T02:48:22+02:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://api.raceid.com/api/v2/web/races/15398",
+          "fetched_at": "2026-10-19T02:48:57+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://api.raceid.com/api/v2/web/races/15398",
+          "fetched_at": "2026-10-19T02:48:57+02:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://www.uppsalamarathon.se/distanser/",
+          "fetched_at": "2026-10-19T02:49:14+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://www.uppsalamarathon.se/",
+          "fetched_at": "2026-10-19T02:47:28+02:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://api.raceid.com/api/v1/web/races/15398/participants-count",
+          "fetched_at": "2026-10-19T02:48:33+02:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://www.uppsalamarathon.se/",
+          "fetched_at": "2026-10-19T02:47:28+02:00"
         }
       ]
     }
