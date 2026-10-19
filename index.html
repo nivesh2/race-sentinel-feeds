@@ -122,6 +122,7 @@
   .cu-tag.k-opens { background: color-mix(in srgb, var(--blue) 14%, transparent); color: var(--blue); }
   .cu-tag.k-race { background: var(--accent-soft); color: var(--accent-text); }
   .cu-detail { display: block; margin-top: 2px; font-size: 13px; line-height: 1.4; color: var(--sub); }
+  .cu-detail .save, .s-dl .save, #peekRaces .save { margin-left: 6px; vertical-align: middle; }
   .cu-none { padding: 10px 0 4px; font-size: 14px; color: var(--sub); max-width: 32em; }
   .cu-more { margin: 2px 0 0 -10px; padding: 0 10px; min-height: 40px; border: 0; background: none; font: inherit; font-size: 13px; font-weight: 500;
     color: var(--accent-text); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
@@ -637,15 +638,14 @@ function deadlineOf(r) {
   if (nd && typeof nd === "object" && dateOf(nd.date)) {
     const label = String(nd.label || "").replace(/\s*after this date\s*$/i, "");
     // agent v3 dates a price_bump on the last day at the old price
-    return nd.type === "price_bump" ? { date: dateOf(nd.date), type: "price_bump", raw: label, label: label + " · last day at the current price" }
-      : { date: dateOf(nd.date), type: nd.type || "", raw: label, label };
+    return { date: dateOf(nd.date), type: nd.type || "", raw: label, label };
   }
   const today = todayISO(), opens = dateOf(r.registration_opens), b = nextBump(r), c = capStatus(r);
   if (c === "upcoming" && opens && opens >= today) return { date: opens, type: "reg_opens", raw: "Registration opens", label: "Registration opens" };
   if (b && c !== "sold_out") {
     const last = new Date(new Date(b.date + "T12:00:00") - 864e5).toISOString().slice(0, 10);
     const raw = b.from && b.to ? `Price rises ${b.from} → ${b.to} SEK` : "Price rises";
-    return { date: last, type: "price_bump", raw, label: raw + " · last day at the current price" };
+    return { date: last, type: "price_bump", raw, label: raw };
   }
   const rd = raceDay(r); return rd && rd >= today ? { date: rd, type: "race_day", raw: "Race day", label: "Race day" } : null;
 }
@@ -710,15 +710,22 @@ function vibesHTML(r, cls) {
   const save = sv ? `<span class="save${sv.soon ? " soon" : ""}" title="Price rises after ${esc(fmt(sv.last))} — sign up by then">💰 Save ${sv.upTo ? "up to " : ""}${sv.amt} SEK before ${esc(fmt(sv.eff, { day: "numeric", month: "short" }))}</span>` : "";
   return `<span class="vibes${cls ? " " + cls : ""}">${save}${tags.map((t) => `<span class="pill">${esc(t)}</span>`).join("")}</span>`;
 }
+// biggest saving for signing up by `last` (the last day at the old price), across distances; null when no known jump that day
+function saveAt(r, last) {
+  const tiers = tiersOf(r); let best = 0;
+  for (let i = 0; i < tiers.length - 1; i++) {
+    const t = tiers[i], n = tiers[i + 1];
+    if (t.until === last && (t.dist === n.dist || !t.dist) && n.price > t.price) best = Math.max(best, n.price - t.price);
+  }
+  return best || null;
+}
+const saveChip = (amt) => (amt ? `<span class="save">💰 Save up to ${amt} SEK</span>` : "");
 const markColor = (t) => (t === "price_bump" ? "price_hike_soon" : t === "reg_opens" ? "opens_soon" : "closed");
 function visible() { return races.filter((r) => filter === "all" || bucketsOf(r).has(filter)); }
 
 // ── short wording for a deadline (used by the "Coming up" line under the page title)
 function shortWhat(dl) {
-  if (dl.type === "price_bump") {
-    const m = [...String(dl.raw || "").matchAll(/(\d[\d,\s ]*)\s*→/g)];
-    return m.length === 1 ? `last day at ${m[0][1].trim()} SEK` : "last day at current prices";
-  }
+  if (dl.type === "price_bump") return "price rises";
   if (dl.type === "reg_opens") return "registration opens";
   return dl.raw ? dl.raw.charAt(0).toLowerCase() + dl.raw.slice(1) : "deadline";
 }
@@ -729,12 +736,12 @@ const COMING_COLOR = { price: "price_hike_soon", deadline: "price_hike_soon", op
 function comingEvents() {
   const out = [], seen = new Set();
   const inWin = (d) => d && daysUntil(d) >= 0 && daysUntil(d) <= COMING_DAYS;
-  const add = (r, date, kind, tag, detail, short) => { const k = r.slug + date + kind; if (!seen.has(k)) { seen.add(k); out.push({ r, date, kind, tag, detail, short }); } };
+  const add = (r, date, kind, tag, detail, short, save) => { const k = r.slug + date + kind; if (!seen.has(k)) { seen.add(k); out.push({ r, date, kind, tag, detail, short, save }); } };
   visible().forEach((r) => {
     const dl = deadlineOf(r);
     if (dl && dl.type !== "race_day" && inWin(dl.date)) {
       if (dl.type === "reg_opens") add(r, dl.date, "opens", "Registration opens", "", shortWhat(dl));
-      else if (dl.type === "price_bump") add(r, dl.date, "price", "Price rise", dl.label, shortWhat(dl));
+      else if (dl.type === "price_bump") add(r, dl.date, "price", "Price rise", dl.label, shortWhat(dl), saveAt(r, dl.date));
       else add(r, dl.date, "deadline", "Deadline", dl.label, shortWhat(dl));
     }
     const opens = dateOf(r.registration_opens);
@@ -743,7 +750,7 @@ function comingEvents() {
     for (let i = 0; i < tiers.length - 1; i++) {
       const t = tiers[i], n = tiers[i + 1];
       if (inWin(t.until) && (t.dist === n.dist || !t.dist) && n.price > t.price)
-        add(r, t.until, "price", "Price rise", `Price rises ${t.price} → ${n.price} SEK${t.dist ? ` (${t.dist})` : ""} · last day at the current price`, `last day at ${t.price} SEK`);
+        add(r, t.until, "price", "Price rise", `Price rises ${t.price} → ${n.price} SEK${t.dist ? ` (${t.dist})` : ""}`, "price rises", saveAt(r, t.until));
     }
     daysOf(r).forEach((d) => { if (inWin(d.date)) add(r, d.date, "race", "Race day", [d.label, d.time && d.time + " start"].filter(Boolean).join(" · "), "race day"); });
   });
@@ -768,7 +775,7 @@ function renderComing() {
     html += `<li class="cu-li c-${COMING_COLOR[ev.kind]}"><button type="button" class="cu-ev" data-slug="${esc(ev.r.slug)}">
       <span class="cu-when"><b>${esc(fmt(ev.date))}</b><span class="cu-rel${daysUntil(ev.date) <= 7 ? " soon" : ""}">${esc(rel(ev.date))}</span></span>
       <span class="cu-what"><span class="cu-name">${esc(ev.r.name)}</span><span class="cu-tag k-${ev.kind}">${esc(ev.tag)}</span></span>
-      ${ev.detail ? `<span class="cu-detail">${esc(ev.detail)}</span>` : ""}</button></li>`;
+      ${ev.detail || ev.save ? `<span class="cu-detail">${esc(ev.detail || "")}${saveChip(ev.save)}</span>` : ""}</button></li>`;
   });
   if (evs.length > COMING_SHOW) html += `<li><button type="button" class="cu-more" aria-expanded="${comingAll}">${comingAll ? "Show fewer" : `Show ${evs.length - COMING_SHOW} more`}</button></li>`;
   html += `<li class="cu-end">That's the next ${COMING_DAYS} days · until ${esc(fmt(end))}</li>`;
@@ -904,7 +911,7 @@ function renderSheet(slug) {
     ${vibesHTML(r, "s-vibes")}
     <ul class="days">${rows.map(([k, v]) => `<li><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></li>`).join("")}</ul>
     <p class="s-head">${esc(headlineOf(r))}${raceRel && rd >= todayISO() ? ` <span style="color:var(--sub)">Race day ${esc(raceRel)}.</span>` : ""}</p>
-    ${dl && dl.type !== "race_day" ? `<div class="s-dl"><strong>${esc(rel(dl.date).replace(/^./, (c) => c.toUpperCase()))}</strong> — ${esc(dl.label)} <span class="sub">(${esc(fmt(dl.date))})</span></div>` : ""}
+    ${dl && dl.type !== "race_day" ? `<div class="s-dl"><strong>${esc(rel(dl.date).replace(/^./, (c) => c.toUpperCase()))}</strong> — ${esc(dl.label)} <span class="sub">(${esc(fmt(dl.date))})</span>${dl.type === "price_bump" ? saveChip(saveAt(r, dl.date)) : ""}</div>` : ""}
     ${notes.length ? `<ul class="s-notes">${notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
     <div class="s-act">
       ${link ? `<a class="btn${badge === "sold_out" || badge === "closed" ? " muted" : " primary"}" href="${esc(link)}" target="_blank" rel="noopener">${badge === "sold_out" ? "Official page ↗" : badge === "opens_soon" ? "Registration page ↗" : "Sign up ↗"}</a>` : ""}
@@ -1276,7 +1283,7 @@ function renderPeeks() {
     $("peekClubs").innerHTML = next ? `Next run: <b>${esc(dayWords(next.o))}${next.o.time ? " " + esc(next.o.time) : ""}</b> · ${esc(next.c.name)}${w.nb ? ", " + esc(w.nb) : ""}` : "";
   } else $("peekClubs").textContent = "";
   const up = races.length && comingEvents()[0];
-  $("peekRaces").innerHTML = up ? `Coming up: <b>${esc(rel(up.date))}</b> · ${esc(shortName(up.r.name))}, ${esc(up.short)}` : races.length ? `Nothing to act on in the next ${COMING_DAYS} days` : "";
+  $("peekRaces").innerHTML = up ? `Coming up: <b>${esc(rel(up.date))}</b> · ${esc(shortName(up.r.name))}, ${esc(up.short)}${saveChip(up.save)}` : races.length ? `Nothing to act on in the next ${COMING_DAYS} days` : "";
 }
 const DOORS = ["clubs", "races"];
 let door = null;
