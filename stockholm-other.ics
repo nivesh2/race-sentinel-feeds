@@ -27,6 +27,20 @@ TZOFFSETTO:+0100
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Uppsala Marathon 2027 (marathon & relay)
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-reg-opens-2@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Registration for the Uppsala Marathon (910 SEK) and the Marath
+ on Relay (2\,000 SEK per team) 2027 opens on RaceID (registration_starts_a
+ t 2026-10-17 00:00).\n\nSign up / registration: https://raceid.com/sv/race
+ s/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Lidingöloppet 15K (Saves ~70 SEK)
 DTSTART;VALUE=DATE:20270429
 DTEND;VALUE=DATE:20270430
@@ -159,5 +173,17 @@ DESCRIPTION:Lidingöloppet 2027 – 30K. Start time not published.\n\nSign
  upId=1
 TRANSP:TRANSPARENT
 URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Uppsala Marathon Relay
+DTSTART;TZID=Europe/Stockholm:20271016T093000
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-race-day-relay@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Uppsala Marathon 2027 – marathon relay (teams of up to 4). S
+ tart 09:30 (RaceID).\n\nSign up / registration: https://raceid.com/sv/race
+ s/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
 END:VEVENT
 END:VCALENDAR
