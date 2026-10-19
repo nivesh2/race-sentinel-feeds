@@ -92,6 +92,19 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Uppsala Marathon 2027 (half marathon)
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Registration for the Uppsala Half Marathon 2027 (16 Oct 2027) 
+ opens on RaceID (registration_starts_at 2026-10-16 00:00). Price 710 SEK.
+ \n\nSign up / registration: https://raceid.com/sv/races/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
@@ -205,5 +218,16 @@ DESCRIPTION:Stockholm Half Marathon 2027 – 21.1K. Start 15:30 (first sta
  rt\, preliminary).\n\nSign up / registration: https://events.marathongrupp
  en.se/8ca268887b77af349904
 URL:https://events.marathongruppen.se/8ca268887b77af349904
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Uppsala Marathon 21.1K
+DTSTART;TZID=Europe/Stockholm:20271016T113000
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-race-day-half@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Uppsala Marathon 2027 – half marathon. Start 11:30 (RaceID).
+ \n\nSign up / registration: https://raceid.com/sv/races/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
 END:VEVENT
 END:VCALENDAR
