@@ -106,6 +106,20 @@ TRANSP:TRANSPARENT
 URL:https://events.marathongruppen.se/8ca268887b77af349904
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Tjejmilen 2027
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Registration for Tjejmilen Stockholm 2027 (10K\, 4 Sep 2027) o
+ pens. Note: start of the first price period (31 Aug – 13 Sep\, 450 SEK) 
+ on tjejmilen.se.\n\nSign up / registration: https://events.marathongruppen
+ .se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 SEK)
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
@@ -121,6 +135,24 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 
  SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~145 SEK)
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-price-bump-10k-1@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 10K: 450 SEK is valid through 2026-09-13\; from 2026
+ -09-14 the price is 595 SEK.\n\nSign up / registration: https://events.mar
+ athongruppen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~145 SEK)
 TRIGGER:PT9H
 END:VALARM
 END:VEVENT
@@ -150,6 +182,33 @@ DESCRIPTION:Status first detected by race-sentinel on 2026-10-14: "29 Maj
  vents.marathongruppen.se/ab4b4e164c269a523608
 TRANSP:TRANSPARENT
 URL:https://events.marathongruppen.se/ab4b4e164c269a523608
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Uppsala Marathon 2027 (half marathon)
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Registration for the Uppsala Half Marathon 2027 (16 Oct 2027) 
+ opens on RaceID (registration_starts_at 2026-10-16 00:00). Price 710 SEK.
+ \n\nSign up / registration: https://raceid.com/sv/races/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Uppsala Marathon 2027 (marathon & relay)
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-reg-opens-2@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Registration for the Uppsala Marathon (910 SEK) and the Marath
+ on Relay (2\,000 SEK per team) 2027 opens on RaceID (registration_starts_a
+ t 2026-10-17 00:00).\n\nSign up / registration: https://raceid.com/sv/race
+ s/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Hässelbyloppet 10K (Saves ~70 SEK)
@@ -221,6 +280,24 @@ URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
  &LanguageId=2
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-price-bump-10k-2@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 10K: 595 SEK is valid through 2027-01-13\; from 2027
+ -01-14 the price is 645 SEK.\n\nSign up / registration: https://events.mar
+ athongruppen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~50 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 SEK)
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
@@ -236,6 +313,24 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 
  SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-price-bump-10k-3@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 10K: 645 SEK is valid through 2027-03-14\; from 2027
+ -03-15 the price is 745 SEK.\n\nSign up / registration: https://events.mar
+ athongruppen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
 TRIGGER:PT9H
 END:VALARM
 END:VEVENT
@@ -355,6 +450,32 @@ DESCRIPTION:Kungsholmen Runt 2027 – 21.1K. Start 12:05 (first start grou
 URL:https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Race Day] Run for Pride 10K
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+DTSTAMP:20261019T004930Z
+UID:run-for-pride-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,run-for-pride
+DESCRIPTION:Run for Pride 2027 – 10K\, Djurgården. Date per organizer h
+ eading\; start time\, registration opening and prices not announced.\n\nSi
+ gn up / registration: https://runforpride.se/startsida-en/
+TRANSP:TRANSPARENT
+URL:https://runforpride.se/startsida-en/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Run for Pride 5K
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+DTSTAMP:20261019T004930Z
+UID:run-for-pride-2027-race-day-5k@race-sentinel-feeds
+CATEGORIES:Running,run-for-pride
+DESCRIPTION:Run for Pride 2027 – 5K\, Djurgården. Date per organizer he
+ ading\; start time\, registration opening and prices not announced.\n\nSig
+ n up / registration: https://runforpride.se/startsida-en/
+TRANSP:TRANSPARENT
+URL:https://runforpride.se/startsida-en/
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Race Day] Stockholm Marathon 42.2K
 DTSTART;TZID=Europe/Stockholm:20270529T120000
 DTSTAMP:20261014T145421Z
@@ -364,6 +485,24 @@ DESCRIPTION:Stockholm Marathon 2027 – 42.2K. Start 12:00 (preliminary).
  \n\nSign up / registration: https://events.marathongruppen.se/ab4b4e164c26
  9a523608
 URL:https://events.marathongruppen.se/ab4b4e164c269a523608
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270620
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-price-bump-10k-4@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 10K: 745 SEK is valid through 2027-06-20\; from 2027
+ -06-21 the price is 845 SEK.\n\nSign up / registration: https://events.mar
+ athongruppen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Lidingöloppet 15K (Saves ~60 SEK)
@@ -503,6 +642,18 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Race Day] Tjejmilen 10K
+DTSTART;TZID=Europe/Stockholm:20270904T120000
+DTSTAMP:20261019T004928Z
+UID:tjejmilen-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,tjejmilen
+DESCRIPTION:Tjejmilen 2027 – 10K\, Södra Djurgården. First start 12:00
+  (Haku event page).\n\nSign up / registration: https://events.marathongrup
+ pen.se/tjejmilen
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/tjejmilen
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Hässelbyloppet 10K (Saves ~80 SEK)
 DTSTART;VALUE=DATE:20270925
 DTEND;VALUE=DATE:20270926
@@ -555,5 +706,39 @@ CATEGORIES:Running,hasselbyloppet
 DESCRIPTION:Hässelbyloppet 2027 – 10K. Start 12:00 (preliminary).\n\nSi
  gn up / registration: https://events.marathongruppen.se/hasselbyloppet
 URL:https://events.marathongruppen.se/hasselbyloppet
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Uppsala Marathon 42.2K
+DTSTART;TZID=Europe/Stockholm:20271016T093000
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-race-day-marathon@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Uppsala Marathon 2027 – 42.2K. Start 09:30 (RaceID).\n\nSign
+  up / registration: https://raceid.com/sv/races/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Uppsala Marathon Relay
+DTSTART;TZID=Europe/Stockholm:20271016T093000
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-race-day-relay@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Uppsala Marathon 2027 – marathon relay (teams of up to 4). S
+ tart 09:30 (RaceID).\n\nSign up / registration: https://raceid.com/sv/race
+ s/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Uppsala Marathon 21.1K
+DTSTART;TZID=Europe/Stockholm:20271016T113000
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-race-day-half@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Uppsala Marathon 2027 – half marathon. Start 11:30 (RaceID).
+ \n\nSign up / registration: https://raceid.com/sv/races/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
 END:VEVENT
 END:VCALENDAR
