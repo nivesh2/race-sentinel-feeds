@@ -56,6 +56,20 @@ TRANSP:TRANSPARENT
 URL:https://events.marathongruppen.se/ab4b4e164c269a523608
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Uppsala Marathon 2027 (marathon & relay)
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-reg-opens-2@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Registration for the Uppsala Marathon (910 SEK) and the Marath
+ on Relay (2\,000 SEK per team) 2027 opens on RaceID (registration_starts_a
+ t 2026-10-17 00:00).\n\nSign up / registration: https://raceid.com/sv/race
+ s/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Race Day] Stockholm Marathon 42.2K
 DTSTART;TZID=Europe/Stockholm:20270529T120000
 DTSTAMP:20261014T145421Z
@@ -65,5 +79,16 @@ DESCRIPTION:Stockholm Marathon 2027 – 42.2K. Start 12:00 (preliminary).
  \n\nSign up / registration: https://events.marathongruppen.se/ab4b4e164c26
  9a523608
 URL:https://events.marathongruppen.se/ab4b4e164c269a523608
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Uppsala Marathon 42.2K
+DTSTART;TZID=Europe/Stockholm:20271016T093000
+DTSTAMP:20261019T004728Z
+UID:uppsala-marathon-2027-race-day-marathon@race-sentinel-feeds
+CATEGORIES:Running,uppsala-marathon
+DESCRIPTION:Uppsala Marathon 2027 – 42.2K. Start 09:30 (RaceID).\n\nSign
+  up / registration: https://raceid.com/sv/races/15398/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15398/about
 END:VEVENT
 END:VCALENDAR
