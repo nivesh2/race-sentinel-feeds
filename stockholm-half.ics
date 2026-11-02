@@ -123,21 +123,6 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Reg Opens Today] Midnattsloppet Stockholm 2027
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-DTSTAMP:20261014T145421Z
-UID:midnattsloppet-2027-reg-opens@race-sentinel-feeds
-CATEGORIES:Running,midnattsloppet
-DESCRIPTION:Registration for Midnattsloppet Stockholm 2027 opens. Note: 'R
- egistration opens 1/11!' – no time stated.\n\nSign up / registration: ht
- tps://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&Langu
- ageId=2
-TRANSP:TRANSPARENT
-URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
- &LanguageId=2
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 SEK)
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
@@ -197,18 +182,6 @@ DESCRIPTION:Kungsholmen Runt 2027 – 21.1K. Start 12:05 (first start grou
 URL:https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Race Day] Midnattsloppet Stockholm 21K
-DTSTART;TZID=Europe/Stockholm:20270814T211000
-DTSTAMP:20261014T145421Z
-UID:midnattsloppet-2027-race-day-21k@race-sentinel-feeds
-CATEGORIES:Running,midnattsloppet
-DESCRIPTION:Midnattsloppet Stockholm 2027 – 21K. Start 21:10.\n\nSign up
-  / registration: https://registration.midnattsloppet.com/Web/Step1.aspx?Ev
- entGroupId=96&LanguageId=2
-URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
- &LanguageId=2
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Race Day] Stockholm Half Marathon 21.1K
 DTSTART;TZID=Europe/Stockholm:20270821T153000
 DTSTAMP:20261014T145421Z
@@ -221,11 +194,11 @@ URL:https://events.marathongruppen.se/8ca268887b77af349904
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Uppsala Marathon 21.1K
-DTSTART;TZID=Europe/Stockholm:20271016T113000
-DTSTAMP:20261019T004728Z
+DTSTART;TZID=Europe/Stockholm:20271016T110000
+DTSTAMP:20261102T221128Z
 UID:uppsala-marathon-2027-race-day-half@race-sentinel-feeds
 CATEGORIES:Running,uppsala-marathon
-DESCRIPTION:Uppsala Marathon 2027 – half marathon. Start 11:30 (RaceID).
+DESCRIPTION:Uppsala Marathon 2027 – half marathon. Start 11:00 (RaceID).
  \n\nSign up / registration: https://raceid.com/sv/races/15398/about
 TRANSP:TRANSPARENT
 URL:https://raceid.com/sv/races/15398/about
