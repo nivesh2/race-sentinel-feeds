@@ -280,6 +280,48 @@ URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
  &LanguageId=2
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Midnattsloppet Stockholm 10K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+DTSTAMP:20261102T221128Z
+UID:midnattsloppet-2027-price-bump-10k-1@race-sentinel-feeds
+CATEGORIES:Running,midnattsloppet
+DESCRIPTION:Midnattsloppet Stockholm 10K: 549 SEK is valid through 2026-11
+ -30\; from 2026-12-01 the price is 599 SEK.\n\nSign up / registration: htt
+ ps://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&Langua
+ geId=2
+TRANSP:TRANSPARENT
+URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
+ &LanguageId=2
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Midnattsloppet Stockholm 10K (Saves ~50 SE
+ K)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Midnattsloppet Stockholm 5K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+DTSTAMP:20261102T221128Z
+UID:midnattsloppet-2027-price-bump-5k-1@race-sentinel-feeds
+CATEGORIES:Running,midnattsloppet
+DESCRIPTION:Midnattsloppet Stockholm 5K: 549 SEK is valid through 2026-11-
+ 30\; from 2026-12-01 the price is 599 SEK.\n\nSign up / registration: http
+ s://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&Languag
+ eId=2
+TRANSP:TRANSPARENT
+URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
+ &LanguageId=2
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Midnattsloppet Stockholm 5K (Saves ~50 SEK
+ )
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~50 SEK)
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270113
@@ -476,6 +518,19 @@ TRANSP:TRANSPARENT
 URL:https://runforpride.se/startsida-en/
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Race Day] Vårruset Stockholm 5K
+DTSTART;TZID=Europe/Stockholm:20270520T183000
+DTSTAMP:20261102T221128Z
+UID:varruset-stockholm-2027-race-day-5k@race-sentinel-feeds
+CATEGORIES:Running,varruset-stockholm
+DESCRIPTION:Vårruset Stockholm 2027 – 5K. Start 18:30 (Haku event page)
+ \; registration is listed as 'Kommer snart' — opening date and price ste
+ ps not announced.\n\nSign up / registration: https://events.marathongruppe
+ n.se/varruset-stockholm
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/varruset-stockholm
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Race Day] Stockholm Marathon 42.2K
 DTSTART;TZID=Europe/Stockholm:20270529T120000
 DTSTAMP:20261014T145421Z
@@ -485,6 +540,34 @@ DESCRIPTION:Stockholm Marathon 2027 – 42.2K. Start 12:00 (preliminary).
  \n\nSign up / registration: https://events.marathongruppen.se/ab4b4e164c26
  9a523608
 URL:https://events.marathongruppen.se/ab4b4e164c269a523608
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Blodomloppet 5K
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270604
+DTSTAMP:20261102T221128Z
+UID:blodomloppet-stockholm-2027-race-day-5k@race-sentinel-feeds
+CATEGORIES:Running,blodomloppet-stockholm
+DESCRIPTION:Blodomloppet Stockholm 2027 – 5K. Listed as 2 & 3 June 2027 
+ (which distance runs on which day is not published)\; start time\, registr
+ ation opening and prices not announced.\n\nSign up / registration: https:/
+ /blodomloppet.se/vara-lopp/stockholm/
+TRANSP:TRANSPARENT
+URL:https://blodomloppet.se/vara-lopp/stockholm/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Blodomloppet 10K
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270604
+DTSTAMP:20261102T221128Z
+UID:blodomloppet-stockholm-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,blodomloppet-stockholm
+DESCRIPTION:Blodomloppet Stockholm 2027 – 10K. Listed as 2 & 3 June 2027
+  (which distance runs on which day is not published)\; start time\, regist
+ ration opening and prices not announced.\n\nSign up / registration: https:
+ //blodomloppet.se/vara-lopp/stockholm/
+TRANSP:TRANSPARENT
+URL:https://blodomloppet.se/vara-lopp/stockholm/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
@@ -565,18 +648,6 @@ DTSTAMP:20261014T145421Z
 UID:midnattsloppet-2027-race-day-10k@race-sentinel-feeds
 CATEGORIES:Running,midnattsloppet
 DESCRIPTION:Midnattsloppet Stockholm 2027 – 10K. Start 21:10.\n\nSign up
-  / registration: https://registration.midnattsloppet.com/Web/Step1.aspx?Ev
- entGroupId=96&LanguageId=2
-URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
- &LanguageId=2
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[Race Day] Midnattsloppet Stockholm 21K
-DTSTART;TZID=Europe/Stockholm:20270814T211000
-DTSTAMP:20261014T145421Z
-UID:midnattsloppet-2027-race-day-21k@race-sentinel-feeds
-CATEGORIES:Running,midnattsloppet
-DESCRIPTION:Midnattsloppet Stockholm 2027 – 21K. Start 21:10.\n\nSign up
   / registration: https://registration.midnattsloppet.com/Web/Step1.aspx?Ev
  entGroupId=96&LanguageId=2
 URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
@@ -709,34 +780,34 @@ URL:https://events.marathongruppen.se/hasselbyloppet
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Uppsala Marathon 42.2K
-DTSTART;TZID=Europe/Stockholm:20271016T093000
-DTSTAMP:20261019T004728Z
+DTSTART;TZID=Europe/Stockholm:20271016T100000
+DTSTAMP:20261102T221128Z
 UID:uppsala-marathon-2027-race-day-marathon@race-sentinel-feeds
 CATEGORIES:Running,uppsala-marathon
-DESCRIPTION:Uppsala Marathon 2027 – 42.2K. Start 09:30 (RaceID).\n\nSign
+DESCRIPTION:Uppsala Marathon 2027 – 42.2K. Start 10:00 (RaceID).\n\nSign
   up / registration: https://raceid.com/sv/races/15398/about
 TRANSP:TRANSPARENT
 URL:https://raceid.com/sv/races/15398/about
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Uppsala Marathon Relay
-DTSTART;TZID=Europe/Stockholm:20271016T093000
-DTSTAMP:20261019T004728Z
+DTSTART;TZID=Europe/Stockholm:20271016T100000
+DTSTAMP:20261102T221128Z
 UID:uppsala-marathon-2027-race-day-relay@race-sentinel-feeds
 CATEGORIES:Running,uppsala-marathon
 DESCRIPTION:Uppsala Marathon 2027 – marathon relay (teams of up to 4). S
- tart 09:30 (RaceID).\n\nSign up / registration: https://raceid.com/sv/race
+ tart 10:00 (RaceID).\n\nSign up / registration: https://raceid.com/sv/race
  s/15398/about
 TRANSP:TRANSPARENT
 URL:https://raceid.com/sv/races/15398/about
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Uppsala Marathon 21.1K
-DTSTART;TZID=Europe/Stockholm:20271016T113000
-DTSTAMP:20261019T004728Z
+DTSTART;TZID=Europe/Stockholm:20271016T110000
+DTSTAMP:20261102T221128Z
 UID:uppsala-marathon-2027-race-day-half@race-sentinel-feeds
 CATEGORIES:Running,uppsala-marathon
-DESCRIPTION:Uppsala Marathon 2027 – half marathon. Start 11:30 (RaceID).
+DESCRIPTION:Uppsala Marathon 2027 – half marathon. Start 11:00 (RaceID).
  \n\nSign up / registration: https://raceid.com/sv/races/15398/about
 TRANSP:TRANSPARENT
 URL:https://raceid.com/sv/races/15398/about
