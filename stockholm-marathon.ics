@@ -82,11 +82,11 @@ URL:https://events.marathongruppen.se/ab4b4e164c269a523608
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Uppsala Marathon 42.2K
-DTSTART;TZID=Europe/Stockholm:20271016T093000
-DTSTAMP:20261019T004728Z
+DTSTART;TZID=Europe/Stockholm:20271016T100000
+DTSTAMP:20261102T221128Z
 UID:uppsala-marathon-2027-race-day-marathon@race-sentinel-feeds
 CATEGORIES:Running,uppsala-marathon
-DESCRIPTION:Uppsala Marathon 2027 – 42.2K. Start 09:30 (RaceID).\n\nSign
+DESCRIPTION:Uppsala Marathon 2027 – 42.2K. Start 10:00 (RaceID).\n\nSign
   up / registration: https://raceid.com/sv/races/15398/about
 TRANSP:TRANSPARENT
 URL:https://raceid.com/sv/races/15398/about
