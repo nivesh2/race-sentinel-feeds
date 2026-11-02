@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T23:11:42+01:00",
+  "generated_at": "2026-11-02T23:13:53+01:00",
   "timezone": "Europe/Stockholm",
   "races": [
     {
@@ -337,7 +337,7 @@
           "valid_until_note": "Listed under 'Kommande priser – Datum meddelas senare' on the start-fee page; dates not published."
         }
       ],
-      "price_tiers_note": "2027 prices not published: /startavgifter/ (re-read 2026-10-14T17:11) still shows only the 2026 table (499–799 SEK), which is not carried over. Registration opens 2026-11-01.",
+      "price_tiers_note": "midnattsloppet.com/startavgifter 'Startavgifter 2027': 549 SEK from 1 Nov, 599 SEK from 1 Dec 2026; later steps are listed without dates.",
       "capacity_status": {
         "status": "open",
         "wording": "Registration page lists 'Stockholm 10/5 km' (14/8) with a 'Sign up' button; start-fee page 'Startavgifter 2027' shows prices from 1 November",
@@ -1094,7 +1094,7 @@
         {
           "field": "registration_opens",
           "source_url": "https://varruset.se/stockholm-2/",
-          "fetched_at": "2026-11-02T23:11:42+01:00"
+          "fetched_at": "2026-11-02T23:13:53+01:00"
         },
         {
           "field": "registration_url",
