@@ -42,6 +42,27 @@ URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
  &LanguageId=2
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Midnattsloppet Stockholm 5K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+DTSTAMP:20261102T221128Z
+UID:midnattsloppet-2027-price-bump-5k-1@race-sentinel-feeds
+CATEGORIES:Running,midnattsloppet
+DESCRIPTION:Midnattsloppet Stockholm 5K: 549 SEK is valid through 2026-11-
+ 30\; from 2026-12-01 the price is 599 SEK.\n\nSign up / registration: http
+ s://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&Languag
+ eId=2
+TRANSP:TRANSPARENT
+URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
+ &LanguageId=2
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Midnattsloppet Stockholm 5K (Saves ~50 SEK
+ )
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Race Day] Run for Pride 5K
 DTSTART;VALUE=DATE:20270520
 DTEND;VALUE=DATE:20270521
@@ -53,6 +74,33 @@ DESCRIPTION:Run for Pride 2027 – 5K\, Djurgården. Date per organizer he
  n up / registration: https://runforpride.se/startsida-en/
 TRANSP:TRANSPARENT
 URL:https://runforpride.se/startsida-en/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Vårruset Stockholm 5K
+DTSTART;TZID=Europe/Stockholm:20270520T183000
+DTSTAMP:20261102T221128Z
+UID:varruset-stockholm-2027-race-day-5k@race-sentinel-feeds
+CATEGORIES:Running,varruset-stockholm
+DESCRIPTION:Vårruset Stockholm 2027 – 5K. Start 18:30 (Haku event page)
+ \; registration is listed as 'Kommer snart' — opening date and price ste
+ ps not announced.\n\nSign up / registration: https://events.marathongruppe
+ n.se/varruset-stockholm
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/varruset-stockholm
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Blodomloppet 5K
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270604
+DTSTAMP:20261102T221128Z
+UID:blodomloppet-stockholm-2027-race-day-5k@race-sentinel-feeds
+CATEGORIES:Running,blodomloppet-stockholm
+DESCRIPTION:Blodomloppet Stockholm 2027 – 5K. Listed as 2 & 3 June 2027 
+ (which distance runs on which day is not published)\; start time\, registr
+ ation opening and prices not announced.\n\nSign up / registration: https:/
+ /blodomloppet.se/vara-lopp/stockholm/
+TRANSP:TRANSPARENT
+URL:https://blodomloppet.se/vara-lopp/stockholm/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Midnattsloppet Stockholm 5K
