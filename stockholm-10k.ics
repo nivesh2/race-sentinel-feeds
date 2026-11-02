@@ -155,6 +155,27 @@ URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
  &LanguageId=2
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Midnattsloppet Stockholm 10K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+DTSTAMP:20261102T221128Z
+UID:midnattsloppet-2027-price-bump-10k-1@race-sentinel-feeds
+CATEGORIES:Running,midnattsloppet
+DESCRIPTION:Midnattsloppet Stockholm 10K: 549 SEK is valid through 2026-11
+ -30\; from 2026-12-01 the price is 599 SEK.\n\nSign up / registration: htt
+ ps://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&Langua
+ geId=2
+TRANSP:TRANSPARENT
+URL:https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96
+ &LanguageId=2
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Midnattsloppet Stockholm 10K (Saves ~50 SE
+ K)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~50 SEK)
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270113
@@ -241,6 +262,20 @@ DESCRIPTION:Run for Pride 2027 – 10K\, Djurgården. Date per organizer h
  gn up / registration: https://runforpride.se/startsida-en/
 TRANSP:TRANSPARENT
 URL:https://runforpride.se/startsida-en/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Blodomloppet 10K
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270604
+DTSTAMP:20261102T221128Z
+UID:blodomloppet-stockholm-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,blodomloppet-stockholm
+DESCRIPTION:Blodomloppet Stockholm 2027 – 10K. Listed as 2 & 3 June 2027
+  (which distance runs on which day is not published)\; start time\, regist
+ ration opening and prices not announced.\n\nSign up / registration: https:
+ //blodomloppet.se/vara-lopp/stockholm/
+TRANSP:TRANSPARENT
+URL:https://blodomloppet.se/vara-lopp/stockholm/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
