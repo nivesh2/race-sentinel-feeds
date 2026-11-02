@@ -176,12 +176,12 @@ URL:https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Uppsala Marathon Relay
-DTSTART;TZID=Europe/Stockholm:20271016T093000
-DTSTAMP:20261019T004728Z
+DTSTART;TZID=Europe/Stockholm:20271016T100000
+DTSTAMP:20261102T221128Z
 UID:uppsala-marathon-2027-race-day-relay@race-sentinel-feeds
 CATEGORIES:Running,uppsala-marathon
 DESCRIPTION:Uppsala Marathon 2027 – marathon relay (teams of up to 4). S
- tart 09:30 (RaceID).\n\nSign up / registration: https://raceid.com/sv/race
+ tart 10:00 (RaceID).\n\nSign up / registration: https://raceid.com/sv/race
  s/15398/about
 TRANSP:TRANSPARENT
 URL:https://raceid.com/sv/races/15398/about
