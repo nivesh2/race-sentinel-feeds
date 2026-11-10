@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T23:13:53+01:00",
+  "generated_at": "2026-11-10T08:11:42+01:00",
   "timezone": "Europe/Stockholm",
   "races": [
     {
@@ -66,7 +66,7 @@
         "wording": "29 Maj 2027 – slutsålt (official site); 'Utsåld' on the registration page",
         "first_detected": "2026-10-14",
         "organizer_announced": "2026-08-24",
-        "last_confirmed": "2026-11-02"
+        "last_confirmed": "2026-11-10"
       },
       "registration_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
       "badge": "sold_out",
@@ -85,37 +85,37 @@
         {
           "field": "race_day",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-11-02T23:07:26+01:00"
+          "fetched_at": "2026-11-10T08:09:57+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-11-02T23:07:26+01:00"
+          "fetched_at": "2026-11-10T08:09:57+01:00"
         },
         {
           "field": "race_day.start_time",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-11-02T23:07:26+01:00"
+          "fetched_at": "2026-11-10T08:09:57+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-11-02T23:07:26+01:00"
+          "fetched_at": "2026-11-10T08:09:57+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://stockholmmarathon.se/start/lopare/",
-          "fetched_at": "2026-11-02T23:07:26+01:00"
+          "fetched_at": "2026-11-10T08:09:57+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
-          "fetched_at": "2026-11-02T23:06:53+01:00"
+          "fetched_at": "2026-11-10T08:09:23+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/ab4b4e164c269a523608",
-          "fetched_at": "2026-11-02T23:06:53+01:00"
+          "fetched_at": "2026-11-10T08:09:23+01:00"
         }
       ]
     },
@@ -187,42 +187,42 @@
         {
           "field": "race_day",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-11-02T23:07:28+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
-          "fetched_at": "2026-11-02T23:06:55+01:00"
+          "fetched_at": "2026-11-10T08:09:25+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-11-02T23:07:28+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-11-02T23:07:28+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://stockholmhalfmarathon.se/om-loppet-2027/",
-          "fetched_at": "2026-11-02T23:07:28+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
-          "fetched_at": "2026-11-02T23:06:55+01:00"
+          "fetched_at": "2026-11-10T08:09:25+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
-          "fetched_at": "2026-11-02T23:06:55+01:00"
+          "fetched_at": "2026-11-10T08:09:25+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/8ca268887b77af349904",
-          "fetched_at": "2026-11-02T23:06:55+01:00"
+          "fetched_at": "2026-11-10T08:09:25+01:00"
         }
       ]
     },
@@ -359,37 +359,37 @@
         {
           "field": "race_day",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-11-02T23:07:09+01:00"
+          "fetched_at": "2026-11-10T08:09:35+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-11-02T23:07:09+01:00"
+          "fetched_at": "2026-11-10T08:09:35+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://midnattsloppet.com/en/midnattsloppet-stockholm/",
-          "fetched_at": "2026-11-02T23:07:09+01:00"
+          "fetched_at": "2026-11-10T08:09:35+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://midnattsloppet.com/startavgifter/",
-          "fetched_at": "2026-11-02T23:07:13+01:00"
+          "fetched_at": "2026-11-10T08:09:39+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://midnattsloppet.com/startavgifter/",
-          "fetched_at": "2026-11-02T23:07:13+01:00"
+          "fetched_at": "2026-11-10T08:09:39+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&LanguageId=2",
-          "fetched_at": "2026-11-02T23:07:56+01:00"
+          "fetched_at": "2026-11-10T08:09:43+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://registration.midnattsloppet.com/Web/Step1.aspx?EventGroupId=96&LanguageId=2",
-          "fetched_at": "2026-11-02T23:07:56+01:00"
+          "fetched_at": "2026-11-10T08:09:43+01:00"
         }
       ]
     },
@@ -492,32 +492,32 @@
         {
           "field": "race_day",
           "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
-          "fetched_at": "2026-11-02T23:07:14+01:00"
+          "fetched_at": "2026-11-10T08:09:45+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
-          "fetched_at": "2026-11-02T23:07:14+01:00"
+          "fetched_at": "2026-11-10T08:09:45+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://www.lidingoloppet.se/hem/om-anmalan",
-          "fetched_at": "2026-11-02T23:07:14+01:00"
+          "fetched_at": "2026-11-10T08:09:43+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
-          "fetched_at": "2026-11-02T23:07:14+01:00"
+          "fetched_at": "2026-11-10T08:09:45+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://www.lidingoloppet.se/",
-          "fetched_at": "2026-11-02T23:08:12+01:00"
+          "fetched_at": "2026-11-10T08:11:22+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://enter.lidingoloppet.se/Web/Step1.aspx?EventGroupId=1",
-          "fetched_at": "2026-11-02T23:07:14+01:00"
+          "fetched_at": "2026-11-10T08:09:45+01:00"
         }
       ]
     },
@@ -591,32 +591,32 @@
         {
           "field": "race_day",
           "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
-          "fetched_at": "2026-11-02T23:07:16+01:00"
+          "fetched_at": "2026-11-10T08:09:47+01:00"
         },
         {
           "field": "race_day",
           "source_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
-          "fetched_at": "2026-11-02T23:07:18+01:00"
+          "fetched_at": "2026-11-10T08:09:49+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
-          "fetched_at": "2026-11-02T23:07:18+01:00"
+          "fetched_at": "2026-11-10T08:09:49+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://www.coopkungsholmenrunt.se/info/inbjudan2027",
-          "fetched_at": "2026-11-02T23:07:16+01:00"
+          "fetched_at": "2026-11-10T08:09:47+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
-          "fetched_at": "2026-11-02T23:07:18+01:00"
+          "fetched_at": "2026-11-10T08:09:49+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://anmalan.kungsholmenrunt.se/Web/Step1.aspx?EventGroupId=97",
-          "fetched_at": "2026-11-02T23:07:18+01:00"
+          "fetched_at": "2026-11-10T08:09:49+01:00"
         }
       ]
     },
@@ -703,32 +703,32 @@
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-11-02T23:06:59+01:00"
+          "fetched_at": "2026-11-10T08:09:30+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-11-02T23:06:59+01:00"
+          "fetched_at": "2026-11-10T08:09:30+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://hasselbyloppet.se/",
-          "fetched_at": "2026-11-02T23:07:19+01:00"
+          "fetched_at": "2026-11-10T08:11:23+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-11-02T23:06:59+01:00"
+          "fetched_at": "2026-11-10T08:09:30+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-11-02T23:06:59+01:00"
+          "fetched_at": "2026-11-10T08:09:30+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/hasselbyloppet",
-          "fetched_at": "2026-11-02T23:06:59+01:00"
+          "fetched_at": "2026-11-10T08:09:30+01:00"
         }
       ]
     },
@@ -843,67 +843,67 @@
         {
           "field": "race_day",
           "source_url": "https://stockholmmarathon.se/premiarmilen/",
-          "fetched_at": "2026-11-02T23:07:28+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-11-02T23:06:56+01:00"
+          "fetched_at": "2026-11-10T08:09:27+01:00"
         },
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-11-02T23:06:58+01:00"
+          "fetched_at": "2026-11-10T08:09:29+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-11-02T23:06:56+01:00"
+          "fetched_at": "2026-11-10T08:09:27+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-11-02T23:06:58+01:00"
+          "fetched_at": "2026-11-10T08:09:29+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://stockholmmarathon.se/premiarmilen/",
-          "fetched_at": "2026-11-02T23:07:28+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://stockholmmarathon.se/premiarmilen/",
-          "fetched_at": "2026-11-02T23:07:28+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-11-02T23:06:56+01:00"
+          "fetched_at": "2026-11-10T08:09:27+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-11-02T23:06:58+01:00"
+          "fetched_at": "2026-11-10T08:09:29+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-11-02T23:06:56+01:00"
+          "fetched_at": "2026-11-10T08:09:27+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-11-02T23:06:58+01:00"
+          "fetched_at": "2026-11-10T08:09:29+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/acf9545de3114ebef5bf",
-          "fetched_at": "2026-11-02T23:06:56+01:00"
+          "fetched_at": "2026-11-10T08:09:27+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/6b8a2540a8ef886750bf",
-          "fetched_at": "2026-11-02T23:06:58+01:00"
+          "fetched_at": "2026-11-10T08:09:29+01:00"
         }
       ]
     },
@@ -984,43 +984,48 @@
       "notes": [
         "Five date-based price steps: 450 → 595 → 645 → 745 → 845 SEK (tjejmilen.se); the 845 SEK step runs 21 Jun – 4 Sep 2027.",
         "New for 2027: the price is the same with or without timing (tjejmilen.se).",
-        "Marathongruppen also runs Tjejmilen Sälen (19 Jun 2027); only the Stockholm edition is tracked here."
+        "Start groups 3A, 4 and 5 are sold out; 3B is still offered for runners who want group 3 (tjejmilen.se, start-group section)."
       ],
       "sources": [
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/tjejmilen",
-          "fetched_at": "2026-11-02T23:07:02+01:00"
+          "fetched_at": "2026-11-10T08:09:32+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://tjejmilen.se/tjejmilen-10k-stockholm/",
-          "fetched_at": "2026-11-02T23:07:29+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://tjejmilen.se/tjejmilen-10k-stockholm/",
-          "fetched_at": "2026-11-02T23:07:29+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://tjejmilen.se/tjejmilen-10k-stockholm/",
-          "fetched_at": "2026-11-02T23:07:29+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/tjejmilen",
-          "fetched_at": "2026-11-02T23:07:02+01:00"
+          "fetched_at": "2026-11-10T08:09:32+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/tjejmilen",
-          "fetched_at": "2026-11-02T23:07:02+01:00"
+          "fetched_at": "2026-11-10T08:09:32+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/tjejmilen",
-          "fetched_at": "2026-11-02T23:07:02+01:00"
+          "fetched_at": "2026-11-10T08:09:32+01:00"
+        },
+        {
+          "field": "notes",
+          "source_url": "https://tjejmilen.se/tjejmilen-10k-stockholm/",
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         }
       ]
     },
@@ -1068,38 +1073,38 @@
       },
       "notes": [
         "Opening date and price-step dates for 2027 are not published; the 495 SEK on the Haku listing is a single undated figure (Haku event page).",
-        "varruset.se/stockholm-2 still shows only the 2026 edition (19 May 2026); the 2027 date comes from the Haku registration page."
+        "varruset.se/stockholm still shows only the 2026 edition (19 May 2026); the 2027 date comes from the Haku registration page."
       ],
       "sources": [
         {
           "field": "race_day",
           "source_url": "https://events.marathongruppen.se/varruset-stockholm",
-          "fetched_at": "2026-11-02T23:07:04+01:00"
+          "fetched_at": "2026-11-10T08:09:34+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://events.marathongruppen.se/varruset-stockholm",
-          "fetched_at": "2026-11-02T23:07:04+01:00"
+          "fetched_at": "2026-11-10T08:09:34+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://events.marathongruppen.se/varruset-stockholm",
-          "fetched_at": "2026-11-02T23:07:04+01:00"
+          "fetched_at": "2026-11-10T08:09:34+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://events.marathongruppen.se/varruset-stockholm",
-          "fetched_at": "2026-11-02T23:07:04+01:00"
+          "fetched_at": "2026-11-10T08:09:34+01:00"
         },
         {
           "field": "registration_opens",
-          "source_url": "https://varruset.se/stockholm-2/",
-          "fetched_at": "2026-11-02T23:13:53+01:00"
+          "source_url": "https://varruset.se/stockholm/",
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://events.marathongruppen.se/varruset-stockholm",
-          "fetched_at": "2026-11-02T23:07:04+01:00"
+          "fetched_at": "2026-11-10T08:09:34+01:00"
         }
       ]
     },
@@ -1165,32 +1170,32 @@
         {
           "field": "race_day",
           "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
-          "fetched_at": "2026-11-02T23:07:20+01:00"
+          "fetched_at": "2026-11-10T08:09:51+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
-          "fetched_at": "2026-11-02T23:07:20+01:00"
+          "fetched_at": "2026-11-10T08:09:51+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
-          "fetched_at": "2026-11-02T23:07:20+01:00"
+          "fetched_at": "2026-11-10T08:09:51+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
-          "fetched_at": "2026-11-02T23:07:20+01:00"
+          "fetched_at": "2026-11-10T08:09:51+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
-          "fetched_at": "2026-11-02T23:07:20+01:00"
+          "fetched_at": "2026-11-10T08:09:51+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://blodomloppet.se/vara-lopp/stockholm/",
-          "fetched_at": "2026-11-02T23:07:20+01:00"
+          "fetched_at": "2026-11-10T08:09:51+01:00"
         }
       ]
     },
@@ -1251,32 +1256,32 @@
         {
           "field": "race_day",
           "source_url": "https://runforpride.se/startsida-en/",
-          "fetched_at": "2026-11-02T23:07:25+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://runforpride.se/startsida-en/",
-          "fetched_at": "2026-11-02T23:07:25+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://runforpride.se/startsida-en/",
-          "fetched_at": "2026-11-02T23:07:25+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://runforpride.se/startsida-en/",
-          "fetched_at": "2026-11-02T23:07:25+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://mittlopp.se/Anmalan/Arrangemangsgrupp/runforpride2026",
-          "fetched_at": "2026-11-02T23:07:25+01:00"
+          "fetched_at": "2026-11-10T08:11:24+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://runforpride.se/startsida-en/",
-          "fetched_at": "2026-11-02T23:07:25+01:00"
+          "fetched_at": "2026-11-10T08:12:00+01:00"
         }
       ]
     },
@@ -1364,54 +1369,54 @@
       },
       "notes": [
         "Registration opened in two steps: half marathon 16 Oct 2026, marathon and relay 17 Oct 2026 (RaceID).",
-        "RaceID lists capacity of 2,000 (marathon), 3,000 (half) and 150 (relay teams); 453 participants were registered on 2 Nov 2026 (RaceID participants-count: marathon 195, half 254, relay 4 runners).",
+        "RaceID lists capacity of 2,000 (marathon), 3,000 (half) and 150 (relay teams); the participants-count endpoint shows 508 registered on 10 Nov 2026 (453 on 2 Nov 2026).",
         "Start times in RaceID changed since the previous check: marathon and relay 10:00, half 11:00 (previously 09:30 / 11:30). Held in Uppsala; the relay is filed under the \"other\" calendar feed."
       ],
       "sources": [
         {
           "field": "race_day",
           "source_url": "https://api.raceid.com/api/v2/web/races/15398",
-          "fetched_at": "2026-11-02T23:07:21+01:00"
+          "fetched_at": "2026-11-10T08:09:56+01:00"
         },
         {
           "field": "distances",
           "source_url": "https://api.raceid.com/api/v2/web/races/15398",
-          "fetched_at": "2026-11-02T23:07:21+01:00"
+          "fetched_at": "2026-11-10T08:09:56+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://api.raceid.com/api/v2/web/races/15398",
-          "fetched_at": "2026-11-02T23:07:21+01:00"
+          "fetched_at": "2026-11-10T08:09:56+01:00"
         },
         {
           "field": "registration_opens",
           "source_url": "https://www.uppsalamarathon.se/",
-          "fetched_at": "2026-11-02T23:07:23+01:00"
+          "fetched_at": "2026-11-10T08:09:53+01:00"
         },
         {
           "field": "price_tiers",
           "source_url": "https://api.raceid.com/api/v2/web/races/15398",
-          "fetched_at": "2026-11-02T23:07:21+01:00"
+          "fetched_at": "2026-11-10T08:09:56+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://api.raceid.com/api/v2/web/races/15398",
-          "fetched_at": "2026-11-02T23:07:21+01:00"
+          "fetched_at": "2026-11-10T08:09:56+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://api.raceid.com/api/v1/web/races/15398/participants-count",
-          "fetched_at": "2026-11-02T23:07:21+01:00"
+          "fetched_at": "2026-11-10T08:09:57+01:00"
         },
         {
           "field": "capacity_status",
           "source_url": "https://www.uppsalamarathon.se/",
-          "fetched_at": "2026-11-02T23:07:23+01:00"
+          "fetched_at": "2026-11-10T08:09:53+01:00"
         },
         {
           "field": "registration_url",
           "source_url": "https://api.raceid.com/api/v2/web/races/15398",
-          "fetched_at": "2026-11-02T23:07:21+01:00"
+          "fetched_at": "2026-11-10T08:09:56+01:00"
         }
       ]
     }
