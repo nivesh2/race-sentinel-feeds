@@ -27,6 +27,20 @@ TZOFFSETTO:+0100
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Västerås Marathon 2027
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260513
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Registration for Västerås Marathon 2027 opens. Note: RaceID 
+ registration_starts_at 2026-05-12 00:00 for all three distances\; the firs
+ t price tier is dated from 2026-05-13.\n\nSign up / registration: https://
+ raceid.com/sv/races/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Reg Opens Today] Premiärmilen / Premiärhalvan 2027
 DTSTART;VALUE=DATE:20260525
 DTEND;VALUE=DATE:20260526
@@ -73,6 +87,24 @@ TRANSP:TRANSPARENT
 URL:https://events.marathongruppen.se/8ca268887b77af349904
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Västerås Marathon 21.1K (Saves ~75 SEK)
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-price-bump-half-1@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Västerås Marathon 21.1K: 400 SEK is valid through 2026-09-02
+ \; from 2026-09-03 the price is 475 SEK.\n\nSign up / registration: https:
+ //raceid.com/sv/races/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Västerås Marathon 21.1K (Saves ~75 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Stockholm Half Marathon 21.1K (Saves ~150 SEK)
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
@@ -103,6 +135,24 @@ DESCRIPTION:Registration for the Uppsala Half Marathon 2027 (16 Oct 2027)
  \n\nSign up / registration: https://raceid.com/sv/races/15398/about
 TRANSP:TRANSPARENT
 URL:https://raceid.com/sv/races/15398/about
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Västerås Marathon 21.1K (Saves ~75 SEK)
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-price-bump-half-2@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Västerås Marathon 21.1K: 475 SEK is valid through 2026-10-27
+ \; from 2026-10-28 the price is 550 SEK.\n\nSign up / registration: https:
+ //raceid.com/sv/races/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Västerås Marathon 21.1K (Saves ~75 SEK)
+TRIGGER:PT9H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
@@ -142,6 +192,24 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Västerås Marathon 21.1K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-price-bump-half-3@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Västerås Marathon 21.1K: 550 SEK is valid through 2027-03-31
+ \; from 2027-04-01 the price is 600 SEK.\n\nSign up / registration: https:
+ //raceid.com/sv/races/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Västerås Marathon 21.1K (Saves ~50 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Premiärhalvan 21.1K (Saves ~100 SEK)
 DTSTART;VALUE=DATE:20270403
 DTEND;VALUE=DATE:20270404
@@ -169,6 +237,36 @@ DESCRIPTION:Premiärhalvan 2027 – 21.1K. Start 11:00 (preliminary).\n\nS
  ign up / registration: https://events.marathongruppen.se/6b8a2540a8ef88675
  0bf
 URL:https://events.marathongruppen.se/6b8a2540a8ef886750bf
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Höstrusket 21.1K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+DTSTAMP:20261111T230455Z
+UID:hostrusket-2027-price-bump-half-1@race-sentinel-feeds
+CATEGORIES:Running,hostrusket
+DESCRIPTION:Höstrusket 21.1K: 495 SEK is valid through 2027-04-27\; from 
+ 2027-04-28 the price is 595 SEK.\n\nSign up / registration: https://events
+ .marathongruppen.se/1e4d970e7bb271bd7ea3
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/1e4d970e7bb271bd7ea3
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Höstrusket 21.1K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Västerås Marathon 21.1K
+DTSTART;TZID=Europe/Stockholm:20270501T110000
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-race-day-half@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Västerås Marathon 2027 – 21.1K. Start 11:00 (first start s
+ hown by the organizer).\n\nSign up / registration: https://raceid.com/sv/r
+ aces/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Kungsholmen Runt 21.1K
@@ -202,5 +300,17 @@ DESCRIPTION:Uppsala Marathon 2027 – half marathon. Start 11:00 (RaceID).
  \n\nSign up / registration: https://raceid.com/sv/races/15398/about
 TRANSP:TRANSPARENT
 URL:https://raceid.com/sv/races/15398/about
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Höstrusket 21.1K
+DTSTART;TZID=Europe/Stockholm:20271113T091500
+DTSTAMP:20261111T230455Z
+UID:hostrusket-2027-race-day-half@race-sentinel-feeds
+CATEGORIES:Running,hostrusket
+DESCRIPTION:Höstrusket 2027 – 21.1K. Start 09:15 (first start shown by 
+ the organizer).\n\nSign up / registration: https://events.marathongruppen.
+ se/1e4d970e7bb271bd7ea3
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/1e4d970e7bb271bd7ea3
 END:VEVENT
 END:VCALENDAR
