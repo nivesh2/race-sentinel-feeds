@@ -1,0 +1,558 @@
+{
+  "generated_at": "2026-11-11T22:49:15Z",
+  "city": "Berlin",
+  "timezone": "Europe/Berlin",
+  "clubs": [
+    {
+      "slug": "hasenheide-parkrun",
+      "name": "Hasenheide parkrun",
+      "tagline": "A free, social and friendly weekly 5 km run or walk — walk, jog, run, volunteer or watch.",
+      "first_seen_date": "2026-11-11",
+      "last_seen_date": "2026-11-11",
+      "seeded": false,
+      "beginner_friendly": true,
+      "vibe_tags": [
+        "☕ Fika after",
+        "🚶 Walk/run option",
+        "👟 Beginner friendly",
+        "🌍 All levels welcome"
+      ],
+      "perks": {
+        "free": true,
+        "bag_drop": "not announced",
+        "post_run_social": "Coffee at Café Blume, Fontanestraße 32",
+        "signup_required": "free signup"
+      },
+      "pace_range": "Any pace — run, jog or walk",
+      "distances_km": "5 km",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Saturday",
+          "start_time": "09:00",
+          "neighborhood": "Hasenheide",
+          "meeting_point": "Volkspark Hasenheide",
+          "maps_query": "Volkspark+Hasenheide+Columbiadamm+160+Berlin"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://www.parkrun.com.de/hasenheide/",
+        "strava_url": "not announced",
+        "instagram_handle": "parkrundeutschland"
+      },
+      "sources": [
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.parkrun.com.de/hasenheide/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://www.parkrun.com.de/hasenheide/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://www.parkrun.com.de/hasenheide/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://www.parkrun.com.de/hasenheide/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://www.parkrun.com.de/hasenheide/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "tagline",
+          "source_url": "https://www.parkrun.com.de/hasenheide/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        }
+      ]
+    },
+    {
+      "slug": "tempelhofer-feld-parkrun",
+      "name": "Tempelhofer Feld parkrun",
+      "tagline": "A free, social and friendly weekly 5 km run or walk — walk, jog, run, volunteer or watch.",
+      "first_seen_date": "2026-11-11",
+      "last_seen_date": "2026-11-11",
+      "seeded": false,
+      "beginner_friendly": true,
+      "vibe_tags": [
+        "☕ Fika after",
+        "🚶 Walk/run option",
+        "👟 Beginner friendly",
+        "🌍 All levels welcome"
+      ],
+      "perks": {
+        "free": true,
+        "bag_drop": "not announced",
+        "post_run_social": "Coffee at Luftschloss Tempelhof in the summer months, weather permitting (about 200 m from the finish)",
+        "signup_required": "free signup"
+      },
+      "pace_range": "Any pace — run, jog or walk",
+      "distances_km": "5 km",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Saturday",
+          "start_time": "09:00",
+          "neighborhood": "Tempelhofer Feld",
+          "meeting_point": "Tempelhofer Feld (Tempelhofer Damm)",
+          "maps_query": "Tempelhofer+Feld+Tempelhofer+Damm+Berlin"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://www.parkrun.com.de/tempelhoferfeld/",
+        "strava_url": "not announced",
+        "instagram_handle": "parkrundeutschland"
+      },
+      "sources": [
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.parkrun.com.de/tempelhoferfeld/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://www.parkrun.com.de/tempelhoferfeld/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://www.parkrun.com.de/tempelhoferfeld/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://www.parkrun.com.de/tempelhoferfeld/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://www.parkrun.com.de/tempelhoferfeld/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "tagline",
+          "source_url": "https://www.parkrun.com.de/tempelhoferfeld/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        }
+      ]
+    },
+    {
+      "slug": "mauerweg-parkrun",
+      "name": "Mauerweg parkrun",
+      "tagline": "A free, social and friendly weekly 5 km run or walk — walk, jog, run, volunteer or watch.",
+      "first_seen_date": "2026-11-11",
+      "last_seen_date": "2026-11-11",
+      "seeded": false,
+      "beginner_friendly": true,
+      "vibe_tags": [
+        "☕ Fika after",
+        "🚶 Walk/run option",
+        "👟 Beginner friendly",
+        "🌍 All levels welcome"
+      ],
+      "perks": {
+        "free": true,
+        "bag_drop": "not announced",
+        "post_run_social": "Coffee, cake and fruit on the meadow after the run (participants bring them)",
+        "signup_required": "free signup"
+      },
+      "pace_range": "Any pace — run, jog or walk",
+      "distances_km": "5 km",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Saturday",
+          "start_time": "09:00",
+          "neighborhood": "Mauerweg",
+          "meeting_point": "Mauerweg, near Jenbacher Weg 4",
+          "maps_query": "Mauerweg+Jenbacher+Weg+4+Berlin"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://www.parkrun.com.de/mauerweg/",
+        "strava_url": "not announced",
+        "instagram_handle": "parkrundeutschland"
+      },
+      "sources": [
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.parkrun.com.de/mauerweg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://www.parkrun.com.de/mauerweg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://www.parkrun.com.de/mauerweg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://www.parkrun.com.de/mauerweg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://www.parkrun.com.de/mauerweg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "tagline",
+          "source_url": "https://www.parkrun.com.de/mauerweg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        }
+      ]
+    },
+    {
+      "slug": "grosser-spektesee-parkrun",
+      "name": "Großer Spektesee parkrun",
+      "tagline": "A free, social and friendly weekly 5 km run or walk — walk, jog, run, volunteer or watch.",
+      "first_seen_date": "2026-11-11",
+      "last_seen_date": "2026-11-11",
+      "seeded": false,
+      "beginner_friendly": true,
+      "vibe_tags": [
+        "☕ Fika after",
+        "🚶 Walk/run option",
+        "👟 Beginner friendly",
+        "🌍 All levels welcome"
+      ],
+      "perks": {
+        "free": true,
+        "bag_drop": "not announced",
+        "post_run_social": "Coffee at Café Viva la Vida",
+        "signup_required": "free signup"
+      },
+      "pace_range": "Any pace — run, jog or walk",
+      "distances_km": "5 km",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Saturday",
+          "start_time": "09:00",
+          "neighborhood": "Großer Spektesee",
+          "meeting_point": "Großer Spektesee, Am Kiesteich 27-29",
+          "maps_query": "Großer+Spektesee+Am+Kiesteich+27+Berlin"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://www.parkrun.com.de/grosserspektesee/",
+        "strava_url": "not announced",
+        "instagram_handle": "parkrundeutschland"
+      },
+      "sources": [
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.parkrun.com.de/grosserspektesee/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://www.parkrun.com.de/grosserspektesee/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://www.parkrun.com.de/grosserspektesee/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://www.parkrun.com.de/grosserspektesee/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://www.parkrun.com.de/grosserspektesee/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "tagline",
+          "source_url": "https://www.parkrun.com.de/grosserspektesee/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        }
+      ]
+    },
+    {
+      "slug": "kraft-runners-berlin",
+      "name": "KRAFT Runners Berlin",
+      "tagline": "Free weekly KRAFT Tuesday training in Mitte — no sign-up, every pace welcome, bag drop on site.",
+      "first_seen_date": "2026-11-11",
+      "last_seen_date": "2026-11-11",
+      "seeded": false,
+      "beginner_friendly": true,
+      "vibe_tags": [
+        "🧳 Bag drop",
+        "🌍 All levels welcome",
+        "🤝 Strong community"
+      ],
+      "perks": {
+        "free": true,
+        "bag_drop": true,
+        "post_run_social": "not announced",
+        "signup_required": "none"
+      },
+      "pace_range": "Every pace welcome",
+      "distances_km": "not announced",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Tuesday",
+          "start_time": "19:00",
+          "neighborhood": "Mitte",
+          "meeting_point": "KORNER, Linienstraße 106",
+          "maps_query": "KORNER+Linienstraße+106+Berlin"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://kraftrunners.de/berlin",
+        "strava_url": "not announced",
+        "instagram_handle": "kraftrunners"
+      },
+      "sources": [
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://kraftrunners.de/berlin",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://kraftrunners.de/berlin",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://kraftrunners.de/about",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://kraftrunners.de/berlin",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://kraftrunners.de/berlin",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "tagline",
+          "source_url": "https://kraftrunners.de/berlin",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://kraftrunners.de/berlin",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        }
+      ]
+    },
+    {
+      "slug": "coffee-run-club-lichtenberg",
+      "name": "Coffee Run Club Lichtenberg",
+      "tagline": "Fuelled by a pre-workout espresso, a scenic Saturday run to Treptower Park with 5k or 10k routes.",
+      "first_seen_date": "2026-11-11",
+      "last_seen_date": "2026-11-11",
+      "seeded": false,
+      "beginner_friendly": true,
+      "vibe_tags": [
+        "🌍 All levels welcome",
+        "👟 Beginner friendly"
+      ],
+      "perks": {
+        "free": "not announced",
+        "bag_drop": "not announced",
+        "post_run_social": "not announced",
+        "signup_required": "not announced"
+      },
+      "pace_range": "not announced",
+      "distances_km": "5 km or 10 km",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Saturday",
+          "start_time": "09:20",
+          "neighborhood": "Lichtenberg",
+          "meeting_point": "Green Wall Coffee & Coworking, Sophienstraße 27",
+          "maps_query": "Green+Wall+Coffee+Sophienstraße+27+Berlin"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://www.meetup.com/coffee-run-club-lichtenberg/",
+        "strava_url": "not announced",
+        "instagram_handle": "not announced"
+      },
+      "sources": [
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.meetup.com/coffee-run-club-lichtenberg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://www.meetup.com/coffee-run-club-lichtenberg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://www.meetup.com/coffee-run-club-lichtenberg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "tagline",
+          "source_url": "https://www.meetup.com/coffee-run-club-lichtenberg/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        }
+      ]
+    },
+    {
+      "slug": "berlin-runners",
+      "name": "Berlin Runners",
+      "tagline": "Group runs through the parks of Berlin for anyone interested in running short, medium and long distances.",
+      "first_seen_date": "2026-11-11",
+      "last_seen_date": "2026-11-11",
+      "seeded": false,
+      "beginner_friendly": "not announced",
+      "vibe_tags": [],
+      "perks": {
+        "free": "not announced",
+        "bag_drop": "not announced",
+        "post_run_social": "not announced",
+        "signup_required": "not announced"
+      },
+      "pace_range": "5:30–6:30 min/km depending on the run",
+      "distances_km": "5–12 km",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Wednesday",
+          "start_time": "18:30",
+          "neighborhood": "Wedding",
+          "meeting_point": "Sprengelkiez, Tegler Straße 27",
+          "maps_query": "Tegler+Straße+27+Berlin"
+        },
+        {
+          "day_of_week": "Thursday",
+          "start_time": "07:00",
+          "neighborhood": "Mitte",
+          "meeting_point": "Espresso House, Friedrichstraße 125",
+          "maps_query": "Espresso+House+Friedrichstraße+125+Berlin"
+        },
+        {
+          "day_of_week": "Sunday",
+          "start_time": "09:00",
+          "neighborhood": "Tiergarten",
+          "meeting_point": "Northwest entrance to Siegessäule",
+          "maps_query": "Siegessäule+Tiergarten+Berlin"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://www.meetup.com/berlin-running/",
+        "strava_url": "https://www.strava.com/clubs/berlin-running",
+        "instagram_handle": "not announced"
+      },
+      "sources": [
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.meetup.com/berlin-running/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://www.meetup.com/berlin-running/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://www.meetup.com/berlin-running/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "tagline",
+          "source_url": "https://www.meetup.com/berlin-running/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        }
+      ]
+    },
+    {
+      "slug": "founders-running-club-berlin",
+      "name": "Founders Running Club Berlin",
+      "tagline": "Weekly easy runs and networking for founders, investors, tech and creative people through Tiergarten.",
+      "first_seen_date": "2026-11-11",
+      "last_seen_date": "2026-11-11",
+      "seeded": false,
+      "beginner_friendly": true,
+      "vibe_tags": [
+        "💼 Networking",
+        "☕ Fika after",
+        "👟 Beginner friendly",
+        "🐕 Dogs welcome"
+      ],
+      "perks": {
+        "free": "not announced",
+        "bag_drop": "not announced",
+        "post_run_social": "Coffee and conversation after the run",
+        "signup_required": "not announced"
+      },
+      "pace_range": "Chill, conversational pace of around 6:30 min/km",
+      "distances_km": "5, 7 and 11 km routes",
+      "weekly_schedule": [
+        {
+          "day_of_week": "Saturday",
+          "start_time": "10:00",
+          "neighborhood": "Mitte",
+          "meeting_point": "Fit Cake Concept, Forum an der Museumsinsel 6",
+          "maps_query": "Fit+Cake+Concept+Forum+an+der+Museumsinsel+6+Berlin"
+        }
+      ],
+      "next_special_event": "not announced",
+      "links": {
+        "primary_url": "https://www.meetup.com/founders-running-club-berlin/",
+        "strava_url": "http://strava.com/clubs/foundersRC",
+        "instagram_handle": "frcberlin"
+      },
+      "sources": [
+        {
+          "field": "weekly_schedule",
+          "source_url": "https://www.meetup.com/founders-running-club-berlin/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "perks",
+          "source_url": "https://www.meetup.com/founders-running-club-berlin/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "pace_range",
+          "source_url": "https://www.meetup.com/founders-running-club-berlin/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "distances_km",
+          "source_url": "https://www.meetup.com/founders-running-club-berlin/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "beginner_friendly",
+          "source_url": "https://www.meetup.com/founders-running-club-berlin/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        },
+        {
+          "field": "tagline",
+          "source_url": "https://www.meetup.com/founders-running-club-berlin/",
+          "fetched_at": "2026-11-11T22:49:15Z"
+        }
+      ]
+    }
+  ]
+}
