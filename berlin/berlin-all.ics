@@ -1,0 +1,664 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//race-sentinel//Berlin race feeds//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Berlin Races — all
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+COMMENT:This timezone only works from 1970-01-01 to 2038-01-01.
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZNAME:CET
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19800406T030000
+RDATE:19810329T030000,19820328T030000,19830327T030000,19840325T030000,1985
+ 0331T030000,19860330T030000,19870329T030000,19880327T030000,19890326T03000
+ 0,19900325T030000,19910331T030000,19920329T030000,19930328T030000,19940327
+ T030000,19950326T030000,19960331T030000,19970330T030000,19980329T030000,19
+ 990328T030000,20000326T030000,20010325T030000,20020331T030000,20030330T030
+ 000,20040328T030000,20050327T030000,20060326T030000,20070325T030000,200803
+ 30T030000,20090329T030000,20100328T030000,20110327T030000,20120325T030000,
+ 20130331T030000,20140330T030000,20150329T030000,20160327T030000,20170326T0
+ 30000,20180325T030000,20190331T030000,20200329T030000,20210328T030000,2022
+ 0327T030000,20230326T030000,20240331T030000,20250330T030000,20260329T03000
+ 0,20270328T030000,20280326T030000,20290325T030000,20300331T030000,20310330
+ T030000,20320328T030000,20330327T030000,20340326T030000,20350325T030000,20
+ 360330T030000,20370329T030000
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19800928T030000
+RDATE:19810927T030000,19820926T030000,19830925T030000,19840930T030000,1985
+ 0929T030000,19860928T030000,19870927T030000,19880925T030000,19890924T03000
+ 0,19900930T030000,19910929T030000,19920927T030000,19930926T030000,19940925
+ T030000,19950924T030000,19961027T030000,19971026T030000,19981025T030000,19
+ 991031T030000,20001029T030000,20011028T030000,20021027T030000,20031026T030
+ 000,20041031T030000,20051030T030000,20061029T030000,20071028T030000,200810
+ 26T030000,20091025T030000,20101031T030000,20111030T030000,20121028T030000,
+ 20131027T030000,20141026T030000,20151025T030000,20161030T030000,20171029T0
+ 30000,20181028T030000,20191027T030000,20201025T030000,20211031T030000,2022
+ 1030T030000,20231029T030000,20241027T030000,20251026T030000,20261025T03000
+ 0,20271031T030000,20281029T030000,20291028T030000,20301027T030000,20311026
+ T030000,20321031T030000,20331030T030000,20341029T030000,20351028T030000,20
+ 361026T030000,20371025T030000
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Berlin Half Marathon (Generali) 2027
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260403
+DTSTAMP:20261111T224445Z
+UID:berlin-half-marathon-2027-reg-opens@race-sentinel-feeds
+DESCRIPTION:Registration opens for Berlin Half Marathon (Generali) 2027. S
+ ign up: https://www.generali-berliner-halbmarathon.de/en/registration/run
+TRANSP:TRANSPARENT
+URL:https://www.generali-berliner-halbmarathon.de/en/registration/run
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Women's Race Berlin 2027
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+DTSTAMP:20261111T224531Z
+UID:womens-race-berlin-2027-reg-opens@race-sentinel-feeds
+DESCRIPTION:Registration opens for Women's Race Berlin 2027. Sign up: http
+ s://www.berliner-frauenlauf.de/en/registration/registration
+TRANSP:TRANSPARENT
+URL:https://www.berliner-frauenlauf.de/en/registration/registration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] S 25 Berlin 2027
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-reg-opens@race-sentinel-feeds
+DESCRIPTION:Registration opens for S 25 Berlin 2027. Sign up: https://www.
+ davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] VOLVO Tierparklauf Berlin 2027
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+DTSTAMP:20261111T224933Z
+UID:tierparklauf-berlin-2027-reg-opens@race-sentinel-feeds
+DESCRIPTION:Registration opens for VOLVO Tierparklauf Berlin 2027. Sign up
+ : https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/overvi
+ ew
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/over
+ view
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Berliner Silvesterlauf 2026
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+DTSTAMP:20261111T224836Z
+UID:silvesterlauf-berlin-2026-reg-opens@race-sentinel-feeds
+DESCRIPTION:Registration opens for Berliner Silvesterlauf 2026. Sign up: h
+ ttps://www.berliner-silvesterlauf.de/anmelden/anmeldung
+TRANSP:TRANSPARENT
+URL:https://www.berliner-silvesterlauf.de/anmelden/anmeldung
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Berlin Marathon (Generali) 2027
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+DTSTAMP:20261111T224448Z
+UID:berlin-marathon-2027-reg-opens@race-sentinel-feeds
+DESCRIPTION:Registration opens for Berlin Marathon (Generali) 2027. Sign u
+ p: https://www.generali-berlin-marathon.com/en/registration/run
+TRANSP:TRANSPARENT
+URL:https://www.generali-berlin-marathon.com/en/registration/run
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Berliner Silvesterlauf 10K
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+DTSTAMP:20261111T224836Z
+UID:silvesterlauf-berlin-2026-race-day-10k@race-sentinel-feeds
+DESCRIPTION:Race day: Berliner Silvesterlauf 2026\, 10K. Registration / in
+ fo: https://www.berliner-silvesterlauf.de/anmelden/anmeldung
+TRANSP:TRANSPARENT
+URL:https://www.berliner-silvesterlauf.de/anmelden/anmeldung
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Berliner Silvesterlauf 4K
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+DTSTAMP:20261111T224836Z
+UID:silvesterlauf-berlin-2026-race-day-4k@race-sentinel-feeds
+DESCRIPTION:Race day: Berliner Silvesterlauf 2026\, 4K. Registration / inf
+ o: https://www.berliner-silvesterlauf.de/anmelden/anmeldung
+TRANSP:TRANSPARENT
+URL:https://www.berliner-silvesterlauf.de/anmelden/anmeldung
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Berliner Silvesterlauf 6K
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+DTSTAMP:20261111T224836Z
+UID:silvesterlauf-berlin-2026-race-day-6k@race-sentinel-feeds
+DESCRIPTION:Race day: Berliner Silvesterlauf 2026\, 6K. Registration / inf
+ o: https://www.berliner-silvesterlauf.de/anmelden/anmeldung
+TRANSP:TRANSPARENT
+URL:https://www.berliner-silvesterlauf.de/anmelden/anmeldung
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] S 25 Berlin 10K (Saves ~5 EUR)
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-price-bump-10k-20270115@race-sentinel-feeds
+DESCRIPTION:S 25 Berlin 10K: 40 EUR is the last price through 15 Jan 2027
+ \; it rises to 45 EUR the next day (saves ~5 EUR by registering now). Regi
+ ster: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] S 25 Berlin 10K (Saves ~5 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] S 25 Berlin 25K (Saves ~5 EUR)
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-price-bump-25k-20270115@race-sentinel-feeds
+DESCRIPTION:S 25 Berlin 25K: 60 EUR is the last price through 15 Jan 2027
+ \; it rises to 65 EUR the next day (saves ~5 EUR by registering now). Regi
+ ster: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] S 25 Berlin 25K (Saves ~5 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] S 25 Berlin 5K (Saves ~5 EUR)
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-price-bump-5k-20270115@race-sentinel-feeds
+DESCRIPTION:S 25 Berlin 5K: 30 EUR is the last price through 15 Jan 2027\;
+  it rises to 35 EUR the next day (saves ~5 EUR by registering now). Regist
+ er: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] S 25 Berlin 5K (Saves ~5 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] S 25 Berlin Half Marathon (Saves ~5 EUR)
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-price-bump-halfmarathon-20270115@race-sentinel-feeds
+DESCRIPTION:S 25 Berlin Half Marathon: 55 EUR is the last price through 15
+  Jan 2027\; it rises to 60 EUR the next day (saves ~5 EUR by registering n
+ ow). Register: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] S 25 Berlin Half Marathon (Saves ~5 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Berliner Morgenpost Great 10K 10K (Saves ~5 EU
+ R)
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+DTSTAMP:20261111T224750Z
+UID:great-10k-berlin-2027-price-bump-10k-20270228@race-sentinel-feeds
+DESCRIPTION:Berliner Morgenpost Great 10K 10K: 37 EUR is the last price th
+ rough 28 Feb 2027\; it rises to 42 EUR the next day (saves ~5 EUR by regis
+ tering now). Register: https://www.davengo.com/v3/event/register/berliner-
+ morgenpost-great-10k-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10
+ k-2027/overview
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Berliner Morgenpost Great 10K 10K (Saves ~
+ 5 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Berliner Morgenpost Great 10K 4.2K (Saves ~3 E
+ UR)
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+DTSTAMP:20261111T224750Z
+UID:great-10k-berlin-2027-price-bump-42k-20270228@race-sentinel-feeds
+DESCRIPTION:Berliner Morgenpost Great 10K 4.2K: 29 EUR is the last price t
+ hrough 28 Feb 2027\; it rises to 32 EUR the next day (saves ~3 EUR by regi
+ stering now). Register: https://www.davengo.com/v3/event/register/berliner
+ -morgenpost-great-10k-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10
+ k-2027/overview
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Berliner Morgenpost Great 10K 4.2K (Saves 
+ ~3 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] VOLVO Tierparklauf Berlin 10K (Saves ~5 EUR)
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+DTSTAMP:20261111T224933Z
+UID:tierparklauf-berlin-2027-price-bump-10k-20270331@race-sentinel-feeds
+DESCRIPTION:VOLVO Tierparklauf Berlin 10K: 42 EUR is the last price throug
+ h 31 Mar 2027\; it rises to 47 EUR the next day (saves ~5 EUR by registeri
+ ng now). Register: https://www.davengo.com/v3/event/register/volvo-tierpar
+ klauf-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/over
+ view
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] VOLVO Tierparklauf Berlin 10K (Saves ~5 EU
+ R)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] VOLVO Tierparklauf Berlin 5K (Saves ~5 EUR)
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+DTSTAMP:20261111T224933Z
+UID:tierparklauf-berlin-2027-price-bump-5k-20270331@race-sentinel-feeds
+DESCRIPTION:VOLVO Tierparklauf Berlin 5K: 32 EUR is the last price through
+  31 Mar 2027\; it rises to 37 EUR the next day (saves ~5 EUR by registerin
+ g now). Register: https://www.davengo.com/v3/event/register/volvo-tierpark
+ lauf-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/over
+ view
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] VOLVO Tierparklauf Berlin 5K (Saves ~5 EUR
+ )
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] S 25 Berlin 10K (Saves ~10 EUR)
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-price-bump-10k-20270404@race-sentinel-feeds
+DESCRIPTION:S 25 Berlin 10K: 45 EUR is the last price through 04 Apr 2027
+ \; it rises to 55 EUR the next day (saves ~10 EUR by registering now). Reg
+ ister: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] S 25 Berlin 10K (Saves ~10 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] S 25 Berlin 25K (Saves ~10 EUR)
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-price-bump-25k-20270404@race-sentinel-feeds
+DESCRIPTION:S 25 Berlin 25K: 65 EUR is the last price through 04 Apr 2027
+ \; it rises to 75 EUR the next day (saves ~10 EUR by registering now). Reg
+ ister: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] S 25 Berlin 25K (Saves ~10 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] S 25 Berlin 5K (Saves ~10 EUR)
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-price-bump-5k-20270404@race-sentinel-feeds
+DESCRIPTION:S 25 Berlin 5K: 35 EUR is the last price through 04 Apr 2027\;
+  it rises to 45 EUR the next day (saves ~10 EUR by registering now). Regis
+ ter: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] S 25 Berlin 5K (Saves ~10 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] S 25 Berlin Half Marathon (Saves ~10 EUR)
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-price-bump-halfmarathon-20270404@race-sentinel-feeds
+DESCRIPTION:S 25 Berlin Half Marathon: 60 EUR is the last price through 04
+  Apr 2027\; it rises to 70 EUR the next day (saves ~10 EUR by registering 
+ now). Register: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] S 25 Berlin Half Marathon (Saves ~10 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Berlin Half Marathon (Generali) 21.1K
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+DTSTAMP:20261111T224445Z
+UID:berlin-half-marathon-2027-race-day-211k@race-sentinel-feeds
+DESCRIPTION:Race day: Berlin Half Marathon (Generali) 2027\, 21.1K. Regist
+ ration / info: https://www.generali-berliner-halbmarathon.de/en/registrati
+ on/run
+TRANSP:TRANSPARENT
+URL:https://www.generali-berliner-halbmarathon.de/en/registration/run
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] S 25 Berlin 10K
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-race-day-10k@race-sentinel-feeds
+DESCRIPTION:Race day: S 25 Berlin 2027\, 10K. Registration / info: https:/
+ /www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] S 25 Berlin 25K
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-race-day-25k@race-sentinel-feeds
+DESCRIPTION:Race day: S 25 Berlin 2027\, 25K. Registration / info: https:/
+ /www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] S 25 Berlin 5K
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-race-day-5k@race-sentinel-feeds
+DESCRIPTION:Race day: S 25 Berlin 2027\, 5K. Registration / info: https://
+ www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] S 25 Berlin Half Marathon
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+DTSTAMP:20261111T224623Z
+UID:s25-berlin-2027-race-day-halfmarathon@race-sentinel-feeds
+DESCRIPTION:Race day: S 25 Berlin 2027\, Half Marathon. Registration / inf
+ o: https://www.davengo.com/event/overview/s-25-berlin-2027
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/event/overview/s-25-berlin-2027
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Women's Race Berlin 10K
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+DTSTAMP:20261111T224531Z
+UID:womens-race-berlin-2027-race-day-10k@race-sentinel-feeds
+DESCRIPTION:Race day: Women's Race Berlin 2027\, 10K. Registration / info:
+  https://www.berliner-frauenlauf.de/en/registration/registration
+TRANSP:TRANSPARENT
+URL:https://www.berliner-frauenlauf.de/en/registration/registration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Women's Race Berlin 5K
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+DTSTAMP:20261111T224531Z
+UID:womens-race-berlin-2027-race-day-5k@race-sentinel-feeds
+DESCRIPTION:Race day: Women's Race Berlin 2027\, 5K. Registration / info: 
+ https://www.berliner-frauenlauf.de/en/registration/registration
+TRANSP:TRANSPARENT
+URL:https://www.berliner-frauenlauf.de/en/registration/registration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Berliner Morgenpost Great 10K 10K (Saves ~5 EU
+ R)
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+DTSTAMP:20261111T224750Z
+UID:great-10k-berlin-2027-price-bump-10k-20270630@race-sentinel-feeds
+DESCRIPTION:Berliner Morgenpost Great 10K 10K: 42 EUR is the last price th
+ rough 30 Jun 2027\; it rises to 47 EUR the next day (saves ~5 EUR by regis
+ tering now). Register: https://www.davengo.com/v3/event/register/berliner-
+ morgenpost-great-10k-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10
+ k-2027/overview
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Berliner Morgenpost Great 10K 10K (Saves ~
+ 5 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Berliner Morgenpost Great 10K 4.2K (Saves ~5 E
+ UR)
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+DTSTAMP:20261111T224750Z
+UID:great-10k-berlin-2027-price-bump-42k-20270630@race-sentinel-feeds
+DESCRIPTION:Berliner Morgenpost Great 10K 4.2K: 32 EUR is the last price t
+ hrough 30 Jun 2027\; it rises to 37 EUR the next day (saves ~5 EUR by regi
+ stering now). Register: https://www.davengo.com/v3/event/register/berliner
+ -morgenpost-great-10k-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10
+ k-2027/overview
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Berliner Morgenpost Great 10K 4.2K (Saves 
+ ~5 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] adidas Runners City Night Berlin 10K
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+DTSTAMP:20261111T224806Z
+UID:city-night-berlin-2027-race-day-10k@race-sentinel-feeds
+DESCRIPTION:Race day: adidas Runners City Night Berlin 2027\, 10K. Registr
+ ation / info: https://www.berlin-citynight.de/en/registration/registration
+TRANSP:TRANSPARENT
+URL:https://www.berlin-citynight.de/en/registration/registration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] adidas Runners City Night Berlin 5K
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+DTSTAMP:20261111T224806Z
+UID:city-night-berlin-2027-race-day-5k@race-sentinel-feeds
+DESCRIPTION:Race day: adidas Runners City Night Berlin 2027\, 5K. Registra
+ tion / info: https://www.berlin-citynight.de/en/registration/registration
+TRANSP:TRANSPARENT
+URL:https://www.berlin-citynight.de/en/registration/registration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] VOLVO Tierparklauf Berlin 10K (Saves ~8 EUR)
+DTSTART;VALUE=DATE:20270827
+DTEND;VALUE=DATE:20270828
+DTSTAMP:20261111T224933Z
+UID:tierparklauf-berlin-2027-price-bump-10k-20270828@race-sentinel-feeds
+DESCRIPTION:VOLVO Tierparklauf Berlin 10K: 47 EUR is the last price throug
+ h 28 Aug 2027\; it rises to 55 EUR the next day (saves ~8 EUR by registeri
+ ng now). Register: https://www.davengo.com/v3/event/register/volvo-tierpar
+ klauf-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/over
+ view
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] VOLVO Tierparklauf Berlin 10K (Saves ~8 EU
+ R)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] VOLVO Tierparklauf Berlin 5K (Saves ~8 EUR)
+DTSTART;VALUE=DATE:20270827
+DTEND;VALUE=DATE:20270828
+DTSTAMP:20261111T224933Z
+UID:tierparklauf-berlin-2027-price-bump-5k-20270828@race-sentinel-feeds
+DESCRIPTION:VOLVO Tierparklauf Berlin 5K: 37 EUR is the last price through
+  28 Aug 2027\; it rises to 45 EUR the next day (saves ~8 EUR by registerin
+ g now). Register: https://www.davengo.com/v3/event/register/volvo-tierpark
+ lauf-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/over
+ view
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] VOLVO Tierparklauf Berlin 5K (Saves ~8 EUR
+ )
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] VOLVO Tierparklauf Berlin 10K
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+DTSTAMP:20261111T224933Z
+UID:tierparklauf-berlin-2027-race-day-10k@race-sentinel-feeds
+DESCRIPTION:Race day: VOLVO Tierparklauf Berlin 2027\, 10K. The event runs
+  over the weekend 11–12 Sep 2027. Registration / info: https://www.daven
+ go.com/v3/event/register/volvo-tierparklauf-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/over
+ view
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] VOLVO Tierparklauf Berlin 5K
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+DTSTAMP:20261111T224933Z
+UID:tierparklauf-berlin-2027-race-day-5k@race-sentinel-feeds
+DESCRIPTION:Race day: VOLVO Tierparklauf Berlin 2027\, 5K. The event runs 
+ over the weekend 11–12 Sep 2027. Registration / info: https://www.daveng
+ o.com/v3/event/register/volvo-tierparklauf-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/over
+ view
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Berliner Morgenpost Great 10K 10K (Saves ~8 EU
+ R)
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+DTSTAMP:20261111T224750Z
+UID:great-10k-berlin-2027-price-bump-10k-20270926@race-sentinel-feeds
+DESCRIPTION:Berliner Morgenpost Great 10K 10K: 47 EUR is the last price th
+ rough 26 Sep 2027\; it rises to 55 EUR the next day (saves ~8 EUR by regis
+ tering now). Register: https://www.davengo.com/v3/event/register/berliner-
+ morgenpost-great-10k-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10
+ k-2027/overview
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Berliner Morgenpost Great 10K 10K (Saves ~
+ 8 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Berliner Morgenpost Great 10K 4.2K (Saves ~8 E
+ UR)
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+DTSTAMP:20261111T224750Z
+UID:great-10k-berlin-2027-price-bump-42k-20270926@race-sentinel-feeds
+DESCRIPTION:Berliner Morgenpost Great 10K 4.2K: 37 EUR is the last price t
+ hrough 26 Sep 2027\; it rises to 45 EUR the next day (saves ~8 EUR by regi
+ stering now). Register: https://www.davengo.com/v3/event/register/berliner
+ -morgenpost-great-10k-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10
+ k-2027/overview
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Berliner Morgenpost Great 10K 4.2K (Saves 
+ ~8 EUR)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Berlin Marathon (Generali) 42.2K
+DTSTART;VALUE=DATE:20270926
+DTEND;VALUE=DATE:20270927
+DTSTAMP:20261111T224448Z
+UID:berlin-marathon-2027-race-day-422k@race-sentinel-feeds
+DESCRIPTION:Race day: Berlin Marathon (Generali) 2027\, 42.2K. Registratio
+ n / info: https://www.generali-berlin-marathon.com/en/registration/run
+TRANSP:TRANSPARENT
+URL:https://www.generali-berlin-marathon.com/en/registration/run
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Berliner Morgenpost Great 10K 10K
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271011
+DTSTAMP:20261111T224750Z
+UID:great-10k-berlin-2027-race-day-10k@race-sentinel-feeds
+DESCRIPTION:Race day: Berliner Morgenpost Great 10K 2027\, 10K. Registrati
+ on / info: https://www.davengo.com/v3/event/register/berliner-morgenpost-g
+ reat-10k-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10
+ k-2027/overview
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Berliner Morgenpost Great 10K 4.2K
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271011
+DTSTAMP:20261111T224750Z
+UID:great-10k-berlin-2027-race-day-42k@race-sentinel-feeds
+DESCRIPTION:Race day: Berliner Morgenpost Great 10K 2027\, 4.2K. Registrat
+ ion / info: https://www.davengo.com/v3/event/register/berliner-morgenpost-
+ great-10k-2027/overview
+TRANSP:TRANSPARENT
+URL:https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10
+ k-2027/overview
+END:VEVENT
+END:VCALENDAR
