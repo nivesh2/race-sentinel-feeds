@@ -1,0 +1,698 @@
+{
+  "generated_at": "2026-11-11T23:51:12+01:00",
+  "city": "Berlin",
+  "timezone": "Europe/Berlin",
+  "currency": "EUR",
+  "races": [
+    {
+      "slug": "berlin-marathon",
+      "name": "Berlin Marathon (Generali)",
+      "edition_year": 2027,
+      "race_day": "2027-09-26",
+      "distances": [
+        "42.2K"
+      ],
+      "registration_opens": "2026-10-01",
+      "price_tiers": [
+        {
+          "distance": "42.2K",
+          "price": 215,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        }
+      ],
+      "capacity_status": "open",
+      "capacity_wording": "Race entries allocated by lottery; lottery registration period 1 Oct 2026 to 12 Nov 2026; results 3 Dec 2026",
+      "registration_url": "https://www.generali-berlin-marathon.com/en/registration/run",
+      "official_url": "https://www.generali-berlin-marathon.com/en/",
+      "badge": "registering",
+      "headline": "Lottery open — enter by 12 Nov 2026 (results 3 Dec 2026); 215 EUR is charged only if you are drawn.",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2027-09-26",
+        "label": "Race day"
+      },
+      "notes": [
+        "Entries are allocated by lottery (entry window 1 Oct–12 Nov 2026, results 3 Dec 2026, fee charged from 4 Dec 2026), per the official run registration page.",
+        "Sponsor change: the 2027 edition is the Generali Berlin-Marathon (previously BMW Berlin-Marathon), per the organizer's site.",
+        "Marathon-weekend 5K (Sat 25 Sep 2027, 34.50 EUR) is a separate event; its registration opens 27 Nov 2026 per its page."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://www.bmw-berlin-marathon.com/en/",
+          "fetched_at": "2026-11-11T23:44:24+01:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://www.generali-berlin-marathon.com/en/registration/run",
+          "fetched_at": "2026-11-11T23:44:42+01:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://www.generali-berlin-marathon.com/en/registration/run",
+          "fetched_at": "2026-11-11T23:44:42+01:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://www.generali-berlin-marathon.com/en/registration/run",
+          "fetched_at": "2026-11-11T23:44:42+01:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://www.generali-berlin-marathon.com/en/registration/run",
+          "fetched_at": "2026-11-11T23:44:42+01:00"
+        },
+        {
+          "field": "notes",
+          "source_url": "https://www.generali-berlin-marathon.com/en/registration/5k",
+          "fetched_at": "2026-11-11T23:44:48+01:00"
+        }
+      ]
+    },
+    {
+      "slug": "berlin-half-marathon",
+      "name": "Berlin Half Marathon (Generali)",
+      "edition_year": 2027,
+      "race_day": "2027-04-04",
+      "distances": [
+        "21.1K"
+      ],
+      "registration_opens": "2026-04-02",
+      "price_tiers": [
+        {
+          "distance": "21.1K",
+          "price": 89,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        }
+      ],
+      "capacity_status": "closed",
+      "capacity_wording": "Lottery registration period 2 Apr 2026 to 28 May 2026 has ended; lottery results are in (emailed 16 Jun 2026)",
+      "registration_url": "https://www.generali-berliner-halbmarathon.de/en/registration/run",
+      "official_url": "https://www.generali-berliner-halbmarathon.de/en/",
+      "badge": "closed",
+      "headline": "Lottery closed — the 2027 draw (entry window 2 Apr–28 May 2026) is done; the 89 EUR fee was charged to drawn runners on 16 Jun 2026.",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2027-04-04",
+        "label": "Race day"
+      },
+      "notes": [
+        "Bibs for 2027 were allocated by lottery (entry window 2 Apr–28 May 2026, results 16 Jun 2026), per the official run registration page.",
+        "Other routes to a bib listed by the organizer: charity places and official tour operators.",
+        "Registration for the next lottery is not announced."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://www.generali-berliner-halbmarathon.de/en/",
+          "fetched_at": "2026-11-11T23:44:27+01:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://www.generali-berliner-halbmarathon.de/en/registration/run",
+          "fetched_at": "2026-11-11T23:44:45+01:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://www.generali-berliner-halbmarathon.de/en/registration/run",
+          "fetched_at": "2026-11-11T23:44:45+01:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://www.generali-berliner-halbmarathon.de/en/",
+          "fetched_at": "2026-11-11T23:44:27+01:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://www.generali-berliner-halbmarathon.de/en/registration/run",
+          "fetched_at": "2026-11-11T23:44:45+01:00"
+        }
+      ]
+    },
+    {
+      "slug": "s25-berlin",
+      "name": "S 25 Berlin",
+      "edition_year": 2027,
+      "race_day": "2027-04-18",
+      "distances": [
+        "5K",
+        "10K",
+        "Half Marathon",
+        "25K"
+      ],
+      "registration_opens": "2026-07-10",
+      "price_tiers": [
+        {
+          "distance": "5K",
+          "price": 30,
+          "currency": "EUR",
+          "valid_until": "2027-01-15"
+        },
+        {
+          "distance": "5K",
+          "price": 35,
+          "currency": "EUR",
+          "valid_until": "2027-04-04"
+        },
+        {
+          "distance": "5K",
+          "price": 45,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        },
+        {
+          "distance": "10K",
+          "price": 40,
+          "currency": "EUR",
+          "valid_until": "2027-01-15"
+        },
+        {
+          "distance": "10K",
+          "price": 45,
+          "currency": "EUR",
+          "valid_until": "2027-04-04"
+        },
+        {
+          "distance": "10K",
+          "price": 55,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        },
+        {
+          "distance": "Half Marathon",
+          "price": 55,
+          "currency": "EUR",
+          "valid_until": "2027-01-15"
+        },
+        {
+          "distance": "Half Marathon",
+          "price": 60,
+          "currency": "EUR",
+          "valid_until": "2027-04-04"
+        },
+        {
+          "distance": "Half Marathon",
+          "price": 70,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        },
+        {
+          "distance": "25K",
+          "price": 60,
+          "currency": "EUR",
+          "valid_until": "2027-01-15"
+        },
+        {
+          "distance": "25K",
+          "price": 65,
+          "currency": "EUR",
+          "valid_until": "2027-04-04"
+        },
+        {
+          "distance": "25K",
+          "price": 75,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        }
+      ],
+      "capacity_status": "open",
+      "capacity_wording": "Registration open ('Die Anmeldung ist geöffnet'); price page: registration only possible while places are available",
+      "registration_url": "https://www.davengo.com/event/overview/s-25-berlin-2027",
+      "official_url": "https://berlin-laeuft.de/s25berlin/",
+      "badge": "registering",
+      "headline": "Registration open — 10K 40 EUR until 15 Jan 2027, then 45 EUR (5K 30, half 55, 25K 60 EUR until then).",
+      "next_deadline": {
+        "type": "price_bump",
+        "date": "2027-01-15",
+        "label": "Price rises 40 → 45 EUR for 10K (5K 30 → 35, half 55 → 60, 25K 60 → 65 EUR)"
+      },
+      "notes": [
+        "Registration-open date is the date of the organizer's news post (10 Jul 2026) announcing that registration is open; the organizer does not state an earlier opening date.",
+        "Four dated price steps (19 Jul 2026, 1 Nov 2026, 15 Jan 2027, 4 Apr 2027, then late registration), per the organizer's price table; places are limited ('only while places are available').",
+        "Groups of 15+ get 10% off the entry fee, bookable only through the organizer; finish is on the blue track in the Olympiastadion."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://berlin-laeuft.de/blog/die-anmeldung-ist-geoffnet-sichere-dir-deinen-startplatz-fur-den-s-25-berlin-2027/",
+          "fetched_at": "2026-11-11T23:46:23+01:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://berlin-laeuft.de/blog/die-anmeldung-ist-geoffnet-sichere-dir-deinen-startplatz-fur-den-s-25-berlin-2027/",
+          "fetched_at": "2026-11-11T23:46:23+01:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://berlin-laeuft.de/s25berlin/preise-und-infos/",
+          "fetched_at": "2026-11-11T23:46:10+01:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://berlin-laeuft.de/s25berlin/preise-und-infos/",
+          "fetched_at": "2026-11-11T23:45:46+01:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://berlin-laeuft.de/s25berlin/preise-und-infos/",
+          "fetched_at": "2026-11-11T23:45:46+01:00"
+        }
+      ]
+    },
+    {
+      "slug": "great-10k-berlin",
+      "name": "Berliner Morgenpost Great 10K",
+      "edition_year": 2027,
+      "race_day": "2027-10-10",
+      "distances": [
+        "10K",
+        "4.2K"
+      ],
+      "registration_opens": "not announced",
+      "price_tiers": [
+        {
+          "distance": "10K",
+          "price": 37,
+          "currency": "EUR",
+          "valid_until": "2027-02-28"
+        },
+        {
+          "distance": "10K",
+          "price": 42,
+          "currency": "EUR",
+          "valid_until": "2027-06-30"
+        },
+        {
+          "distance": "10K",
+          "price": 47,
+          "currency": "EUR",
+          "valid_until": "2027-09-26"
+        },
+        {
+          "distance": "10K",
+          "price": 55,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        },
+        {
+          "distance": "4.2K",
+          "price": 29,
+          "currency": "EUR",
+          "valid_until": "2027-02-28"
+        },
+        {
+          "distance": "4.2K",
+          "price": 32,
+          "currency": "EUR",
+          "valid_until": "2027-06-30"
+        },
+        {
+          "distance": "4.2K",
+          "price": 37,
+          "currency": "EUR",
+          "valid_until": "2027-09-26"
+        },
+        {
+          "distance": "4.2K",
+          "price": 45,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        }
+      ],
+      "capacity_status": "open",
+      "capacity_wording": "Online registration page for the 2027 event exists; price page: registration only possible while places are available",
+      "registration_url": "https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10k-2027/overview",
+      "official_url": "https://berlin-laeuft.de/great10k/",
+      "badge": "registering",
+      "headline": "Registration open — 10K 37 EUR until 28 Feb 2027, then 42 EUR (4.2K 29 EUR, then 32 EUR).",
+      "next_deadline": {
+        "type": "price_bump",
+        "date": "2027-02-28",
+        "label": "Price rises 37 → 42 EUR for 10K (4.2K 29 → 32 EUR)"
+      },
+      "notes": [
+        "Four dated price steps plus late registration, per the organizer's price table; registration is only possible while places last.",
+        "The organizer's site also lists a 2x5K relay and kids' runs (not tracked here); the 2026 edition had about 7,000 runners (organizer news, 11 Oct 2026).",
+        "The registration opening date for 2027 is not published; the price table's first tier ended 18 Oct 2026."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://berlin-laeuft.de/great10k/",
+          "fetched_at": "2026-11-11T23:46:33+01:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://berlin-laeuft.de/great10k/",
+          "fetched_at": "2026-11-11T23:46:33+01:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://berlin-laeuft.de/great10k/preise-und-infos/",
+          "fetched_at": "2026-11-11T23:46:44+01:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://www.davengo.com/v3/event/register/berliner-morgenpost-great-10k-2027/overview",
+          "fetched_at": "2026-11-11T23:47:50+01:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://berlin-laeuft.de/great10k/",
+          "fetched_at": "2026-11-11T23:46:33+01:00"
+        }
+      ]
+    },
+    {
+      "slug": "tierparklauf-berlin",
+      "name": "VOLVO Tierparklauf Berlin",
+      "edition_year": 2027,
+      "race_day": "2027-09-11",
+      "distances": [
+        "5K",
+        "10K"
+      ],
+      "registration_opens": "2026-09-12",
+      "price_tiers": [
+        {
+          "distance": "5K",
+          "price": 32,
+          "currency": "EUR",
+          "valid_until": "2027-03-31"
+        },
+        {
+          "distance": "5K",
+          "price": 37,
+          "currency": "EUR",
+          "valid_until": "2027-08-28"
+        },
+        {
+          "distance": "5K",
+          "price": 45,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        },
+        {
+          "distance": "10K",
+          "price": 42,
+          "currency": "EUR",
+          "valid_until": "2027-03-31"
+        },
+        {
+          "distance": "10K",
+          "price": 47,
+          "currency": "EUR",
+          "valid_until": "2027-08-28"
+        },
+        {
+          "distance": "10K",
+          "price": 55,
+          "currency": "EUR",
+          "valid_until": "not announced"
+        }
+      ],
+      "capacity_status": "open",
+      "capacity_wording": "Registration open ('Anmeldung für Tierparklauf 2027 geöffnet'); price page: registration only possible while places are available",
+      "registration_url": "https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/overview",
+      "official_url": "https://berlin-laeuft.de/tierparklauf/",
+      "badge": "registering",
+      "headline": "Registration open — 5K 32 EUR and 10K 42 EUR until 31 Mar 2027, then 37 and 47 EUR.",
+      "next_deadline": {
+        "type": "price_bump",
+        "date": "2027-03-31",
+        "label": "Price rises 32 → 37 EUR (5K) and 42 → 47 EUR (10K)"
+      },
+      "notes": [
+        "Held over the weekend of 11–12 Sep 2027 in Tierpark Berlin; which distance runs on which day is not announced (organizer site).",
+        "Registration-open date is the organizer's news post (12 Sep 2026) announcing it; early-bird prices ran to 20 Sep 2026, then three further dated steps and late registration.",
+        "The 2026 edition drew 8,605 runners (organizer news, 14 Sep 2026); the site also lists a 5K walk, a 2x5K Generations team and kids' runs (not tracked here)."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://berlin-laeuft.de/tierparklauf/",
+          "fetched_at": "2026-11-11T23:46:54+01:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://berlin-laeuft.de/tierparklauf/",
+          "fetched_at": "2026-11-11T23:46:54+01:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://berlin-laeuft.de/tierparklauf/preise-und-infos/",
+          "fetched_at": "2026-11-11T23:47:04+01:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://www.davengo.com/v3/event/register/volvo-tierparklauf-2027/overview",
+          "fetched_at": "2026-11-11T23:49:33+01:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://berlin-laeuft.de/tierparklauf/",
+          "fetched_at": "2026-11-11T23:46:54+01:00"
+        }
+      ]
+    },
+    {
+      "slug": "womens-race-berlin",
+      "name": "Women's Race Berlin",
+      "edition_year": 2027,
+      "race_day": "2027-05-22",
+      "distances": [
+        "5K",
+        "10K"
+      ],
+      "registration_opens": "2026-05-26",
+      "price_tiers": [
+        {
+          "distance": "5K",
+          "price": 38,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 1"
+        },
+        {
+          "distance": "5K",
+          "price": 44,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 2"
+        },
+        {
+          "distance": "5K",
+          "price": 48,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 3 (late registration)"
+        },
+        {
+          "distance": "10K",
+          "price": 38,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 1"
+        },
+        {
+          "distance": "10K",
+          "price": 44,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 2"
+        },
+        {
+          "distance": "10K",
+          "price": 48,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 3 (late registration)"
+        }
+      ],
+      "capacity_status": "open",
+      "capacity_wording": "Registration period 26 May 2026 to 6 May 2027; price levels 1 and 2 are limited in number",
+      "registration_url": "https://www.berliner-frauenlauf.de/en/registration/registration",
+      "official_url": "https://www.berliner-frauenlauf.de/en/",
+      "badge": "registering",
+      "headline": "Registration open until 6 May 2027 — timed 5K/10K from 38 EUR (adult, price level 1); prices rise by level as places sell, not by date.",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2027-05-22",
+        "label": "Race day"
+      },
+      "notes": [
+        "Price levels are capacity-based, not dated: levels 1 and 2 are limited, and when a level sells out the next one applies (organizer's registration page); which level is current is not published.",
+        "Prices shown are adult, timed 5K/10K; without timing, 5K run/walk is 36 / 42 / 48 EUR; youth rates are lower.",
+        "Women only; the registration period runs to 6 May 2027."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://www.berliner-frauenlauf.de/en/registration/registration",
+          "fetched_at": "2026-11-11T23:45:14+01:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://www.berliner-frauenlauf.de/en/registration/registration",
+          "fetched_at": "2026-11-11T23:45:14+01:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://www.berliner-frauenlauf.de/en/registration/10-k-running",
+          "fetched_at": "2026-11-11T23:45:31+01:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://www.berliner-frauenlauf.de/en/registration/registration",
+          "fetched_at": "2026-11-11T23:45:14+01:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://www.berliner-frauenlauf.de/en/registration/registration",
+          "fetched_at": "2026-11-11T23:45:14+01:00"
+        }
+      ]
+    },
+    {
+      "slug": "city-night-berlin",
+      "name": "adidas Runners City Night Berlin",
+      "edition_year": 2027,
+      "race_day": "2027-07-31",
+      "distances": [
+        "5K",
+        "10K"
+      ],
+      "registration_opens": "not announced",
+      "price_tiers": [],
+      "capacity_status": "upcoming",
+      "capacity_wording": "'The registration period for 2027 will be announced here.'",
+      "registration_url": "https://www.berlin-citynight.de/en/registration/registration",
+      "official_url": "https://www.berlin-citynight.de/en/",
+      "badge": "opens_soon",
+      "headline": "Registration not open yet — the 2027 registration period and prices are not announced; race day is 31 Jul 2027.",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2027-07-31",
+        "label": "Race day"
+      },
+      "notes": [
+        "The organizer's registration page still shows only the 2026 fees (adult 10K run 30 / 35 / 40 EUR by capacity-based level); 2027 prices are not announced.",
+        "The 2026 edition drew more than 16,350 runners and skaters (organizer news, 3 Aug 2026)."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://www.berlin-citynight.de/en/",
+          "fetched_at": "2026-11-11T23:45:30+01:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://www.berlin-citynight.de/en/registration/registration",
+          "fetched_at": "2026-11-11T23:48:06+01:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://www.berlin-citynight.de/en/registration/registration",
+          "fetched_at": "2026-11-11T23:48:06+01:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://www.berlin-citynight.de/en/registration/registration",
+          "fetched_at": "2026-11-11T23:48:06+01:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://www.berlin-citynight.de/en/registration/registration",
+          "fetched_at": "2026-11-11T23:48:06+01:00"
+        }
+      ]
+    },
+    {
+      "slug": "silvesterlauf-berlin",
+      "name": "Berliner Silvesterlauf",
+      "edition_year": 2026,
+      "race_day": "2026-12-31",
+      "distances": [
+        "4K",
+        "6K",
+        "10K"
+      ],
+      "registration_opens": "2026-09-17",
+      "price_tiers": [
+        {
+          "distance": "6K",
+          "price": 17,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 1 (adult)"
+        },
+        {
+          "distance": "10K",
+          "price": 17,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 1 (adult)"
+        },
+        {
+          "distance": "6K",
+          "price": 28,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 2 (adult)"
+        },
+        {
+          "distance": "10K",
+          "price": 28,
+          "currency": "EUR",
+          "valid_until": "not announced",
+          "label": "Level 2 (adult)"
+        }
+      ],
+      "capacity_status": "open",
+      "capacity_wording": "Registration period 17 Sep 2026 to 30 Dec 2026; 4 km run marked 'AUSVERKAUFT' (sold out), 6 km and 10 km still open",
+      "registration_url": "https://www.berliner-silvesterlauf.de/anmelden/anmeldung",
+      "official_url": "https://www.berliner-silvesterlauf.de/",
+      "badge": "registering",
+      "headline": "Registration open until 30 Dec 2026 — 17 EUR (adult, level 1) while the cheaper places last, then 28 EUR; the 4 km run is sold out.",
+      "next_deadline": {
+        "type": "race_day",
+        "date": "2026-12-31",
+        "label": "Race day"
+      },
+      "notes": [
+        "The 4 km run is sold out as of 11 Nov 2026 (marked 'AUSVERKAUFT' on the registration page); the 6 km and 10 km runs are still open.",
+        "Fees are capacity-based by level (adult 17 / 28 EUR, youth 10 / 20 EUR), not dated, so a cheaper level can sell out without notice.",
+        "Held in Grunewald around the Teufelsberg; costumes are encouraged (organizer site)."
+      ],
+      "sources": [
+        {
+          "field": "race_day",
+          "source_url": "https://www.berliner-silvesterlauf.de/",
+          "fetched_at": "2026-11-11T23:48:30+01:00"
+        },
+        {
+          "field": "registration_opens",
+          "source_url": "https://www.berliner-silvesterlauf.de/anmelden/anmeldung",
+          "fetched_at": "2026-11-11T23:48:36+01:00"
+        },
+        {
+          "field": "price_tiers",
+          "source_url": "https://www.berliner-silvesterlauf.de/anmelden/anmeldung",
+          "fetched_at": "2026-11-11T23:48:36+01:00"
+        },
+        {
+          "field": "capacity_status",
+          "source_url": "https://www.berliner-silvesterlauf.de/anmelden/anmeldung",
+          "fetched_at": "2026-11-11T23:48:36+01:00"
+        },
+        {
+          "field": "registration_url",
+          "source_url": "https://www.berliner-silvesterlauf.de/anmelden/anmeldung",
+          "fetched_at": "2026-11-11T23:48:36+01:00"
+        }
+      ]
+    }
+  ]
+}
