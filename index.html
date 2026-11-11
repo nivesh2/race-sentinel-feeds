@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stockholm Race Alerts</title>
-<meta name="description" content="Friendly weekly run clubs and Stockholm's big races in one calm place — find people to run with this week, or plan a race or two for the year.">
+<title>Race Alerts</title>
+<meta name="description" content="Friendly weekly run clubs and the big races in your city, in one calm place — find people to run with this week, or plan a race or two for the year.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%23ff5a1f'/></svg>">
 <style>
   :root {
@@ -37,6 +37,12 @@
     --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 48px rgba(0, 0, 0, .5);
     color-scheme: dark;
   }
+  /* ── per-city accent (set via <html data-city>): Stockholm keeps the base orange; Berlin takes a Berlin-Marathon-style red */
+  :root[data-city="berlin"] { --accent: #e2001a; --accent-ink: #ffffff; --accent-soft: rgba(226, 0, 26, .10); --accent-text: #b0001a; --accent-fill: #c8001a; }
+  @media (prefers-color-scheme: dark) {
+    :root[data-city="berlin"]:not([data-theme="light"]) { --accent: #ff4d5e; --accent-ink: #141414; --accent-soft: rgba(255, 77, 94, .16); --accent-text: #ff6b78; --accent-fill: #ff4d5e; }
+  }
+  :root[data-city="berlin"][data-theme="dark"] { --accent: #ff4d5e; --accent-ink: #141414; --accent-soft: rgba(255, 77, 94, .16); --accent-text: #ff6b78; --accent-fill: #ff4d5e; }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.5 var(--font);
@@ -49,6 +55,20 @@
 
   /* ── header: a small name, then the headline itself is the switch */
   .brand { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--sub); letter-spacing: .01em; }
+  header { position: relative; }
+  /* small landmark line-art per city, right of the title; drawn in code (CITIES[..].art). Hidden where it would crowd the headline. */
+  .cityart { position: absolute; right: 0; top: 56px; width: 230px; pointer-events: none; color: var(--faint); }
+  .cityart svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .cityart svg * { fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+  .cityart svg .a { stroke: var(--accent); }
+  .cityart svg .f { fill: var(--accent-soft); }
+  .cityart svg .t { stroke-width: 5; stroke-linecap: butt; }
+  @media (max-width: 859px) { .cityart { display: none; } }
+  .hbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .cities { display: inline-flex; gap: 2px; padding: 3px; border-radius: 12px; background: var(--zone); border: 1px solid var(--line); }
+  .cities button { border: 0; background: none; height: 32px; padding: 0 12px; border-radius: 9px; font-size: 14px; color: var(--sub); cursor: pointer; white-space: nowrap; }
+  .cities button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 600; box-shadow: 0 1px 2px rgba(0, 0, 0, .08), 0 0 0 1px var(--line); }
+  .cities[hidden] { display: none; }
   .brand i { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
   .ttabs { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0 20px; margin-top: 10px; scroll-margin-top: 64px; }
   .door { position: relative; border: 0; background: none; padding: 2px 0 8px; cursor: pointer; color: var(--faint);
@@ -432,7 +452,7 @@
 <body>
 <div class="mini" id="mini">
   <div class="mini-in">
-    <span class="brand"><i aria-hidden="true"></i><span>Stockholm Race Alerts</span></span>
+    <span class="brand"><i aria-hidden="true"></i><span class="cityname">Race Alerts</span></span>
     <div class="mini-seg" role="group" aria-label="Switch view">
       <button type="button" data-go="clubs" aria-pressed="true">Run clubs</button>
       <button type="button" data-go="races" aria-pressed="false">Races</button>
@@ -442,13 +462,17 @@
 
 <div class="wrap">
   <header>
-    <h1 class="sr">Stockholm Race Alerts — run clubs and races</h1>
-    <span class="brand" aria-hidden="true"><i></i>Stockholm Race Alerts</span>
+    <h1 class="sr" id="h1">Race Alerts — run clubs and races</h1>
+    <div class="hbar">
+      <span class="brand" aria-hidden="true"><i></i><span class="cityname">Race Alerts</span></span>
+      <nav class="cities" id="cityPick" role="group" aria-label="City"></nav>
+    </div>
+    <div class="cityart" id="cityArt" aria-hidden="true"></div>
     <div class="ttabs" id="doors" role="tablist" aria-label="Show">
       <button class="door" id="door-clubs" type="button" role="tab" data-door="clubs" aria-controls="view-clubs" aria-selected="true">Run clubs<span class="n" id="nClubs" aria-hidden="true"></span></button>
       <button class="door" id="door-races" type="button" role="tab" data-door="races" aria-controls="view-races" aria-selected="false" tabindex="-1">Races<span class="n" id="nRaces" aria-hidden="true"></span></button>
     </div>
-    <p class="pitch" data-for="clubs">Friendly group runs that meet every week around Stockholm.<span class="peek" id="peekClubs"></span></p>
+    <p class="pitch" data-for="clubs">Friendly group runs that meet every week around <span class="cityn"></span>.<span class="peek" id="peekClubs"></span></p>
     <p class="pitch" data-for="races">Every sign-up day, price hike and sell-out — in the calendar you already use.<span class="peek" id="peekRaces"></span></p>
   </header>
 
@@ -464,7 +488,7 @@
       <div class="listhead"><span id="cCount" aria-live="polite"></span><button class="linkbtn" id="dayAll" type="button" hidden>Whole week</button></div>
       <div class="agenda" id="agenda"><p class="empty">Finding this week's runs…</p></div>
       <ul class="clist" id="cList" hidden></ul>
-      <p class="c-foot" id="clubsMore" hidden>Clubs are checked every night — times can still change, so check the club page before your first run. New clubs show up here as we find them.</p>
+      <p class="c-foot" id="clubsMore" hidden>Clubs are checked regularly — times can still change, so check the club page before your first run. New clubs show up here as we find them.</p>
       <a class="hand" href="#races" data-go="races">
         <span class="hq">Signing up for a race?<span>See sign-up days and price steps for the season.</span></span>
         <span class="ha">Races →</span>
@@ -500,7 +524,7 @@
     </section>
   </div>
 
-  <footer>Races are checked every night at 00:30 from organizer and registration sites — always confirm on the official race page before you pay. Club times come from each club's own page.</footer>
+  <footer>Races are checked regularly from organizer and registration sites — always confirm on the official race page before you pay. Club times come from each club's own page.</footer>
 </div>
 
 <dialog class="sheet" id="sheet" aria-labelledby="sName">
@@ -509,24 +533,73 @@
 <div class="toast" id="toast" role="status"></div>
 
 <script>
+// ── cities: each has its own data folder (Stockholm lives at the repo root, others in <dir>/), timezone, currency and feed names.
+// Add a city here once its agents have published <dir>/races.json + clubs.json.
+const CITIES = {
+  stockholm: { name: "Stockholm", tz: "Europe/Stockholm", cur: "SEK", dir: "", ics: "stockholm",
+    // Gamla Stan gables, Riddarholmen's iron spire, City Hall (Stadshuset) with its tower and crowns
+    art: `<svg viewBox="0 0 240 112" role="presentation">
+      <path d="M4 104H236"/><path d="M12 110q6-3 12 0t12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0" opacity=".5"/>
+      <path d="M12 104V74l12-14 12 14v30"/><path d="M40 104V84l11-12 11 12v20"/><path d="M66 104V72h18v32"/><path d="M70 80h2M78 80h2M70 90h2M78 90h2"/>
+      <path d="M92 104V84h12v20"/><path class="a" d="M94 84L98 26l4 58"/><path class="a" d="M98 26V14M94 20h8"/>
+      <path class="f" d="M118 104V74h58v30z"/><path d="M126 104V96a4 4 0 0 1 8 0v8M140 104V96a4 4 0 0 1 8 0v8M154 104V96a4 4 0 0 1 8 0v8"/>
+      <path d="M184 104V38h22v66"/><path d="M188 50v12M195 50v12M202 50v12"/><path d="M187 38V28h16v10"/><path class="a" d="M186 28l9-14 9 14"/><path class="a" d="M195 14V6"/><circle class="a" cx="195" cy="4" r="2"/>
+    </svg>` },
+  berlin: { name: "Berlin", tz: "Europe/Berlin", cur: "EUR", dir: "berlin/", ics: "berlin",
+    // Brandenburg Gate with its quadriga, the TV Tower (Fernsehturm), a few blocks
+    art: `<svg viewBox="0 0 240 112" role="presentation">
+      <path d="M4 104H236"/>
+      <path class="f" d="M20 52h124v10H20z"/><path class="f" d="M34 40h96v12H34z"/>
+      <path class="t" d="M30 62v38M50 62v38M70 62v38M94 62v38M114 62v38M134 62v38"/>
+      <path class="a" d="M64 40v-6h36v6"/><path class="a" d="M72 34c0-6 4-9 10-9s10 3 10 9"/><path class="a" d="M60 34l-4-7 7 2M104 34l4-7-7 2"/>
+      <path d="M150 104V86h16v18"/><path d="M214 104V82h14v22"/>
+      <path d="M187 104L189 52M193 104L191 52"/><path d="M180 104l5-9M200 104l-5-9"/><circle class="a f" cx="190" cy="42" r="10"/><path class="a" d="M181 42h18"/><path class="a" d="M190 32V6"/>
+    </svg>` },
+};
+const CITY_KEY = "rs-city-v1";
+const CITY_ID = (() => {
+  let c = new URLSearchParams(location.search).get("city");
+  if (!(c in CITIES)) { try { c = localStorage.getItem(CITY_KEY); } catch { c = null; } }
+  return c in CITIES ? c : "stockholm";
+})();
+try { localStorage.setItem(CITY_KEY, CITY_ID); } catch {}
+const CITY = CITIES[CITY_ID], CUR = CITY.cur;
+document.documentElement.dataset.city = CITY_ID;
+document.getElementById("cityArt").innerHTML = CITY.art || "";
+{ const dot = { stockholm: "%23ff5a1f", berlin: "%23e2001a" }[CITY_ID], ic = document.querySelector('link[rel="icon"]');
+  if (ic && dot) ic.href = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='${dot}'/></svg>`; }
 const DISTANCES = [
-  { id: "all", label: "All", long: "All distances", file: "stockholm-all.ics" },
-  { id: "5k", label: "5K", long: "5K", file: "stockholm-5k.ics" },
-  { id: "10k", label: "10K", long: "10K", file: "stockholm-10k.ics" },
-  { id: "half", label: "Half", long: "Half", file: "stockholm-half.ics" },
-  { id: "marathon", label: "Marathon", long: "Marathon", file: "stockholm-marathon.ics" },
-  { id: "other", label: "Other", long: "Other", file: "stockholm-other.ics" },
+  { id: "all", label: "All", long: "All distances" },
+  { id: "5k", label: "5K", long: "5K" },
+  { id: "10k", label: "10K", long: "10K" },
+  { id: "half", label: "Half", long: "Half" },
+  { id: "marathon", label: "Marathon", long: "Marathon" },
+  { id: "other", label: "Other", long: "Other" },
 ];
+document.title = `${CITY.name} Race Alerts`;
+document.querySelectorAll(".cityname").forEach((e) => (e.textContent = `${CITY.name} Race Alerts`));
+document.querySelectorAll(".cityn").forEach((e) => (e.textContent = CITY.name));
+document.getElementById("h1").textContent = `${CITY.name} Race Alerts — run clubs and races`;
+{
+  const pick = document.getElementById("cityPick"), ids = Object.keys(CITIES);
+  if (ids.length < 2) pick.hidden = true;
+  pick.innerHTML = ids.map((id) => `<button type="button" data-city="${id}" aria-pressed="${id === CITY_ID}">${CITIES[id].name}</button>`).join("");
+  pick.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-city]"); if (!b || b.dataset.city === CITY_ID) return;
+    try { localStorage.setItem(CITY_KEY, b.dataset.city); } catch {}
+    const u = new URL(location.href); u.searchParams.set("city", b.dataset.city); location.href = u.toString(); // reload: every time/currency/feed constant is per city
+  });
+}
 const BUCKETS = new Set(DISTANCES.map((d) => d.id));
 const BADGE_LABEL = { sold_out: "Sold out", price_hike_soon: "Price hike soon", registering: "Registering", opens_soon: "Opens soon", closed: "Closed" };
-const DOOR_KEY = "rs-door-v1", TZ = "Europe/Stockholm";
+const DOOR_KEY = "rs-door-v1", TZ = CITY.tz;
 const $ = (id) => document.getElementById(id);
 // calendar with a down arrow: "save this race's dates to my calendar"
 const ICON_CAL = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M12 12.5v5m0 0-2.2-2.2m2.2 2.2 2.2-2.2"/></svg>`;
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const val = (v) => (v && typeof v === "object" && !Array.isArray(v) && "value" in v ? v.value : v);
 const dateOf = (v) => { v = val(v); if (v && typeof v === "object") v = v.date; return typeof v === "string" && /^\d{4}-\d{2}-\d{2}/.test(v) ? v.slice(0, 10) : null; };
-// "now" is Stockholm wall-clock time, whatever the visitor's device is set to
+// "now" is the city's wall-clock time, whatever the visitor's device is set to
 const nowFmt = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
 let nowCache = null;
 function sthlmNow() {
@@ -570,7 +643,7 @@ let races = [], filter = "all", racesLoaded = false;
 // ── derive the human layer (agent v3 writes badge/headline/next_deadline/notes; older data gets computed fallbacks)
 function tiersOf(r) {
   const t = val(r.price_tiers);
-  return Array.isArray(t) ? t.map((x) => ({ price: Number(val(x.price_sek)), until: dateOf(x.valid_until), dist: x.distance })) : [];
+  return Array.isArray(t) ? t.map((x) => ({ price: Number(val(x.price ?? x.price_sek)), until: dateOf(x.valid_until), dist: x.distance })) : [];
 }
 function nextBump(r) {
   const today = todayISO(), tiers = tiersOf(r);
@@ -644,7 +717,7 @@ function deadlineOf(r) {
   if (c === "upcoming" && opens && opens >= today) return { date: opens, type: "reg_opens", raw: "Registration opens", label: "Registration opens" };
   if (b && c !== "sold_out") {
     const last = new Date(new Date(b.date + "T12:00:00") - 864e5).toISOString().slice(0, 10);
-    const raw = b.from && b.to ? `Price rises ${b.from} → ${b.to} SEK` : "Price rises";
+    const raw = b.from && b.to ? `Price rises ${b.from} → ${b.to} ${CUR}` : "Price rises";
     return { date: last, type: "price_bump", raw, label: raw + " · last day at the current price" };
   }
   const rd = raceDay(r); return rd && rd >= today ? { date: rd, type: "race_day", raw: "Race day", label: "Race day" } : null;
@@ -654,13 +727,13 @@ function headlineOf(r) {
   const c = capStatus(r), b = nextBump(r), tiers = tiersOf(r), opens = dateOf(r.registration_opens);
   if (c === "sold_out") return "Sold out for this edition.";
   if (c === "upcoming") return opens ? `Registration opens ${fmt(opens, { day: "numeric", month: "long" })}.` : "Registration not open yet.";
-  if (b) return `Registration open — ${b.from} SEK until ${fmt(new Date(new Date(b.date + "T12:00:00") - 864e5).toISOString().slice(0, 10), { day: "numeric", month: "short" })}, then ${b.to} SEK.`;
-  if (tiers.length) return `Registration open — from ${Math.min(...tiers.map((t) => t.price).filter(Boolean))} SEK.`;
+  if (b) return `Registration open — ${b.from} ${CUR} until ${fmt(new Date(new Date(b.date + "T12:00:00") - 864e5).toISOString().slice(0, 10), { day: "numeric", month: "short" })}, then ${b.to} ${CUR}.`;
+  if (tiers.length) return `Registration open — from ${Math.min(...tiers.map((t) => t.price).filter(Boolean))} ${CUR}.`;
   return "Registration open.";
 }
 const notesOf = (r) => (Array.isArray(r.notes) ? r.notes : []).map(val).filter((n) => typeof n === "string" && n.trim()).slice(0, 3);
 const bucketsOf = (r) => new Set((r.distances || []).map(bucket));
-const shortName = (s) => String(s).replace(/\bStockholm\b/g, "").replace(/\s+/g, " ").trim() || String(s);
+const shortName = (s) => String(s).replace(new RegExp("\\b" + CITY.name + "\\b", "g"), "").replace(/\s+/g, " ").trim() || String(s);
 const linkOf = (r) => { const u = val(r.registration_url), o = val(r.official_url); return typeof u === "string" && u.startsWith("http") ? u : typeof o === "string" && o.startsWith("http") ? o : null; };
 // deadline markers for the ruler: the race's next deadline (not race day itself) + a still-future registration opening
 function marksOf(r) {
@@ -688,7 +761,10 @@ const VIBES = {
 };
 function vibesOf(r) {
   const own = Array.isArray(r.vibe_tags) ? r.vibe_tags.map(val).filter((t) => typeof t === "string" && t.trim()) : [];
-  return (own.length ? own : VIBES[r.slug] || []).slice(0, 2);
+  // nearby-town races carry "location" (the agent writes the town); show it first so a Södertälje or Uppsala race reads as "not in the city itself"
+  const loc = typeof val(r.location) === "string" ? val(r.location).trim() : "", away = loc && loc.toLowerCase() !== CITY.name.toLowerCase();
+  const tags = (own.length ? own : VIBES[r.slug] || []).filter((t) => !(away && /^📍/.test(t))).slice(0, 2);
+  return away ? ["📍 " + loc, ...tags] : tags;
 }
 // the soonest dated price jump where both tier prices are known; several distances jumping that day → "up to" the biggest saving
 function savingsOf(r) {
@@ -707,7 +783,7 @@ function savingsOf(r) {
 function vibesHTML(r, cls) {
   const sv = savingsOf(r), tags = vibesOf(r);
   if (!sv && !tags.length) return "";
-  const save = sv ? `<span class="save${sv.soon ? " soon" : ""}" title="Price rises after ${esc(fmt(sv.last))} — sign up by then">💰 Save ${sv.upTo ? "up to " : ""}${sv.amt} SEK before ${esc(fmt(sv.eff, { day: "numeric", month: "short" }))}</span>` : "";
+  const save = sv ? `<span class="save${sv.soon ? " soon" : ""}" title="Price rises after ${esc(fmt(sv.last))} — sign up by then">💰 Save ${sv.upTo ? "up to " : ""}${sv.amt} ${CUR} before ${esc(fmt(sv.eff, { day: "numeric", month: "short" }))}</span>` : "";
   return `<span class="vibes${cls ? " " + cls : ""}">${save}${tags.map((t) => `<span class="pill">${esc(t)}</span>`).join("")}</span>`;
 }
 const markColor = (t) => (t === "price_bump" ? "price_hike_soon" : t === "reg_opens" ? "opens_soon" : "closed");
@@ -717,7 +793,7 @@ function visible() { return races.filter((r) => filter === "all" || bucketsOf(r)
 function shortWhat(dl) {
   if (dl.type === "price_bump") {
     const m = [...String(dl.raw || "").matchAll(/(\d[\d,\s ]*)\s*→/g)];
-    return m.length === 1 ? `last day at ${m[0][1].trim()} SEK` : "last day at current prices";
+    return m.length === 1 ? `last day at ${m[0][1].trim()} ${CUR}` : "last day at current prices";
   }
   if (dl.type === "reg_opens") return "registration opens";
   return dl.raw ? dl.raw.charAt(0).toLowerCase() + dl.raw.slice(1) : "deadline";
@@ -743,7 +819,7 @@ function comingEvents() {
     for (let i = 0; i < tiers.length - 1; i++) {
       const t = tiers[i], n = tiers[i + 1];
       if (inWin(t.until) && (t.dist === n.dist || !t.dist) && n.price > t.price)
-        add(r, t.until, "price", "Price rise", `Price rises ${t.price} → ${n.price} SEK${t.dist ? ` (${t.dist})` : ""} · last day at the current price`, `last day at ${t.price} SEK`);
+        add(r, t.until, "price", "Price rise", `Price rises ${t.price} → ${n.price} ${CUR}${t.dist ? ` (${t.dist})` : ""} · last day at the current price`, `last day at ${t.price} ${CUR}`);
     }
     daysOf(r).forEach((d) => { if (inWin(d.date)) add(r, d.date, "race", "Race day", [d.label, d.time && d.time + " start"].filter(Boolean).join(" · "), "race day"); });
   });
@@ -978,11 +1054,11 @@ function saveFile(text, name) {
   const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: name });
   document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
 }
-// One race → a small .ics cut from the agent's stockholm-all.ics: race day(s), registration opening and price-step reminders (UIDs are <slug>-<year>-…)
+// One race → a small .ics cut from the agent's <city>-all.ics: race day(s), registration opening and price-step reminders (UIDs are <slug>-<year>-…)
 async function downloadRace(slug) {
   const r = races.find((x) => x.slug === slug); if (!r) return;
   try {
-    const ics = await (await fetch("stockholm-all.ics", { cache: "no-cache" })).text();
+    const ics = await (await fetch(`${CITY.dir}${CITY.ics}-all.ics`, { cache: "no-cache" })).text();
     const first = ics.indexOf("BEGIN:VEVENT"), end = ics.lastIndexOf("END:VCALENDAR");
     if (first < 0 || end < 0) throw new Error("feed not ready");
     const head = ics.slice(0, first)
@@ -1004,7 +1080,7 @@ async function downloadRace(slug) {
 }
 function toast(msg) { const t = $("toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 2600); }
 
-// ── run clubs: next meetups computed from weekly_schedule in Stockholm time
+// ── run clubs: next meetups computed from weekly_schedule in the city's time
 let clubs = [], clubsState = "loading";
 const SENTINELS = new Set(["", "not announced", "see source link", "unknown", "n/a"]);
 const known = (v) => v !== null && v !== undefined && v !== false && !(typeof v === "string" && SENTINELS.has(v.trim().toLowerCase()));
@@ -1044,8 +1120,8 @@ function whereOf(s) {
   return { text: [mp, nbNew ? nb : ""].filter(Boolean).join(", "), exact: !!mp, nb, note };
 }
 function mapUrl(s) {
-  const q = known(s.maps_query) ? String(s.maps_query).replace(/\+/g, " ") : [whereOf(s).text, "Stockholm"].filter(Boolean).join(" ");
-  return q.trim() && q !== "Stockholm" ? "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q) : null;
+  const q = known(s.maps_query) ? String(s.maps_query).replace(/\+/g, " ") : [whereOf(s).text, CITY.name].filter(Boolean).join(" ");
+  return q.trim() && q !== CITY.name ? "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q) : null;
 }
 // pace in plain words: "8:00 min/km" → how long a 5 km takes at that pace
 function paceGloss(p) {
@@ -1054,7 +1130,10 @@ function paceGloss(p) {
   const lo = Math.round(Math.min(...ms)) * 5, hi = Math.round(Math.max(...ms)) * 5; // minutes per 5 km, to the nearest 5
   return lo === hi ? `a 5 km takes about ${lo} min` : `a 5 km takes about ${lo}–${hi} min`;
 }
-const isNewClub = (c) => c.seeded === false && dateOf(c.first_seen_date) && daysUntil(dateOf(c.first_seen_date)) <= 0 && daysUntil(dateOf(c.first_seen_date)) >= -30;
+// "New" = found on a LATER run: discovered (not seeded), first seen within 30 days, and after the city's first run (the earliest first_seen_date in the file) — a city's first batch isn't new
+let firstRunDate = null;
+const isNewClub = (c) => c.seeded === false && dateOf(c.first_seen_date) && daysUntil(dateOf(c.first_seen_date)) <= 0 && daysUntil(dateOf(c.first_seen_date)) >= -30
+  && firstRunDate && dateOf(c.first_seen_date) > firstRunDate;
 function specialOf(c) {
   const ev = c.next_special_event; if (!ev || typeof ev !== "object") return null;
   const d = dateOf(ev.date), time = hhmm(ev.start_time), now = sthlmNow(); if (!d || d < now.date || !known(ev.title)) return null;
@@ -1062,7 +1141,7 @@ function specialOf(c) {
   return { title: String(ev.title), date: d, time, where: known(ev.location) ? String(ev.location) : "" };
 }
 
-// one VEVENT, Stockholm wall-clock time + its VTIMEZONE, 1 hour long
+// one VEVENT, city wall-clock time + its VTIMEZONE (EU rules: CET/CEST — right for Stockholm and Berlin; a non-EU city needs its own rules), 1 hour long
 const icsEsc = (s) => String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
 const enc = new TextEncoder();
 function fold(line) {
@@ -1077,13 +1156,13 @@ function endOf(date, time) {
 function eventICS({ uid, date, time, summary, location, url, description }) {
   const stamp = (d) => d.replace(/-/g, ""), e = endOf(date, time), end = `${stamp(e.date)}T${e.time.replace(":", "")}00`;
   const lines = [
-    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Stockholm Race Alerts//Run clubs//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
-    "BEGIN:VTIMEZONE", "TZID:Europe/Stockholm", "X-LIC-LOCATION:Europe/Stockholm",
+    "BEGIN:VCALENDAR", "VERSION:2.0", `PRODID:-//${CITY.name} Race Alerts//Run clubs//EN`, "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+    "BEGIN:VTIMEZONE", `TZID:${TZ}`, `X-LIC-LOCATION:${TZ}`,
     "BEGIN:DAYLIGHT", "TZOFFSETFROM:+0100", "TZOFFSETTO:+0200", "TZNAME:CEST", "DTSTART:19700329T020000", "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU", "END:DAYLIGHT",
     "BEGIN:STANDARD", "TZOFFSETFROM:+0200", "TZOFFSETTO:+0100", "TZNAME:CET", "DTSTART:19701025T030000", "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU", "END:STANDARD",
     "END:VTIMEZONE",
     "BEGIN:VEVENT", `UID:${uid}`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "")}`,
-    `DTSTART;TZID=Europe/Stockholm:${stamp(date)}T${time.replace(":", "")}00`, `DTEND;TZID=Europe/Stockholm:${end}`,
+    `DTSTART;TZID=${TZ}:${stamp(date)}T${time.replace(":", "")}00`, `DTEND;TZID=${TZ}:${end}`,
     `SUMMARY:${icsEsc(summary)}`, location ? `LOCATION:${icsEsc(location)}` : "", url ? `URL:${url}` : "",
     description ? `DESCRIPTION:${icsEsc(description)}` : "", "END:VEVENT", "END:VCALENDAR",
   ].filter(Boolean);
@@ -1322,7 +1401,7 @@ if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => $("mini
   showDoor(DOORS.includes(start) ? start : "clubs", { replace: true });
 }
 renderAll();
-fetch("races.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
+fetch(CITY.dir + "races.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
   // load errors end at the .catch above; a bug in rendering below surfaces in the console instead of posing as "couldn't load"
   if (d && Array.isArray(d.races)) {
     races = d.races.filter((r) => r && r.slug).flatMap(splitRace);
@@ -1330,8 +1409,9 @@ fetch("races.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null))
   } else $("updated").textContent = "";
   racesLoaded = true; renderAll();
 });
-fetch("clubs.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
+fetch(CITY.dir + "clubs.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
   if (d && Array.isArray(d.clubs)) {
+    firstRunDate = d.clubs.map((c) => dateOf(c && c.first_seen_date)).filter(Boolean).sort()[0] || null;
     clubs = d.clubs.filter((c) => c && typeof c === "object" && c.slug && known(c.name)
       && !(dateOf(c.last_seen_date) && daysUntil(dateOf(c.last_seen_date)) < -30)); // hide clubs not seen at a source for 30+ days
     clubsState = "ready";
