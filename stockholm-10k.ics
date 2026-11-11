@@ -27,6 +27,20 @@ TZOFFSETTO:+0100
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+SUMMARY:[Reg Opens Today] Västerås Marathon 2027
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260513
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-reg-opens@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Registration for Västerås Marathon 2027 opens. Note: RaceID 
+ registration_starts_at 2026-05-12 00:00 for all three distances\; the firs
+ t price tier is dated from 2026-05-13.\n\nSign up / registration: https://
+ raceid.com/sv/races/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Reg Opens Today] Premiärmilen / Premiärhalvan 2027
 DTSTART;VALUE=DATE:20260525
 DTEND;VALUE=DATE:20260526
@@ -71,6 +85,24 @@ DESCRIPTION:Registration for Tjejmilen Stockholm 2027 (10K\, 4 Sep 2027) o
  .se/tjejmilen
 TRANSP:TRANSPARENT
 URL:https://events.marathongruppen.se/tjejmilen
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Västerås Marathon 10K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-price-bump-10k-1@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Västerås Marathon 10K: 350 SEK is valid through 2026-09-02\;
+  from 2026-09-03 the price is 400 SEK.\n\nSign up / registration: https://
+ raceid.com/sv/races/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Västerås Marathon 10K (Saves ~50 SEK)
+TRIGGER:PT9H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~145 SEK)
@@ -118,6 +150,24 @@ URL:https://events.marathongruppen.se/hasselbyloppet
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:[Price Bump in 48h] Hässelbyloppet 10K (Saves ~70 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Västerås Marathon 10K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-price-bump-10k-2@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Västerås Marathon 10K: 400 SEK is valid through 2026-10-27\;
+  from 2026-10-28 the price is 450 SEK.\n\nSign up / registration: https://
+ raceid.com/sv/races/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Västerås Marathon 10K (Saves ~50 SEK)
 TRIGGER:PT9H
 END:VALARM
 END:VEVENT
@@ -176,6 +226,24 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Winter Run Stockholm 10K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+DTSTAMP:20261111T230455Z
+UID:winter-run-stockholm-2027-price-bump-10k-1@race-sentinel-feeds
+CATEGORIES:Running,winter-run-stockholm
+DESCRIPTION:Winter Run Stockholm 10K: 495 SEK is valid through 2026-11-30
+ \; from 2026-12-01 the price is 595 SEK.\n\nSign up / registration: https:
+ //events.marathongruppen.se/6c6fa98256498c8c5b54
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/6c6fa98256498c8c5b54
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Winter Run Stockholm 10K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~50 SEK)
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270113
@@ -192,6 +260,18 @@ ACTION:DISPLAY
 DESCRIPTION:[Price Bump in 48h] Tjejmilen 10K (Saves ~50 SEK)
 TRIGGER:PT9H
 END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Winter Run Stockholm 10K
+DTSTART;TZID=Europe/Stockholm:20270130T160000
+DTSTAMP:20261111T230455Z
+UID:winter-run-stockholm-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,winter-run-stockholm
+DESCRIPTION:Winter Run Stockholm 2027 – 10K. Start 16:00 (first start sh
+ own by the organizer).\n\nSign up / registration: https://events.marathong
+ ruppen.se/6c6fa98256498c8c5b54
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/6c6fa98256498c8c5b54
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Tjejmilen 10K (Saves ~100 SEK)
@@ -212,6 +292,24 @@ TRIGGER:PT9H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Västerås Marathon 10K (Saves ~50 SEK)
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-price-bump-10k-3@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Västerås Marathon 10K: 450 SEK is valid through 2027-03-31\;
+  from 2027-04-01 the price is 500 SEK.\n\nSign up / registration: https://
+ raceid.com/sv/races/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Västerås Marathon 10K (Saves ~50 SEK)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[Race Day] Premiärmilen 10K
 DTSTART;TZID=Europe/Stockholm:20270403T110000
 DTSTAMP:20261014T145421Z
@@ -220,6 +318,24 @@ CATEGORIES:Running,premiarmilen
 DESCRIPTION:Premiärmilen 2027 – 10K. Start 11:00 (preliminary).\n\nSign
   up / registration: https://events.marathongruppen.se/acf9545de3114ebef5bf
 URL:https://events.marathongruppen.se/acf9545de3114ebef5bf
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Price Bump in 48h] Höstrusket 10K (Saves ~100 SEK)
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+DTSTAMP:20261111T230455Z
+UID:hostrusket-2027-price-bump-10k-1@race-sentinel-feeds
+CATEGORIES:Running,hostrusket
+DESCRIPTION:Höstrusket 10K: 395 SEK is valid through 2027-04-27\; from 20
+ 27-04-28 the price is 495 SEK.\n\nSign up / registration: https://events.m
+ arathongruppen.se/1e4d970e7bb271bd7ea3
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/1e4d970e7bb271bd7ea3
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Price Bump in 48h] Höstrusket 10K (Saves ~100 SEK)
+TRIGGER:PT9H
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Price Bump in 48h] Hässelbyloppet 10K (Saves ~50 SEK)
@@ -238,6 +354,18 @@ ACTION:DISPLAY
 DESCRIPTION:[Price Bump in 48h] Hässelbyloppet 10K (Saves ~50 SEK)
 TRIGGER:PT9H
 END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Västerås Marathon 10K
+DTSTART;TZID=Europe/Stockholm:20270501T143000
+DTSTAMP:20261111T230455Z
+UID:vasteras-marathon-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,vasteras-marathon
+DESCRIPTION:Västerås Marathon 2027 – 10K. Start 14:30 (first start sho
+ wn by the organizer).\n\nSign up / registration: https://raceid.com/sv/rac
+ es/15113/about
+TRANSP:TRANSPARENT
+URL:https://raceid.com/sv/races/15113/about
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:[Race Day] Kungsholmen Runt 10K
@@ -364,5 +492,17 @@ CATEGORIES:Running,hasselbyloppet
 DESCRIPTION:Hässelbyloppet 2027 – 10K. Start 12:00 (preliminary).\n\nSi
  gn up / registration: https://events.marathongruppen.se/hasselbyloppet
 URL:https://events.marathongruppen.se/hasselbyloppet
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Race Day] Höstrusket 10K
+DTSTART;TZID=Europe/Stockholm:20271113T091500
+DTSTAMP:20261111T230455Z
+UID:hostrusket-2027-race-day-10k@race-sentinel-feeds
+CATEGORIES:Running,hostrusket
+DESCRIPTION:Höstrusket 2027 – 10K. Start 09:15 (first start shown by th
+ e organizer).\n\nSign up / registration: https://events.marathongruppen.se
+ /1e4d970e7bb271bd7ea3
+TRANSP:TRANSPARENT
+URL:https://events.marathongruppen.se/1e4d970e7bb271bd7ea3
 END:VEVENT
 END:VCALENDAR
