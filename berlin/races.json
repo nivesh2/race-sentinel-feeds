@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T23:51:12+01:00",
+  "generated_at": "2026-11-11T23:53:19+01:00",
   "city": "Berlin",
   "timezone": "Europe/Berlin",
   "currency": "EUR",
@@ -101,7 +101,7 @@
       "notes": [
         "Bibs for 2027 were allocated by lottery (entry window 2 Apr–28 May 2026, results 16 Jun 2026), per the official run registration page.",
         "Other routes to a bib listed by the organizer: charity places and official tour operators.",
-        "Registration for the next lottery is not announced."
+        "The 2026 edition was run on 29 Mar 2026 (race report dated 30 Mar 2026 on the same site), so the Apr–May 2026 lottery is for the 2027 edition; the next lottery window is not announced."
       ],
       "sources": [
         {
@@ -565,7 +565,7 @@
         "10K"
       ],
       "registration_opens": "not announced",
-      "price_tiers": [],
+      "price_tiers": "not announced",
       "capacity_status": "upcoming",
       "capacity_wording": "'The registration period for 2027 will be announced here.'",
       "registration_url": "https://www.berlin-citynight.de/en/registration/registration",
