@@ -444,6 +444,13 @@
   .strip.zoomed .zdate { opacity: 1; }
   .mark.target::before { height: 14px; width: 3px; box-shadow: 0 0 0 3px var(--accent-soft); }
 
+  /* switching city: colours cross-fade (accent is a CSS variable), the city-specific parts fade and slide a few px */
+  html.cityfade *, html.cityfade *::before, html.cityfade *::after { transition: background-color .4s ease, color .4s ease, border-color .4s ease, fill .4s ease, stroke .4s ease, box-shadow .4s ease, opacity .22s ease, transform .22s ease; }
+  html.swapping :is(.cityname, .pitch, .views) { opacity: 0; }
+  html.swapping .views { transform: translateY(8px); }
+  html.swapping .cityart { opacity: 0; transform: translateX(14px); }
+  .cityart { transition: opacity .35s ease .05s, transform .35s ease .05s; }
+
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
   }
@@ -557,17 +564,14 @@ const CITIES = {
     </svg>` },
 };
 const CITY_KEY = "rs-city-v1";
-const CITY_ID = (() => {
+const cityFromUrl = () => {
   let c = new URLSearchParams(location.search).get("city");
   if (!(c in CITIES)) { try { c = localStorage.getItem(CITY_KEY); } catch { c = null; } }
   return c in CITIES ? c : "stockholm";
-})();
+};
+// the city can change without a reload: everything per city reads these at call time
+let CITY_ID = cityFromUrl(), CITY = CITIES[CITY_ID], CUR = CITY.cur, TZ = CITY.tz;
 try { localStorage.setItem(CITY_KEY, CITY_ID); } catch {}
-const CITY = CITIES[CITY_ID], CUR = CITY.cur;
-document.documentElement.dataset.city = CITY_ID;
-document.getElementById("cityArt").innerHTML = CITY.art || "";
-{ const dot = { stockholm: "%23ff5a1f", berlin: "%23e2001a" }[CITY_ID], ic = document.querySelector('link[rel="icon"]');
-  if (ic && dot) ic.href = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='${dot}'/></svg>`; }
 const DISTANCES = [
   { id: "all", label: "All", long: "All distances" },
   { id: "5k", label: "5K", long: "5K" },
@@ -576,23 +580,30 @@ const DISTANCES = [
   { id: "marathon", label: "Marathon", long: "Marathon" },
   { id: "other", label: "Other", long: "Other" },
 ];
-document.title = `${CITY.name} Race Alerts`;
-document.querySelectorAll(".cityname").forEach((e) => (e.textContent = `${CITY.name} Race Alerts`));
-document.querySelectorAll(".cityn").forEach((e) => (e.textContent = CITY.name));
-document.getElementById("h1").textContent = `${CITY.name} Race Alerts — run clubs and races`;
+// everything that shows the city's name, colour or skyline — run at load and on every switch
+function applyCityChrome() {
+  const root = document.documentElement; root.dataset.city = CITY_ID;
+  document.getElementById("cityArt").innerHTML = CITY.art || "";
+  const dot = { stockholm: "%23ff5a1f", berlin: "%23e2001a" }[CITY_ID], ic = document.querySelector('link[rel="icon"]');
+  if (ic && dot) ic.href = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='${dot}'/></svg>`;
+  document.title = `${CITY.name} Race Alerts`;
+  document.querySelectorAll(".cityname").forEach((e) => (e.textContent = `${CITY.name} Race Alerts`));
+  document.querySelectorAll(".cityn").forEach((e) => (e.textContent = CITY.name));
+  document.getElementById("h1").textContent = `${CITY.name} Race Alerts — run clubs and races`;
+  document.querySelectorAll("#cityPick [data-city]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.city === CITY_ID));
+}
+applyCityChrome();
 {
   const pick = document.getElementById("cityPick"), ids = Object.keys(CITIES);
   if (ids.length < 2) pick.hidden = true;
   pick.innerHTML = ids.map((id) => `<button type="button" data-city="${id}" aria-pressed="${id === CITY_ID}">${CITIES[id].name}</button>`).join("");
-  pick.addEventListener("click", (e) => {
-    const b = e.target.closest("[data-city]"); if (!b || b.dataset.city === CITY_ID) return;
-    try { localStorage.setItem(CITY_KEY, b.dataset.city); } catch {}
-    const u = new URL(location.href); u.searchParams.set("city", b.dataset.city); location.href = u.toString(); // reload: every time/currency/feed constant is per city
-  });
+  pick.addEventListener("click", (e) => { const b = e.target.closest("[data-city]"); if (b) switchCity(b.dataset.city, { push: true }); });
+  // start fetching the other city's data as soon as the pointer or focus lands on its button, so the switch has nothing to wait for
+  ["pointerenter", "focusin", "touchstart"].forEach((ev) => pick.addEventListener(ev, (e) => { const b = e.target.closest && e.target.closest("[data-city]"); if (b && b.dataset.city in CITIES) cityData(b.dataset.city); }, { passive: true }));
 }
 const BUCKETS = new Set(DISTANCES.map((d) => d.id));
 const BADGE_LABEL = { sold_out: "Sold out", price_hike_soon: "Price hike soon", registering: "Registering", opens_soon: "Opens soon", closed: "Closed" };
-const DOOR_KEY = "rs-door-v1", TZ = CITY.tz;
+const DOOR_KEY = "rs-door-v1";
 const $ = (id) => document.getElementById(id);
 // calendar with a down arrow: "save this race's dates to my calendar"
 const ICON_CAL = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M12 12.5v5m0 0-2.2-2.2m2.2 2.2 2.2-2.2"/></svg>`;
@@ -600,8 +611,8 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 const val = (v) => (v && typeof v === "object" && !Array.isArray(v) && "value" in v ? v.value : v);
 const dateOf = (v) => { v = val(v); if (v && typeof v === "object") v = v.date; return typeof v === "string" && /^\d{4}-\d{2}-\d{2}/.test(v) ? v.slice(0, 10) : null; };
 // "now" is the city's wall-clock time, whatever the visitor's device is set to
-const nowFmt = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
-let nowCache = null;
+const mkNowFmt = (tz) => new Intl.DateTimeFormat("en-CA", { timeZone: tz, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+let nowFmt = mkNowFmt(TZ), nowCache = null;
 function sthlmNow() {
   if (nowCache && Date.now() - nowCache.at < 30000) return nowCache;
   const p = Object.fromEntries(nowFmt.formatToParts(new Date()).map((x) => [x.type, x.value]));
@@ -1400,16 +1411,24 @@ if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => $("mini
   if (!DOORS.includes(start)) { try { start = localStorage.getItem(DOOR_KEY); } catch { start = null; } }
   showDoor(DOORS.includes(start) ? start : "clubs", { replace: true });
 }
-renderAll();
-fetch(CITY.dir + "races.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
-  // load errors end at the .catch above; a bug in rendering below surfaces in the console instead of posing as "couldn't load"
+// ── data per city: fetched once, shared by the first load, the hover prefetch and every switch
+const getJSON = (url) => fetch(url, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+const dataCache = {};
+function cityData(id) {
+  const c = dataCache[id];
+  if (c && Date.now() - c.at < 5 * 60e3) return c; // a tab left open for hours refetches
+  const dir = CITIES[id].dir;
+  return (dataCache[id] = { at: Date.now(), races: getJSON(dir + "races.json"), clubs: getJSON(dir + "clubs.json") });
+}
+function ingestRaces(d) {
+  // load errors end at getJSON's .catch; a bug in rendering below surfaces in the console instead of posing as "couldn't load"
   if (d && Array.isArray(d.races)) {
     races = d.races.filter((r) => r && r.slug).flatMap(splitRace);
     if (d.generated_at) checkedLine($("updated"), "Races checked", d.generated_at, 2); else $("updated").textContent = "";
   } else $("updated").textContent = "";
   racesLoaded = true; renderAll();
-});
-fetch(CITY.dir + "clubs.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((d) => {
+}
+function ingestClubs(d) {
   if (d && Array.isArray(d.clubs)) {
     firstRunDate = d.clubs.map((c) => dateOf(c && c.first_seen_date)).filter(Boolean).sort()[0] || null;
     clubs = d.clubs.filter((c) => c && typeof c === "object" && c.slug && known(c.name)
@@ -1418,7 +1437,44 @@ fetch(CITY.dir + "clubs.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json
     if (d.generated_at) checkedLine($("clubsUpdated"), "Clubs checked", d.generated_at, 9);
   } else clubsState = "failed";
   renderClubs(); renderPeeks();
-});
+}
+function loadCity(id) {
+  const d = cityData(id);
+  d.races.then((r) => { if (id === CITY_ID) ingestRaces(r); });
+  d.clubs.then((c) => { if (id === CITY_ID) ingestClubs(c); });
+  return d;
+}
+
+// ── switching city without a reload: fade the city-specific parts out, swap, fade in (colours cross-fade via CSS variables)
+let swapTok = 0;
+async function switchCity(id, { push = true } = {}) {
+  if (!(id in CITIES) || id === CITY_ID) return;
+  const tok = ++swapTok, root = document.documentElement, anim = !reduceMotion(), d = cityData(id);
+  if (anim) root.classList.add("cityfade", "swapping");
+  // wait for the fade-out AND the data, but never longer than 1.5 s — a slow network falls through to the loading state
+  await Promise.all([new Promise((r) => setTimeout(r, anim ? 200 : 0)), Promise.race([Promise.all([d.races, d.clubs]), new Promise((r) => setTimeout(r, 1500))])]);
+  if (tok !== swapTok) return; // a newer switch took over
+  closeSheet();
+  CITY_ID = id; CITY = CITIES[id]; CUR = CITY.cur;
+  if (TZ !== CITY.tz) { TZ = CITY.tz; nowFmt = mkNowFmt(TZ); nowCache = null; }
+  try { localStorage.setItem(CITY_KEY, id); } catch {}
+  try { const u = new URL(location.href); u.searchParams.set("city", id); history[push ? "pushState" : "replaceState"](null, "", u); } catch {}
+  // back to a clean slate for the new city
+  races = []; racesLoaded = false; filter = "all"; comingAll = false; openSlug = null;
+  clubs = []; clubsState = "loading"; firstRunDate = null; aDay = null;
+  $("updated").textContent = "Loading the latest check…"; $("clubsUpdated").textContent = "";
+  $("agenda").innerHTML = `<p class="empty">Finding this week's runs…</p>`; $("dayPick").innerHTML = ""; $("cCount").textContent = "";
+  $("cList").hidden = true; $("dayLeg").hidden = true; $("dayAll").hidden = true;
+  applyCityChrome(); renderAll(); loadCity(id); // cached promises are already settled: the data lands before the next paint
+  if (anim) {
+    setTimeout(() => { if (tok === swapTok) root.classList.remove("swapping"); }, 40); // timer, not rAF: rAF stalls in a hidden tab and would leave the page invisible
+    setTimeout(() => { if (tok === swapTok) root.classList.remove("cityfade"); }, 600);
+  }
+}
+window.addEventListener("popstate", () => { const c = new URLSearchParams(location.search).get("city"); if (c in CITIES && c !== CITY_ID) switchCity(c, { push: false }); });
+
+renderAll();
+loadCity(CITY_ID);
 </script>
 </body>
 </html>
